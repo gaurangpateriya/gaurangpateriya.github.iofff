@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9e499572.chunk.css",
+    "main.js": "/static/js/main.03e36f6a.chunk.js",
+    "main.js.map": "/static/js/main.03e36f6a.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.74416d59.chunk.css": "/static/css/2.74416d59.chunk.css",
+    "static/js/2.ae570338.chunk.js": "/static/js/2.ae570338.chunk.js",
+    "static/js/2.ae570338.chunk.js.map": "/static/js/2.ae570338.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e0c4a47d30ec8852a85bdc2bbabdc400.js": "/precache-manifest.e0c4a47d30ec8852a85bdc2bbabdc400.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.74416d59.chunk.css.map": "/static/css/2.74416d59.chunk.css.map",
+    "static/css/main.9e499572.chunk.css.map": "/static/css/main.9e499572.chunk.css.map",
+    "static/media/LandingPage.css": "/static/media/bg-circles-1.1e9698d5.svg"
+  }
+}
