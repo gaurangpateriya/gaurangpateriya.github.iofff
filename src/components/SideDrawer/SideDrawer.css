@@ -1,0 +1,17 @@
+
+.side-drawer-div{
+    height: 100vh;
+    width: 51vh;
+    background-color: transparent;
+    
+}
+.MuiDrawer-paperAnchorRight{
+    background: transparent ;
+    cursor: none;
+    margin-top: 20vh;
+    height: 100vh;
+    
+}
+.MuiList-root{
+    height:100%;
+}
