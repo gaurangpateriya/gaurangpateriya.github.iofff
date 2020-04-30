@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.a1bdf6d8.chunk.css",
-    "main.js": "/static/js/main.5f91634f.chunk.js",
-    "main.js.map": "/static/js/main.5f91634f.chunk.js.map",
+    "main.css": "/static/css/main.db78155f.chunk.css",
+    "main.js": "/static/js/main.be772a08.chunk.js",
+    "main.js.map": "/static/js/main.be772a08.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
     "static/css/2.f5874b4f.chunk.css": "/static/css/2.f5874b4f.chunk.css",
-    "static/js/2.bc815961.chunk.js": "/static/js/2.bc815961.chunk.js",
-    "static/js/2.bc815961.chunk.js.map": "/static/js/2.bc815961.chunk.js.map",
+    "static/js/2.fb020541.chunk.js": "/static/js/2.fb020541.chunk.js",
+    "static/js/2.fb020541.chunk.js.map": "/static/js/2.fb020541.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e95cb24ac9c063ba9c2f547db68b3ee0.js": "/precache-manifest.e95cb24ac9c063ba9c2f547db68b3ee0.js",
+    "precache-manifest.12737b521e2e7cee6f3fc7757aef57b8.js": "/precache-manifest.12737b521e2e7cee6f3fc7757aef57b8.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.f5874b4f.chunk.css.map": "/static/css/2.f5874b4f.chunk.css.map",
-    "static/css/main.a1bdf6d8.chunk.css.map": "/static/css/main.a1bdf6d8.chunk.css.map",
+    "static/css/main.db78155f.chunk.css.map": "/static/css/main.db78155f.chunk.css.map",
     "static/media/0db05c61c7d85c151b5d9e2321d0e9d9-youtube-distorted-round-icon-by-vexels.png": "/static/media/0db05c61c7d85c151b5d9e2321d0e9d9-youtube-distorted-round-icon-by-vexels.8357d8e0.png",
     "static/media/288499034000211.png": "/static/media/288499034000211.21b72490.png",
     "static/media/3dda7d3babda55b112341c12f25d46ec.png": "/static/media/3dda7d3babda55b112341c12f25d46ec.178a0528.png",
@@ -36,7 +36,6 @@
     "static/media/instalink_logo.png": "/static/media/instalink_logo.28c5a759.png",
     "static/media/linkedIn_PNG36.png": "/static/media/linkedIn_PNG36.b03d83b3.png",
     "static/media/mobile.jpg": "/static/media/mobile.d5181a84.jpg",
-    "static/media/patreon-512.png": "/static/media/patreon-512.0dfef75f.png",
-    "static/media/tick.png": "/static/media/tick.86208827.png"
+    "static/media/patreon-512.png": "/static/media/patreon-512.0dfef75f.png"
   }
 }
