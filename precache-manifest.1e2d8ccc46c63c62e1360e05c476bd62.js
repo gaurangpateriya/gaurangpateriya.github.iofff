@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "89aac941bafde5f280b5190817114db9",
+    "revision": "41ef697a3bf9bbb1a972ade8ea6ba959",
     "url": "/index.html"
   },
   {
-    "revision": "f43596c7c3097f4290d9",
-    "url": "/static/css/2.4b61c042.chunk.css"
+    "revision": "518e0a9c55981fdb283b",
+    "url": "/static/css/2.f5874b4f.chunk.css"
   },
   {
-    "revision": "11d2a810b9715410ad46",
-    "url": "/static/css/main.af08b275.chunk.css"
+    "revision": "cbdff7cf6ad6c57e2f9c",
+    "url": "/static/css/main.a1bdf6d8.chunk.css"
   },
   {
-    "revision": "f43596c7c3097f4290d9",
-    "url": "/static/js/2.9d50bd65.chunk.js"
+    "revision": "518e0a9c55981fdb283b",
+    "url": "/static/js/2.bc815961.chunk.js"
   },
   {
-    "revision": "11d2a810b9715410ad46",
-    "url": "/static/js/main.280f4b94.chunk.js"
+    "revision": "cbdff7cf6ad6c57e2f9c",
+    "url": "/static/js/main.1b765d78.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -56,40 +56,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Splash-Instagraam-Icon-Png-1024x1024.2a6d07cf.png"
   },
   {
-    "revision": "2bc4cf793e8211d4af1a8546dac7cac1",
-    "url": "/static/media/WhatsApp Image 2020-04-28 at 4.40.57 PM (1).2bc4cf79.jpeg"
+    "revision": "047534f121601da4f007930056a2de76",
+    "url": "/static/media/WhatsApp Image 2020-04-29 at 10.50.38 PM (1).047534f1.jpeg"
   },
   {
-    "revision": "3d8c86b0b874cf76901849b543135db1",
-    "url": "/static/media/WhatsApp Image 2020-04-28 at 4.40.57 PM (2).3d8c86b0.jpeg"
+    "revision": "4eaea5a786131dc98894aa46012fbb9e",
+    "url": "/static/media/WhatsApp Image 2020-04-29 at 10.50.38 PM (2).4eaea5a7.jpeg"
   },
   {
-    "revision": "2a19459549d2dbed1a5fe9ce5e02fbb3",
-    "url": "/static/media/WhatsApp Image 2020-04-28 at 4.40.57 PM (3).2a194595.jpeg"
-  },
-  {
-    "revision": "5ead400f20cf347f1d14ce123ad2f6de",
-    "url": "/static/media/WhatsApp Image 2020-04-28 at 4.40.57 PM.5ead400f.jpeg"
+    "revision": "a23d7e5cd3562c6adb9a5708dfce9d2a",
+    "url": "/static/media/WhatsApp Image 2020-04-29 at 10.50.38 PM (3).a23d7e5c.jpeg"
   },
   {
     "revision": "2f52a4f82797eb0bab9da5cf30681f9c",
     "url": "/static/media/Youtube-PNG-Pic.2f52a4f8.png"
   },
   {
+    "revision": "10127c68c78182daa240f76e4e0f0a8f",
+    "url": "/static/media/analytics-img.10127c68.svg"
+  },
+  {
     "revision": "5c31f900e83b4b9f07419f750ba35b27",
     "url": "/static/media/arrow.5c31f900.png"
   },
   {
-    "revision": "1e9698d5028c7d952751fadd5416f3b0",
-    "url": "/static/media/bg-circles-1.1e9698d5.svg"
-  },
-  {
-    "revision": "6bfb5ac9ef5116e9cd1a052d187e5e91",
-    "url": "/static/media/bg.6bfb5ac9.svg"
-  },
-  {
     "revision": "1f04957a406504d8a4a8f8155d086ba0",
     "url": "/static/media/facebook-new.1f04957a.png"
+  },
+  {
+    "revision": "0ece82cf3f49ba97cef8a64c4982bd21",
+    "url": "/static/media/feature-img.0ece82cf.jpeg"
   },
   {
     "revision": "12048fae2b849c0b65216255f11fc4d5",
@@ -122,10 +118,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0dfef75fa817cb22462b6e722aecfee2",
     "url": "/static/media/patreon-512.0dfef75f.png"
-  },
-  {
-    "revision": "2aef8a90d6fee2e34ea1b214c8feb894",
-    "url": "/static/media/star.2aef8a90.png"
   },
   {
     "revision": "86208827d593356611464711f5e8f88f",
