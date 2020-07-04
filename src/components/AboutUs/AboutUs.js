@@ -12,6 +12,12 @@ import style_icon from '../../assets/Images/AboutUS/style_icon.svg';
 import yash_sir_photo from '../../assets/Images/AboutUS/our_team/yash_sir_photo.jpeg';
 import vaibhav_sir_photo from '../../assets/Images/AboutUS/our_team/vaibhav_sir_photo.png';
 import gaurang_sir_photo from '../../assets/Images/AboutUS/our_team/gaurang_sir_photo.jpg';
+import saumya_mehta from '../../assets/Images/AboutUS/our_team/saumya_mehta.jpeg';
+import yash_dhoka from '../../assets/Images/AboutUS/our_team/yash_dhoka.jpeg';
+import savio_barla from '../../assets/Images/AboutUS/our_team/savio_barla.jpeg';
+import sanya_aneja from '../../assets/Images/AboutUS/our_team/sanya_aneja.jpeg';
+
+
 import falcon_logo from '../../assets/Images/AboutUS/our_clients/falcon-city-logo.jpg';
 import instalink_logo from '../../assets/Images/AboutUS/our_clients/instalink_logo.png';
 
@@ -33,10 +39,34 @@ const our_team = [
 	{
 		photo:gaurang_sir_photo,
 		name:'Gaurang Pateriya',
-		designation: 'Senior Developer',
+		designation: 'Technical Lead',
 		info: ''
 	},
-
+	{
+		photo:sanya_aneja,
+		name:'Sanya Aneja',
+		designation: 'Marketing Lead',
+		info: ''
+	},
+	{
+		photo:saumya_mehta,
+		name:'Saumya Mehta',
+		designation: 'Seo Strategist',
+		info: ''
+	},
+	{
+		photo:yash_dhoka,
+		name:'Yash Dhoka',
+		designation: 'Associate Sales Manager',
+		info: ''
+	},
+	{
+		photo:savio_barla,
+		name:'Savio Barla',
+		designation: 'Digital Marketing Lead',
+		info: ''
+	},
+	
 ];
 const our_clients = [
 	{
@@ -55,7 +85,10 @@ const our_clients = [
 		logo:instalink_logo,
 		name:'Naffs Creation'
 	},
-    
+    {
+		logo:instalink_logo,
+		name:'S Younus Khadri '
+	},
 ];
 function AboutUs() {
 	// console.log(our_team);
