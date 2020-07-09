@@ -1,31 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.59fc2a63.chunk.css",
-<<<<<<< HEAD
-    "main.js": "/static/js/main.996fcdb1.chunk.js",
-    "main.js.map": "/static/js/main.996fcdb1.chunk.js.map",
-=======
-    "main.js": "/static/js/main.62a24471.chunk.js",
-    "main.js.map": "/static/js/main.62a24471.chunk.js.map",
->>>>>>> fc809e815591f5872de808619c916f21887facdc
+    "main.css": "/static/css/main.fac43def.chunk.css",
+    "main.js": "/static/js/main.bb5155b0.chunk.js",
+    "main.js.map": "/static/js/main.bb5155b0.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
     "static/css/2.5cdf0231.chunk.css": "/static/css/2.5cdf0231.chunk.css",
-    "static/js/2.9f3c6345.chunk.js": "/static/js/2.9f3c6345.chunk.js",
-    "static/js/2.9f3c6345.chunk.js.map": "/static/js/2.9f3c6345.chunk.js.map",
+    "static/js/2.f59d6e99.chunk.js": "/static/js/2.f59d6e99.chunk.js",
+    "static/js/2.f59d6e99.chunk.js.map": "/static/js/2.f59d6e99.chunk.js.map",
     "index.html": "/index.html",
-<<<<<<< HEAD
-    "precache-manifest.f6d30a0c3ec64d60c7f0c1361355e305.js": "/precache-manifest.f6d30a0c3ec64d60c7f0c1361355e305.js",
-=======
-    "precache-manifest.33ab634764f19e5e108d9cb4980597e5.js": "/precache-manifest.33ab634764f19e5e108d9cb4980597e5.js",
->>>>>>> fc809e815591f5872de808619c916f21887facdc
+    "precache-manifest.e0ab5e377cd739a54c69fe20460c2523.js": "/precache-manifest.e0ab5e377cd739a54c69fe20460c2523.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.5cdf0231.chunk.css.map": "/static/css/2.5cdf0231.chunk.css.map",
-    "static/css/main.59fc2a63.chunk.css.map": "/static/css/main.59fc2a63.chunk.css.map",
+    "static/css/main.fac43def.chunk.css.map": "/static/css/main.fac43def.chunk.css.map",
     "static/media/0db05c61c7d85c151b5d9e2321d0e9d9-youtube-distorted-round-icon-by-vexels.png": "/static/media/0db05c61c7d85c151b5d9e2321d0e9d9-youtube-distorted-round-icon-by-vexels.8357d8e0.png",
     "static/media/288499034000211.png": "/static/media/288499034000211.21b72490.png",
     "static/media/3dda7d3babda55b112341c12f25d46ec.png": "/static/media/3dda7d3babda55b112341c12f25d46ec.178a0528.png",
     "static/media/Facebook-Icon-PNG.png": "/static/media/Facebook-Icon-PNG.80d645c4.png",
+    "static/media/App.scss": "/static/media/FlandersArtSans-Medium.3dca724b.ttf",
     "static/media/Instagram-icon-PNG.png": "/static/media/Instagram-icon-PNG.37d7a4dc.png",
     "static/media/Patreon-logo-16x9-300x169.png": "/static/media/Patreon-logo-16x9-300x169.0e6435a9.png",
     "static/media/Social-Media-Icons-Blue-Transparent-21.png": "/static/media/Social-Media-Icons-Blue-Transparent-21.e3fa72d9.png",
@@ -39,19 +31,25 @@
     "static/media/arrow.png": "/static/media/arrow.5c31f900.png",
     "static/media/background1.jpg": "/static/media/background1.c6b8b553.jpg",
     "static/media/best-backgrounds-hd-1.jpg": "/static/media/best-backgrounds-hd-1.aa793eca.jpg",
+    "static/media/credit-card-visa.svg": "/static/media/credit-card-visa.05d2d57a.svg",
     "static/media/facebook-new.png": "/static/media/facebook-new.1f04957a.png",
     "static/media/feature-img.jpeg": "/static/media/feature-img.0ece82cf.jpeg",
     "static/media/github_PNG20.png": "/static/media/github_PNG20.12048fae.png",
     "static/media/icon_blue_Linkedin.png": "/static/media/icon_blue_Linkedin.23a5ff45.png",
+    "static/media/icons8-paytm.svg": "/static/media/icons8-paytm.58cafeb8.svg",
     "static/media/instagram-512.png": "/static/media/instagram-512.6eaa4843.png",
     "static/media/instagram-logo-png-paint-brush-colour-1.png": "/static/media/instagram-logo-png-paint-brush-colour-1.90c76fd8.png",
     "static/media/instalink_logo.png": "/static/media/instalink_logo.85014d77.png",
     "static/media/linkedIn_PNG36.png": "/static/media/linkedIn_PNG36.b03d83b3.png",
     "static/media/loader.gif": "/static/media/loader.9209e391.gif",
+    "static/media/mastercard.svg": "/static/media/mastercard.805e608b.svg",
     "static/media/mobile.jpg": "/static/media/mobile.2bcf358e.jpg",
     "static/media/online-shopping-png.png": "/static/media/online-shopping-png.c17020cf.png",
     "static/media/patreon-512.png": "/static/media/patreon-512.0dfef75f.png",
+    "static/media/searchpng.com-maestro-card-logo-png-free-download.png": "/static/media/searchpng.com-maestro-card-logo-png-free-download.9a76905f.png",
+    "static/media/searchpng.com-rupay-logo-png-image-free-download.png": "/static/media/searchpng.com-rupay-logo-png-image-free-download.b7eaa822.png",
     "static/media/shopping_banner-2.png": "/static/media/shopping_banner-2.759a8882.png",
+    "static/media/upi-ar21.svg": "/static/media/upi-ar21.0593e1f2.svg",
     "static/media/zuu537K.jpg": "/static/media/zuu537K.a0908b50.jpg"
   }
 }
