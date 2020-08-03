@@ -1,11 +1,21 @@
 .nav-bar {
-  background-color: #ecfafc;
+  background-color: #26232e;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  margin: 0;
-  padding: 20px;
+  padding: 0px 5%;
+  width: 100%;
   z-index: 150;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
 }
 
 .nav-bar .logo {
@@ -15,25 +25,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 50px;
 }
 
 .nav-bar .logo img {
-  width: 30px;
+  width: 25px;
   height: auto;
 }
 
 .nav-bar .logo h1 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 0 10px;
   color: #ff8800;
 }
 
-@media (max-width: 600px) {
-  .nav-bar .logo img {
-    width: 20px;
-  }
-  .nav-bar .logo h1 {
-    font-size: 1.2rem;
-  }
+.nav-bar .end-links button {
+  background-color: #ff8800;
+  color: #ecfafc;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=NavBar.css.map */

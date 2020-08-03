@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 * {
   color: #232323;
   scroll-behavior: smooth;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=App.css.map */
