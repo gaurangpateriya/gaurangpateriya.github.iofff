@@ -235,9 +235,24 @@
 }
 
 .our-team-carousel .carousel .slick-slide .mentor .heading .designation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   font-size: 0.75rem;
   color: #115293;
+}
+
+.our-team-carousel .carousel .slick-slide .mentor .heading .designation img {
+  width: 30px;
+  margin: 0 10px;
+  height: auto;
 }
 
 .our-team-carousel .carousel .slick-slide .mentor .discreption {

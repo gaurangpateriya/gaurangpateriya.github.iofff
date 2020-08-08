@@ -5,41 +5,54 @@ import gaurang_sir_photo from '../assets/Images/AboutUS/our_team/gaurang_sir_pho
 import milind_ray from '../assets/Images/AboutUS/our_team/milind_ray.jpeg';
 import nihar_patel from '../assets/Images/AboutUS/our_team/nihar_patel.jpg';
 
+import athena_health from '../assets/Images/AboutUS/mentors_company/athena_health.png';
+import Caterpillar from '../assets/Images/AboutUS/mentors_company/Caterpillar.png';
+import DE_shaw from '../assets/Images/AboutUS/mentors_company/DE_shaw.png';
+import logo from '../assets/Images/AboutUS/mentors_company/logo.png';
+import pwc from '../assets/Images/AboutUS/mentors_company/pwc.png';
+
 import chirag_agrawal from '../assets/Images/AboutUS/testimonials/chirag_agrawal.jpg';
 import hemendra_sharma from '../assets/Images/AboutUS/testimonials/hemendra_sharma.jpg';
 import sampreeth_miriyala from '../assets/Images/AboutUS/testimonials/sampreeth_miriyala.jpg';
+import sai_teja from '../assets/Images/AboutUS/testimonials/sai_teja.jpg';
 
 import falcon_logo from '../assets/Images/AboutUS/our_clients/falcon-city-logo.jpg';
 import instalink_logo from '../assets/Images/AboutUS/our_clients/instalink_logo.png';
 
-import ai from '../assets/Images/AboutUS/courses/ai.png';
+
+import reactImg from '../assets/Images/AboutUS/courses/react.png';
+import djangoImg from '../assets/Images/AboutUS/courses/django.jpg';
+
 
 export const our_team = [
 	{
 		photo:yash_sir_photo,
 		name:'Yash Prasad',
 		designation: 'MTS at Athenahealth Inc.',
-		linkedInUrl:'https://www.linkedin.com/in/yash-prasad-262457128/',
+		companyLogo:athena_health,
+		linkedInURL:'https://www.linkedin.com/in/yash-prasad-262457128/',
 		info: 'Yash has over 5 years of experience in full stack Website and App Development.He has experience of working in e​arly stage start-ups ​which have reached a valuation of ​10Cr​. He single handedly wrote the code for their entire website and reported directly to the CTO.He has also worked in product based companies which have more than 2​ 0 million users across the globe.'
 	},
 	{
 		photo:vaibhav_sir_photo,
 		linkedInURL:'https://www.linkedin.com/in/vaibhav-prasad-8278bb172/',
+		companyLogo:DE_shaw,
 		designation:'SDE at De Shaw & Co',
 		name:'Vaibhav Prasad',
-		// designation: 'Co-Founder',
 		info: 'Vaibhav being from a tier 2 college and not from some IIT or NIT still manage to get into Deshaw. Vaibhav’s vision is to make recruiters hire engineers based on their product development knowledge and not because of their IITian/NITian brand.'
 	},
 	{
 		photo:gaurang_sir_photo,
 		name:'Gaurang Pateriya',
+		companyLogo:logo,
 		designation: 'Technical Lead at YAV Technologies',
 		linkedInURL: 'https://www.linkedin.com/in/gaurang-pateriya-b15290178/',
-		info: 'Excepteur cillum ipsum sit ex nostrud in laborum adipisicing eu laboris laboris sit in Lorem. Aute non adipisicing in velit sunt laboris enim anim velit pariatur incididunt anim. Aute ad dolor sit eiusmod excepteur eiusmod cupidatat culpa ut irure. Laborum incididunt qui magna ex esse. Reprehenderit consectetur enim mollit amet irure duis nisi sunt deserunt adipisicing eu. Aute excepteur amet dolor consequat irure dolor sunt commodo excepteur cillum consectetur ea. Non nulla excepteur consectetur ad cupidatat dolor incididunt culpa enim laboris minim duis occaecat voluptate.'
+		info: 'I have started as an intern with YAV Technologies. Got Expert in full stack development under the guidance of Yash Prasad (sir) and now doing mentorship of new interns.'
 	},
 	{
 		photo:milind_ray,
 		name:'Milind Kar Ray',
+		companyLogo:pwc,
 		designation: 'PWC',
 		linkedInURL:'https://www.linkedin.com/in/milind-kar-ray/',
 		info: 'Milind works in the Cloud and Digital Practise for PriceWaterHouseCoopers. He has over 3 years experience in Cloud Architecture Deployments and developing solution. He uses Django and Python back end for Web Development.'
@@ -47,6 +60,7 @@ export const our_team = [
 	{
 		photo:nihar_patel,
 		name:'Nihar Patel ',
+		companyLogo:Caterpillar,
 		designation: 'Ex Caterpillar Inc',
 		linkedInURL: 'https://www.linkedin.com/in/niharpatel1996/',
 		info: 'Expertise in product development. Working towards IoT with BLE and WiFi. Software stack I work with: MERN'
@@ -79,156 +93,128 @@ export const our_clients = [
 
 export const courses = [
 	{
-		img:ai,
+		img: reactImg,
 		title:'React.js + Javascript',
 		rating:'4',
 		price: 'Rs. 1700 ',
 		discPrice:'Rs. 2800',
 		duration:'2 months',
-		noOfRating: '13.5k',
-		overview:'Our advancements in technology have now lead us to a new realm of possibilities, Machine Learning, An application of Artificial Intelligence. It has the ability of Learning by itself without Human interference with the help of data. Algorithms identify and observe the data, clean it, find patterns, and make/suggest Decisions that help Humans ease their workload. It replicates the way humans understand the data.',
-		studentsEnrolled: '53,689',
-		discreption: 'Learning, the foundation of our growth has enabled us to change our reality, alter our movements, and design our future the way we wish. Our learning began as early as our evolution as a means to survive, now a means to thrive. Our inventions have helped us move faster and learn quicker. Machines, one of the most important inventions has helped us change the way we work, the way we live.',
+		noOfRating: '1.1k',
+		overview:`Throughout the course, you will gain hands-on experience by working on our flagship products, and by the end of this course, you will be prepared to build your own web applications as well as make mobile applications.
+		 
+		We at YAV are strong believers of execution and we focus primarily on that.`,
+		studentsEnrolled: '1,400',
+		discreption: 'In this internship you will take a deep dive into React fundamentals, covering all new React concepts including Redux. We do address some legacy features in case you’re working with an older codebase, but the majority of this course will focus on working with modern React. You will learn how to style your app, techniques for maintaining your app, and some more advanced concepts like performance optimization.',
 		concepts:[
 			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
+				heading:'HTML5 + CSS3',
+				discreption:'In this section, we will learn about HTML5 and CSS3.'
 			},
 			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
+				heading:'Advanced Styling',
+				discreption:'We will implement the HTML5 and CSS3 to design some cool and impressive designs.'
+			},
+			,
+			{
+				heading:'Introduction to Javascript',
+				discreption:'In this section, we will learn about the background and importance of this language.'
 			},
 			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
+				heading:'Advanced Javascript',
+				discreption:'In this section, we will learn about the advanced features of the language.'
 			},
 			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
+				heading:'Introduction to React',
+				discreption:'In this section, we will learn about the React.js library.'
 			},
 			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
+				heading:'Introduction to React-Router',
+				discreption:'In this section, we will create a multiple page website using React-router.'
 			},
 			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
+				heading:'Introduction to Redux',
+				discreption:'In this section, we will learn about the central store and redux actions and dispatch.'
 			},
 			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
-			}
+				heading:'REST Implementation',
+				discreption:'In this section, we will learn about the connection with the REST service.'
+			},
+			
 		],
 		benefits:[
-			'16 hours+ Mentor Support',
+			'20 hours+ Mentor Support',
 			'Flexible plans',
 			'Certificate of Completion',
-			'Microsoft Gold Partner',
 			'Real-world Projects',
 			'Industry Specific Courses',
 		]
 	},
 	{
-		img:ai,
-		title:'Django + Python',
-		rating:'4',
-		price: 'Rs. 1700 ',
-		discPrice:'Rs. 2800',
-		duration:'2 months',
+		img: djangoImg,
+		title:'Full stack Development',
+		rating:'4.3',
+		price: 'Rs. 2750 ',
+		discPrice:'Rs. 3000',
+		duration:'1 month',
 		noOfRating: '13.5k',
-		overview:'Our advancements in technology have now lead us to a new realm of possibilities, Machine Learning, An application of Artificial Intelligence. It has the ability of Learning by itself without Human interference with the help of data. Algorithms identify and observe the data, clean it, find patterns, and make/suggest Decisions that help Humans ease their workload. It replicates the way humans understand the data.',
+		discreption:'In this internship you would be learning how to write scalable backend apis which are highly performant and have zero down time using the framework - Django. Language we would be writing the apis would be in python. The interns would get a chance to work on YAV technology’s flagship product, MyWeblink.',
 		studentsEnrolled: '53,689',
-		discreption: 'Learning, the foundation of our growth has enabled us to change our reality, alter our movements, and design our future the way we wish. Our learning began as early as our evolution as a means to survive, now a means to thrive. Our inventions have helped us move faster and learn quicker. Machines, one of the most important inventions has helped us change the way we work, the way we live.',
+		overview: `Interns daily responsiblities would involve. Back-end Developer duties and responsibilities
+		* Be involved and participate in the overall application lifecycle
+		* Main focus on coding and debugging
+		* Collaborate with Front-end developers 
+		* Define and communicate technical and design requirements
+		* Provide training, help and support to other team members
+		* Build high-quality reusable code that can be used in thew future
+		* Develop functional and sustainable web applications with clean codes
+		* Troubleshoot and debug applications
+		* Learn about new technologies
+		* Stay up to date with current best practices
+		* Conduct UI tests and optimize performance
+		* Manage cutting-edge technologies to improve applications
+		* Collaborate with multidisciplinary team of designers, developers and system administrators
+		* Participate in conferences and educational programs
+		* Follow new and emerging technologies`,
 		concepts:[
 			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
+				heading:'Introduction to Python',
+				discreption:'In this section, we will learn about the background and importance of this language.'
 			},
 			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
+				heading:'Introduction to Server development',
+				discreption:'In this section, we will learn about the server and everything about backend.'
 			},
 			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
+				heading:'Introduction to Django',
+				discreption:'In this section, we will give the introduction to Django Framework and design the some great servers.'
 			},
 			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
+				heading:'Introduction to MVT in Django',
+				discreption:'In this section, we will learn about MVT structure of the Django and create a beautiful website.'
 			},
 			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
+				heading:'Database Handling',
+				discreption:'This module helps us learn Django views, templates, model layers; Ms SQL Basics'
 			},
 			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
+				heading:'Introduction to REST Services',
+				discreption:'In this section, we will learn about the REST services and micro services.'
 			},
 			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
+				heading:'Implementation of Django REST Framework',
+				discreption:'In this section, we will create a micro service with Django REST Framework.'
 			}
 		],
 		benefits:[
-			'16 hours+ Mentor Support',
+			'20 hours+ Mentor Support',
 			'Flexible plans',
 			'Certificate of Completion',
-			'Microsoft Gold Partner',
 			'Real-world Projects',
 			'Industry Specific Courses',
 		]
 
 	},
-	{
-		img:ai,
-		title:'Artificial intelligence',
-		rating:'4',
-		price: 'Rs. 1700 ',
-		discPrice:'Rs. 2800',
-		duration:'2 months',
-		noOfRating: '13.5k',
-		overview:'Our advancements in technology have now lead us to a new realm of possibilities, Machine Learning, An application of Artificial Intelligence. It has the ability of Learning by itself without Human interference with the help of data. Algorithms identify and observe the data, clean it, find patterns, and make/suggest Decisions that help Humans ease their workload. It replicates the way humans understand the data.',
-		studentsEnrolled: '53,689',
-		discreption: 'Learning, the foundation of our growth has enabled us to change our reality, alter our movements, and design our future the way we wish. Our learning began as early as our evolution as a means to survive, now a means to thrive. Our inventions have helped us move faster and learn quicker. Machines, one of the most important inventions has helped us change the way we work, the way we live.',
-		concepts:[
-			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
-			},
-			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
-			},
-			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
-			},
-			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
-			},
-			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
-			},
-			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
-			},
-			{
-				heading:"Introduction to Python",
-				discreption:"In this section, we will learn about the background and importance of this language."
-			}
-		],
-		benefits:[
-			'16 hours+ Mentor Support',
-			'Flexible plans',
-			'Certificate of Completion',
-			'Microsoft Gold Partner',
-			'Real-world Projects',
-			'Industry Specific Courses',
-		]
-	},
+	
 
 ];
 
@@ -240,9 +226,9 @@ export const testimonialData = [
 		testimonial: 'It was my first experience and i have learnt a loads from you alll. The complete system is very wxciting and all help eqch others in resolving their problems .. especially the mentors who are available for helping us 24/7 ..I have learnt a basic understanding of how the website works and what is the level of programming needed and how to resolve the errors.... It is a great experience for me.'
 	},
 	{
-		photo:'',
+		photo:sai_teja,
 		name:'Sai Teja',
-		linkedInURL: '',
+		linkedInURL: 'https://instagram.com/saiteja_278?igshid=rhm6up8a39ph',
 		testimonial: 'Flexible deadlines, always there to clear doubts in any aspect, good advices not only regarding web development but also various other aspects in the field of Computer science Really helped brush up my concepts on web development topics like React'
 	},
 	{

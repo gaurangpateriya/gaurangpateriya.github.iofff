@@ -2,8 +2,6 @@
 import React from 'react';
 import 'tachyons';
 
-
-
 import './AboutUs.css';
 
 import topBg from '../../assets/Images/AboutUS/top-bg.png';
@@ -55,11 +53,11 @@ const AboutUs = () => {
 				<MentorsCarousels/>
 				<div className='join-yav-container'>
 					<small>	Break your goals into an achievable milestone</small>
-					<h2> Join Verzeo Today!</h2>
+					<h2> Join YAV Technologies Today!</h2>
 					<p>I am interested in</p>
 					<div className='btn-div'>
-						<button type="button"> Internship </button>
-						<button type="button"> Profession Certification </button>
+						<a href='/#product'> Internship </a>
+						<a href='/#product'> Profession Certification </a>
 					</div>
 
 				</div>

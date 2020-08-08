@@ -1,6 +1,7 @@
 import React from 'react';
 import 'tachyons';
 import './AboutUs.css';
+import { Link } from "react-router-dom";
 
 import StarIcon from '@material-ui/icons/Star';
 // import StarOutlineIcon from '@material-ui/icons/StarOutline';
@@ -16,11 +17,14 @@ function Course({details}) {
 	return (
 		<>
 			<a className='course' href={`/${details.title}`} >
-				<img src={details.img} alt=""/>
+				<div style={{backgroundImage:`url(${details.img})`}} className='img'>
+					{/* <img src={details.img} alt=""/> */}
+				</div>
 				<div className='content'>
-					<a href={`/${details.title}`}>
+					<Link to={`/${details.title}`}>
 						<h4>{details.title}</h4>
-					</a>
+					</Link>
+					
 					<div className='rating' >
 						<span>
 							{stars}

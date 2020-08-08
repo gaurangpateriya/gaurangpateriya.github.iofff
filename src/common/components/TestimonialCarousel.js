@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import 'tachyons';
 import Slider from 'react-slick';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -11,7 +11,18 @@ import {  testimonialData } from '../../constants/data';
 // const testimonial 
 const CourseDetails = () => {
 	// console.log(our_team);
-	
+	const [ mobileView, setMobileView ] = useState(false);
+
+	const resize = () =>{
+		setMobileView(window.innerWidth <= 576);
+	}
+	useEffect(()=>{
+		resize();
+		window.addEventListener("resize", () => resize())
+		return () => {
+			window.removeEventListener("resize", () => resize())
+		}
+	},[]);
 
 	
 	const testimonialSettings = {
@@ -22,7 +33,7 @@ const CourseDetails = () => {
 		autoplay: true,
 		autoplaySpeed: 2000,
 		slidesToShow: 1,
-		variableWidth: true,
+		variableWidth: !mobileView,
 	};
 	
 	return (
@@ -45,7 +56,9 @@ const CourseDetails = () => {
                             
 								<div className='heading'>
 									<div className='name'>
-										<LinkedInIcon />
+                                        <a href={t.linkedInURL}>
+										    <LinkedInIcon />
+                                        </a>
 										<p>{t.name}</p>
 									</div>
 								</div>

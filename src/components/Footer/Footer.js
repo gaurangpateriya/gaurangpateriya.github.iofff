@@ -20,18 +20,18 @@ const Footer = () => {
 				<div className='content'>
 					<EmailIcon />
 					<p>Email</p>
-					<p>support@yavtechnologies.com</p>
+					<p>support@myweblink.store</p>
 				</div>
 				
 				<div className='content'>
 					<PhoneIcon />
 					<p>Call Us</p>
-					<p>+91-8360682123   +91-9019031739</p>
+					<p>+91 70034 42036</p>
 				</div>
 				<div className='content'>
 					<LocationOnIcon />
 					<p>Reach Us</p>
-					<p>2nd Floor, Building No. L-367, 5th Main Road, Sector 6, HSR Layout, Bengaluru, Karnataka, 560102.</p>
+					<p>Onkar Bearing Co , No 38/1 Laxmipura , Vaderahalli -Sakalvara Road , Anekal Taluk , Bangalore -560083</p>
 				</div>
 			</div>	
 		</>

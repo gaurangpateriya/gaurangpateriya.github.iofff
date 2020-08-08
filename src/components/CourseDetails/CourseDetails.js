@@ -11,6 +11,7 @@ import Footer from '../Footer/Footer';
 
 import { courses } from '../../constants/data';
 
+import rightimg from '../../assets/Images/AboutUS/road-map.jpeg'
 import  MentorsCarousels from '../../common/components/MentorsCarousels';
 import  TestimonialCarousel from '../../common/components/TestimonialCarousel';
 import  CollapseTransition from '../../common/components/CollapseTransition';
@@ -28,7 +29,7 @@ const CourseDetails = ({match}) => {
 	const [courseDetails, setCourseDetails] = useState(courses[0]);
 	const [activeConcept, setActiveConcept] = useState(-1);
 	const stars = [];
-	for( let i = 0; i< courseDetails.rating; i++){
+	for( let i = 0; i< Math.floor(courseDetails.rating); i++){
 		stars.push(<StarIcon/>);
 	}
 	
@@ -75,21 +76,17 @@ const CourseDetails = ({match}) => {
 							</div>
 						</div>
 						<div className='flex justify-between items-center sub-heading'>
-							<span>
+							<span className='flex items-center'>
 								{stars}
+								<b>
+									{`${courseDetails.rating}`}
+								</b>
 							</span>
-							<b>
-								{`${courseDetails.rating}[${courseDetails.noOfRating} Ratings]`}
-							</b>
-						</div>
-						<div className='flex justify-between items-center sub-heading'>
 							<b>
 								{`Duration: ${courseDetails.duration}`}
 							</b>
-							<p>
-								{`${courseDetails.studentsEnrolled} + Students Enrolled`}
-							</p>
 						</div>
+						
 						<p className='discreption'>{courseDetails.discreption}</p>
 						<ul className='benefit-list'>
 							{
@@ -107,7 +104,10 @@ const CourseDetails = ({match}) => {
 							}
 						</ul>
 					</div>
-
+					<div className='right-div'>
+						<img src={rightimg} alt=""/>
+					</div>
+					
 				</div>
 				
 			</div>

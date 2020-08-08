@@ -37,11 +37,17 @@
 .course-details-details-card{
     background-color: white;
     border-radius: 20px;
-    padding: 6%;
+    padding: 3% 0% 3% 2%;
     top: 80px;
     position: relative;
     margin: 0 10%;
     box-shadow: 0px 0px 30px #aaaaaa  ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mobile{
+        flex-direction: column;
+    }
     .price{
         b{
             font-size: 1.2rem;
@@ -49,8 +55,21 @@
         }
     }
     .left-div {
-        width: 90%;
+        width: 60%;
         margin: auto;
+    }
+    .right-div{
+        margin: 0 10px;
+        margin: 1px sold;
+        padding: 10px;
+        box-shadow: 0px 0px 10px #aaaaaa  ;
+        border-radius: 25px;
+        overflow: hidden;
+        width: 35%;
+        @include mobile{
+            width: 80%;
+            margin: 10px;
+        }
     }
     .discreption{
         color: #696969;
@@ -126,6 +145,7 @@
     text-align: center;
     width: 70%;
     margin: 25% auto 5% auto;
+    white-space: pre-wrap;
     @include mobile{
         margin-top: 50%;
     }
