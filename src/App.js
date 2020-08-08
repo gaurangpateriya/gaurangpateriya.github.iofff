@@ -1,26 +1,29 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable linebreak-style */
 import React from 'react';
-
 import AboutUs from './components/AboutUs/AboutUs';
 import './App.css';
-import NavBar from './components/NavBar/NavBar';
-// import 'bootstrap/dist/css/bootstrap.css';
-// import 'bootstrap/dist/css/bootstrap-theme.css';
-// Import css files
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import CourseDetails from './components/CourseDetails/CourseDetails';
+import {
+	BrowserRouter,
+	Switch,
+	Route,
+} from 'react-router-dom';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 function App() {
+
 	return (
-		<>
-			<NavBar />
-			<AboutUs />
-
-		</>
-
+		<BrowserRouter>
+			<Switch>
+				<Route path="/" component={AboutUs} exact />
+				<Route path="/:courseDetails" component={CourseDetails}  exact/>
+			</Switch>
+    	</BrowserRouter>
 	);
-
 }
-
-
-
 export default App;
+
+
 

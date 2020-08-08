@@ -16,7 +16,9 @@ class BootstrapNavbar extends React.Component{
 				</div>
 				<div className='end-links'>
 					<button type='button'>
+						<a href='/#product' >
                         Join Us
+						</a>
 					</button>
 
 				</div>  

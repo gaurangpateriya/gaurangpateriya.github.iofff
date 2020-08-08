@@ -21,12 +21,6 @@ $pageWidth : 80%;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-//     background-color: #ffcfdf;
-// background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
-    
-    // background-size: 400%;
-    // background-position: left;
-    // animation: header-animation 15s ease-in infinite alternate;
     @keyframes header-animation {
         0%{
             background-position: left;
@@ -47,18 +41,18 @@ $pageWidth : 80%;
             font-size: 1.5rem;
             
         }
-        button{
+        a{
             border-radius: 5px;
             padding: 15px;
             font-size: 1rem;
             transition: all 0.5s;
             margin: 10px 0;
             background-color: $secondaryColor;
-            a{
-                text-decoration: none;
-                transition: all 0.5s;
-                color: white;
-            }
+            
+            text-decoration: none;
+            transition: all 0.5s;
+            color: white;
+            
             &:hover {
                 background: black;
                 a{
@@ -99,9 +93,18 @@ $pageWidth : 80%;
     @media (max-width: 600px){
         flex-direction: column;
     }
+    a{
+        text-decoration: none;
+    }
     .heading{
         margin: 10px;
         padding: 10px;
+        
+        &:hover {
+            
+            color: $secondaryColor;
+            
+        }
     }
     .courses-container{
         display: flex;
@@ -128,97 +131,7 @@ $pageWidth : 80%;
         }
     }
 }
-.our-team-carousel {
-    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
-    padding: $pagePadding;
-    margin: 0 auto;
-    padding: 40px 0;
-    text-align: center;
-    h1{
-        color: $primaryColor;
-    }
-    .carousel{
-        padding:40px;
-        .slick-slide{
-            .mentor{
-                margin-top: 20%;
-                padding: 10px;
-                height: 100px;
-                .header{
-                    background-color: pink;
-                    display: flex;
-                    justify-content: center;
-                    border-top-left-radius: 5px;
-                    border-top-right-radius: 5px;
-                    img{
-                        width: 38%;
-                        height: 120px;
-                        border-radius: 50%;
-                        border : 3px solid white;
-                        margin-top: -50px  ;
-                        margin-bottom: 20px;
-                    }
-                }   
-                .shadow{
-                    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-                    background-color: $primaryColor;
-                } 
-                .heading{
-                    .name{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        position: relative;
-                        path{
-                            color:rgb(17, 82, 147)
-                        }
-                        p{
-                            font-weight: 500;
-                        }
-                        &::after{
-                            position: absolute;
-                            content: "";
-                            width: 60%;
-                            height: 2px;
-                            background-color:#dbd9d9 ;
-                            transform: translate(0, 800%);
-                        }
-                    }
-                    .designation{
-                        text-align: center;
-                        font-size: 0.75rem;
-                        color: rgb(17, 82, 147);
-                        
-                    }
-                }
-                .discreption{
-                    overflow-y: scroll;
-                    height: 150px;
-                    text-align: center;
-                    padding: 15px;
-                    p{
-                        font-size: 0.7rem;
-                    }
-                    &::-webkit-scrollbar {
-                        width: 3px;
-                        background-color: transparent;
-                        background: none;
-                    } 
-                    &::-webkit-scrollbar-thumb {
-                        background-color: #000000;
-                    }
-                    &::-webkit-scrollbar-track {
-                        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-                        background: none;
-                    }
-                    
-                    
-                }
-            }
-            
-        }   
-    } 
-}
+
 .join-yav-container{
     background-color: black;
     color: white;
@@ -268,40 +181,7 @@ $pageWidth : 80%;
         
     }
 }
-.home-page-our-clients{
-    background-color: #ffe0e7;
-    background: linear-gradient(326deg,#ffe0e7, #ecfafc);
-    padding: $pagePadding;
-    margin: 0 auto;
-    padding: 40px 0;
-    text-align: center;
-    .carousel{
-        padding: 40px;
-        .slick-slide{
-            .item{
-                justify-content: space-between;
-                height: 100%;   
-                
-            }
-            img {
-                margin: auto;
-                width: 100px;
-                padding: 20px;
-                height: 100%;
-                
-            }
-        }    
-        @media (max-width:600px){
-            padding: 10px;
-            width: 100%;
-            h2{
-                font-size: 1.3rem;
-            }
-            
-        }
-    }
-    
-}
+
 .heading{
     
         @media (max-width:600px) {
@@ -309,102 +189,4 @@ $pageWidth : 80%;
         }
     
 }
-.testimonial-carousel{
-    padding:  40px;
-    background-color: $primaryColor;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    h1{
-        margin: 0em;
-    }
-    .slick-slide{
-        .mentor{
-            padding: 10px;
-            .quote-svg{
-                display: grid;
-                place-items: center;
-                svg{
-                    width: 100px;
-                    path{
-                        color: $secondaryColor;
-                    }
-                    height: 100px;
-                }
-            }
-            .header{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
-                img{
-                    width: 30%;
-                    height: 90px;
-                    border-radius: 50%;
-                    border : 3px solid white;
-                    
 
-                }
-            }   
-            .heading{
-                
-                .name{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    position: relative;
-                    path{
-                        color:rgb(17, 82, 147)
-                    }
-                    p{
-                        font-weight: 500;
-                    }
-                }
-            }
-            .discreption{
-                overflow-y: scroll;
-                height: 150px;
-                text-align: center;
-                padding: 15px;
-                p{
-                    font-size: 0.7rem;
-                }
-                &::-webkit-scrollbar {
-                    width: 3px;
-                    background-color: transparent;
-                    background: none;
-                } 
-                &::-webkit-scrollbar-thumb {
-                    background-color: #000000;
-                }
-                &::-webkit-scrollbar-track {
-                    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-                    background: none;
-                }
-            }
-        }
-        
-    }    
-}
-
-.reach-us-div{
-    background-color: rgb(41, 39, 44);
-    padding: 20px;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
-    .content{
-        text-align: center;
-        path{
-            color: white;
-        }
-        p{
-            color: white;
-            font-size: 0.8rem;
-            max-width: 250px;
-        }
-    }
-}

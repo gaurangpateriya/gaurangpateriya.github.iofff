@@ -1,7 +1,9 @@
 @import '../../assets/styles/variables.scss';
 
 .nav-bar{
-    background-color: rgb(38, 35, 46);
+    // background-color: rgb(38, 35, 46);
+    background-color: rgba(white,0.8);
+    filter: blur(0.3);
     position: sticky;
     top: 0px;
     padding:0px 5%;
@@ -27,11 +29,12 @@
     }
 
     .end-links{
-        button{
-            background-color: $secondaryColor;
+        a{
+            background-color: rgb(38, 35, 46);
             color: $primaryColor;
             padding: 10px 20px;
             border-radius: 5px;
+            text-decoration: none;
         }
     }
     

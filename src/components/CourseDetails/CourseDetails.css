@@ -1,0 +1,225 @@
+.heading-div {
+  position: relative;
+  margin: 40px 0;
+}
+
+.heading-div .txt {
+  color: #ff8800;
+  font-weight: 600;
+  font-size: 23px;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.heading-div .watermark {
+  font-size: 75px;
+  color: rgba(255, 136, 0, 0.2);
+  font-weight: 700;
+  position: absolute;
+  top: -150%;
+  margin: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (max-width: 576px) {
+  .heading-div {
+    margin: 20px 0;
+  }
+  .heading-div .watermark {
+    font-size: 50px;
+    top: -70%;
+  }
+}
+
+.top-bg {
+  background-color: rgba(255, 136, 0, 0.8);
+  width: 100%;
+}
+
+.course-details-details-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 6%;
+  top: 80px;
+  position: relative;
+  margin: 0 10%;
+  -webkit-box-shadow: 0px 0px 30px #aaaaaa;
+          box-shadow: 0px 0px 30px #aaaaaa;
+}
+
+.course-details-details-card .price b {
+  font-size: 1.2rem;
+  color: #ff8800;
+}
+
+.course-details-details-card .left-div {
+  width: 90%;
+  margin: auto;
+}
+
+.course-details-details-card .discreption {
+  color: #696969;
+  font-size: 0.9rem;
+}
+
+.course-details-details-card .benefit-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.course-details-details-card .benefit-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.course-details-details-card .benefit-list li svg {
+  width: 30px;
+  margin: 0 5px;
+}
+
+@media (max-width: 576px) {
+  .course-details-details-card {
+    margin: 0 20px;
+    padding: 1%;
+  }
+  .course-details-details-card .course-title {
+    font-size: 1.5rem;
+    margin: 20px 0 0 0;
+  }
+  .course-details-details-card .price {
+    margin-left: auto;
+    margin: 30px 0 30px auto;
+  }
+  .course-details-details-card .price b {
+    color: #ff8800;
+  }
+  .course-details-details-card .sub-heading svg {
+    width: 15px;
+    height: 15px;
+  }
+  .course-details-details-card .sub-heading b {
+    font-size: 0.8rem;
+  }
+  .course-details-details-card .sub-heading p {
+    font-size: 0.8rem;
+    text-align: right;
+  }
+  .course-details-details-card .left-div {
+    width: 95%;
+  }
+  .course-details-details-card .discreption {
+    font-size: 0.8rem;
+  }
+  .course-details-details-card .benefit-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 0.8rem;
+  }
+  .course-details-details-card .benefit-list li svg {
+    width: 25px;
+    margin: 5px;
+  }
+}
+
+.overview-div {
+  margin-top: 25%;
+  text-align: center;
+  width: 70%;
+  margin: 25% auto 5% auto;
+}
+
+@media (max-width: 576px) {
+  .overview-div {
+    margin-top: 50%;
+  }
+}
+
+.our-mentor-companies-div {
+  text-align: center;
+  padding: 5%;
+  background-color: rgba(255, 136, 0, 0.1);
+}
+
+@media (max-width: 576px) {
+  .our-mentor-companies-div {
+    padding: 15% 0;
+  }
+}
+
+.our-mentor-companies-div .company-img-wrapper {
+  margin: 100px 0;
+}
+
+.our-mentor-companies-div .company-img-wrapper .company-img {
+  width: auto !important;
+  height: 100px;
+  margin: 0 50px;
+}
+
+@media (max-width: 600px) {
+  .our-mentor-companies-div .company-img-wrapper .company-img {
+    height: 100px;
+    margin: 0 10px;
+  }
+}
+
+.concepts-div {
+  padding: 5%;
+  text-align: center;
+}
+
+.concepts-div .content {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 0;
+}
+
+.concepts-div .content li {
+  margin: 10px;
+  background-color: #ecfafc;
+  border-radius: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.concepts-div .content li .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px 20px;
+}
+
+@media (max-width: 576px) {
+  .concepts-div .content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=CourseDetails.css.map */

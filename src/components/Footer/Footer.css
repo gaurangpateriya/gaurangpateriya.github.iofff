@@ -1,0 +1,28 @@
+.reach-us-div {
+  background-color: #29272c;
+  padding: 20px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.reach-us-div .content {
+  text-align: center;
+}
+
+.reach-us-div .content path {
+  color: white;
+}
+
+.reach-us-div .content p {
+  color: white;
+  font-size: 0.8rem;
+  max-width: 250px;
+}
+/*# sourceMappingURL=Footer.css.map */

@@ -8,26 +8,30 @@ import StarIcon from '@material-ui/icons/Star';
 
 function Course({details}) {
 	
+	const stars = []
+	for( let i = 0; i< details.rating; i++){
+		stars.push(<StarIcon/>)
+	}
+	
 	return (
 		<>
-			<div className='course' >
+			<a className='course' href={`/${details.title}`} >
 				<img src={details.img} alt=""/>
 				<div className='content'>
-					<h4>{details.title}</h4>
+					<a href={`/${details.title}`}>
+						<h4>{details.title}</h4>
+					</a>
 					<div className='rating' >
 						<span>
-							<StarIcon/>
-							<StarIcon/>
-							<StarIcon/>
-							<StarIcon/>
-							<StarIcon/>
+							{stars}
+							{/* {emptyStars} */}
 						</span>
 						<span>
 							{details.rating}/5 
 						</span>
 					</div>
 				</div>
-			</div>
+			</a>
 		</>
 	);
 }
