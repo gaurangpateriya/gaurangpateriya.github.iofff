@@ -15,13 +15,13 @@ const CourseDetails = () => {
 
 	const resize = () =>{
 		setMobileView(window.innerWidth <= 576);
-	}
+	};
 	useEffect(()=>{
 		resize();
-		window.addEventListener("resize", () => resize())
+		window.addEventListener('resize', () => resize());
 		return () => {
-			window.removeEventListener("resize", () => resize())
-		}
+			window.removeEventListener('resize', () => resize());
+		};
 	},[]);
 
 	
@@ -43,7 +43,7 @@ const CourseDetails = () => {
 				<Slider {...testimonialSettings} >
 					{
 						testimonialData.map((t,i) => (
-							<div className='mentor' style={{width: Math.min(window.innerWidth- 20, 300)}} >
+							<a href={t.linkedInURL} className='mentor' style={{width: Math.min(window.innerWidth- 20, 300)}} >
 								<div className='quote-svg'>
 									<FormatQuoteIcon/>
 								</div>
@@ -56,13 +56,13 @@ const CourseDetails = () => {
                             
 								<div className='heading'>
 									<div className='name'>
-                                        <a href={t.linkedInURL}>
+										<a href={t.linkedInURL}>
 										    <LinkedInIcon />
-                                        </a>
+										</a>
 										<p>{t.name}</p>
 									</div>
 								</div>
-							</div>
+							</a>
 						))    
 					}
 				</Slider>

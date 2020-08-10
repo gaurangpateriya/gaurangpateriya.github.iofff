@@ -93,11 +93,12 @@ export const our_clients = [
 
 export const courses = [
 	{
+		id:0,
 		img: reactImg,
-		title:'React.js + Javascript',
+		title:'Web & App Development',
 		rating:'4',
-		price: 'Rs. 1700 ',
-		discPrice:'Rs. 2800',
+		price: 'Rs. 2750 ',
+		discPrice:'Rs. 3000',
 		duration:'2 months',
 		noOfRating: '1.1k',
 		overview:`Throughout the course, you will gain hands-on experience by working on our flagship products, and by the end of this course, you will be prepared to build your own web applications as well as make mobile applications.
@@ -150,6 +151,7 @@ export const courses = [
 		]
 	},
 	{
+		id:1,
 		img: djangoImg,
 		title:'Full stack Development',
 		rating:'4.3',

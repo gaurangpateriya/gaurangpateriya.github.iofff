@@ -70,6 +70,7 @@
 
 .testimonial-carousel .slick-slide .mentor {
   padding: 10px;
+  text-decoration: none;
 }
 
 .testimonial-carousel .slick-slide .mentor .quote-svg {
@@ -174,6 +175,7 @@
   margin-top: 20%;
   padding: 10px;
   height: 100px;
+  text-decoration: none;
 }
 
 .our-team-carousel .carousel .slick-slide .mentor .header {

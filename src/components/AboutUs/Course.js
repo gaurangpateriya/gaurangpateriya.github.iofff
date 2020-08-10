@@ -1,7 +1,7 @@
 import React from 'react';
 import 'tachyons';
 import './AboutUs.css';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 import StarIcon from '@material-ui/icons/Star';
 // import StarOutlineIcon from '@material-ui/icons/StarOutline';
@@ -9,9 +9,9 @@ import StarIcon from '@material-ui/icons/Star';
 
 function Course({details}) {
 	
-	const stars = []
+	const stars = [];
 	for( let i = 0; i< details.rating; i++){
-		stars.push(<StarIcon/>)
+		stars.push(<StarIcon/>);
 	}
 	
 	return (
@@ -21,9 +21,9 @@ function Course({details}) {
 					{/* <img src={details.img} alt=""/> */}
 				</div>
 				<div className='content'>
-					<Link to={`/${details.title}`}>
-						<h4>{details.title}</h4>
-					</Link>
+					
+					<h4>{details.title}</h4>
+					
 					
 					<div className='rating' >
 						<span>

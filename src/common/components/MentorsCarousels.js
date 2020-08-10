@@ -44,7 +44,7 @@ const MentorsCarousel = () => {
 					<Slider {...settings} >
 						{
 							our_team.map((t,i) => (
-								<div className='mentor' style={{width: Math.min(window.innerWidth- 20, 290)}} >
+								<a href={t.linkedInURL} className='mentor' style={{width: Math.min(window.innerWidth- 20, 290)}} >
 									<div className='header'>
 										<img src={t.photo} alt="" />	
 									</div>
@@ -65,7 +65,7 @@ const MentorsCarousel = () => {
 											<p> {t.info} </p>
 										</div>
 									</div>
-								</div>
+								</a>
 							))    
 						}
 					</Slider>
