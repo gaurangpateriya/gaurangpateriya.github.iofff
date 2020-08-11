@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import 'tachyons';
+import { Helmet } from 'react-helmet';
 
 import './AboutUs.css';
 
@@ -21,6 +22,14 @@ const AboutUs = () => {
       
 	return (
 		<>
+			<Helmet>
+				<title>YAV</title>
+				<meta name="description" content="Intern with us and escalate your career. Upskill with the world’s most effective project-based learning platform for developers." />
+				<meta name="keywords " content="college internship, software internship, placement training, jobs, placements, training" />
+
+			
+			
+			</Helmet>
 			<NavBar />
 			<div className=''>
 				<div className='bgimg'>
