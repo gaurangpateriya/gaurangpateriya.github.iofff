@@ -49,7 +49,7 @@ const AboutUs = () => {
 							<p>Learn through real-world problems and an amazing internship program to impress your recruiters.</p>
 							<div className='flex items-center'>
 								<a href='/#product' >Start a free trial</a>
-								<a href='/#product' >Talk to a mentor</a>
+								<a href='/talk-to-mentor' >Talk to a mentor</a>
 							</div>
 						</div>
 						<img src={topBg} alt="" />
