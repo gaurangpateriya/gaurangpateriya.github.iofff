@@ -62,7 +62,7 @@
   font-size: 1rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  margin: 10px 0;
+  margin: 10px;
   background-color: #ff8800;
   text-decoration: none;
   transition: all 0.5s;
@@ -99,10 +99,13 @@
     text-align: center;
   }
   .home-page-header .content h2 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
   .home-page-header .content p {
     font-size: 0.9rem;
+  }
+  .home-page-header .content a {
+    padding: 5px 20px;
   }
 }
 

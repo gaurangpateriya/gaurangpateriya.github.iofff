@@ -52,24 +52,11 @@
 .testimonial-carousel {
   padding: 40px;
   background-color: #ecfafc;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.testimonial-carousel h1 {
-  margin: 0em;
+  text-align: center;
 }
 
 .testimonial-carousel .slick-slide .mentor {
-  padding: 10px;
+  padding: 20px;
   text-decoration: none;
 }
 

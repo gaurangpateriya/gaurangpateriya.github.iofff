@@ -31,7 +31,7 @@ const CourseDetails = () => {
 		speed: 500,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 2000,
+		autoplaySpeed:4000,
 		slidesToShow: 1,
 		variableWidth: !mobileView,
 	};
@@ -39,7 +39,10 @@ const CourseDetails = () => {
 	return (
 		<>							
 			<div className='testimonial-carousel'>
-				<h1 className='heading'>Testimonials</h1>
+				<div className='heading-div'>
+					<p className='txt'>Testimonials</p>
+					<p className='watermark'>Testimonials</p>
+				</div>
 				<Slider {...testimonialSettings} >
 					{
 						testimonialData.map((t,i) => (

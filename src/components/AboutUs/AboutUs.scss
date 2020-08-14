@@ -46,7 +46,7 @@ $pageWidth : 80%;
             padding: 15px;
             font-size: 1rem;
             transition: all 0.5s;
-            margin: 10px 0;
+            margin: 10px ;
             background-color: $secondaryColor;
             
             text-decoration: none;
@@ -74,10 +74,14 @@ $pageWidth : 80%;
         .content{
             text-align: center;
             h2{
-                font-size: 1.8rem;
+                font-size: 1.3rem;
             }
             p{
                 font-size: 0.9rem;
+            }
+            a{
+                    
+                padding: 5px 20px;
             }
         }
         

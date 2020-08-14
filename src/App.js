@@ -1,9 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable linebreak-style */
 import React from 'react';
-import AboutUs from './components/AboutUs/AboutUs';
-import './App.css';
-import CourseDetails from './components/CourseDetails/CourseDetails';
 import {
 	BrowserRouter,
 	Switch,
@@ -12,13 +9,22 @@ import {
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+
+import AboutUs from './components/AboutUs/AboutUs';
+import './App.css';
+import CourseDetails from './components/CourseDetails/CourseDetails';
+import TalkToMentor from './components/TalkToMentor/TalkToMentor';
+
 function App() {
 
 	return (
 		<BrowserRouter>
 			<Switch>
 				<Route path="/" component={AboutUs} exact />
+				<Route path="/talk-to-mentor" component={TalkToMentor}  exact/>
 				<Route path="/:courseDetails" component={CourseDetails}  exact/>
+				
+				
 			</Switch>
     	</BrowserRouter>
 	);

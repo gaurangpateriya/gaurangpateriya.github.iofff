@@ -53,15 +53,10 @@
 .testimonial-carousel{
     padding:  40px;
     background-color: $primaryColor;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    h1{
-        margin: 0em;
-    }
+    text-align: center;
     .slick-slide{
         .mentor{
-            padding: 10px;
+            padding: 20px;
             text-decoration: none;
             .quote-svg{
                 display: grid;
