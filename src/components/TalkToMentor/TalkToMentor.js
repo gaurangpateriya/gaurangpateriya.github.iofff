@@ -1,39 +1,55 @@
 import React, {  useState } from 'react';
 import 'tachyons';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 import './TalkToMentor.css';
 import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
+import agent from '../../agent';
 
 let  today = new Date();
 const currentTime = today.getHours() + 2;
 
 
-let times = ['12:00','1:00','2:00','3:00','4:00','5:00','6:00','7:00'];
+let times = ['11:00','12:00','13:00','14:00','15:00','16:00','17:00','18:00','19:00'];
 if( currentTime < 19 ){
 	times = times.filter(t => {
 		let x = Number(t.split(':')[0]);
-		if(x > 12 ){
-			x +=12;
-		}
-		return x >= currentTime;
+		
+        
+		return x >= currentTime ;
 	});
 } else{
 	today = new Date( Date.now() + 1 * 24 * 60 * 60 * 1000);
 }
-const minDate = today.toJSON().split('T')[0]
+const minDate = today.toJSON().split('T')[0];
 
 const TalkToMentor = () => {
 	
 	const [user, setUser] = useState({date:minDate});
 	const [time, setTime] = useState(times[0]);
-    
+	const [loading, setLoading] = useState(false);
+	const [res, setRes] = useState("");
+	const [error, setError] = useState("");
 	const submitDetails = e => {
 		if(e){
 			e.preventDefault();
-        }
-        const data = { ...user, time }
+		}
+		const data = { ...user, time };
 		console.log(data);
+		setLoading(true);
+		agent.TalkToMentor.sendDetails(data).then(res => {
+			console.log(res);
+			setLoading(false);
+			let x = Number(time.split(':')[0]) + 1;
+			setRes(`You will recieve a call from our executive on ${user.date} between ${time} and ${x}:00`);
+			setError("");
+		}).catch(err  => {
+			setLoading(false);
+			console.log(err,err.response);
+			setError("Some error occured, please try again after some time!!!");
+			setRes("");
+		});
 	};
 	
 	return (
@@ -51,7 +67,19 @@ const TalkToMentor = () => {
 							</div>
 							<small>Book a call slot and our representative will call you within 1hr of selected time.</small>
 						</div>
-						
+						<div className='res-wrapper'>
+							{
+								res && <p className='response'>
+									{res}
+								</p>
+							}
+							{
+								error && <p className='error'>
+									{error}
+								</p>
+							}
+
+						</div>
 						<div className='flex  flex-column'>
 							<label htmlFor='name' >Name: </label>
 							<input required type="text" value={user.name} onChange={(e) => setUser({...user, name: e.target.value}) } />
@@ -78,7 +106,13 @@ const TalkToMentor = () => {
 							</div>
 						
 						</div>
-						<button type="submit">Get A Call</button>
+						<button type="submit" disabled={loading}>
+							{
+								loading ? 
+									<CircularProgress style={{color:'white'}} size={20} />
+									:'Get A Call'
+							}
+						</button>
 					</form>
 				</div>
 			</div>

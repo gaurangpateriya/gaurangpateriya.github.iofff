@@ -8,6 +8,25 @@
   background-attachment: fixed;
 }
 
+.book-a-call-wrapper .res-wrapper {
+  text-align: center;
+}
+
+.book-a-call-wrapper .res-wrapper p {
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.book-a-call-wrapper .res-wrapper .response {
+  background-color: #ff8800;
+}
+
+.book-a-call-wrapper .res-wrapper .error {
+  background-color: red;
+}
+
 .book-a-call-wrapper .book-a-call-div {
   min-height: 100vh;
 }

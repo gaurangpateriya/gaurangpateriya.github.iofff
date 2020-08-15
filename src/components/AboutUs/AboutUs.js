@@ -3,6 +3,7 @@ import React from 'react';
 import 'tachyons';
 import Slider from 'react-slick';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 
 import './AboutUs.css';
 
@@ -49,7 +50,7 @@ const AboutUs = () => {
 							<p>Learn through real-world problems and an amazing internship program to impress your recruiters.</p>
 							<div className='flex items-center'>
 								<a href='/#product' >Start a free trial</a>
-								<a href='/talk-to-mentor' >Talk to a mentor</a>
+								<Link to='/talk-to-mentor' >Talk to a mentor</Link>
 							</div>
 						</div>
 						<img src={topBg} alt="" />
@@ -78,10 +79,14 @@ const AboutUs = () => {
 				<TestimonialCarousel/>
 
 				<div className="home-page-courses" id='product'>
-					<div className='heading'>
-						<h2 className='heading'>
+					<div className='design' />
+
+					
+					<div className='heading-div'>
+						<p className='txt'>
 						Choose From Latest Program
-						</h2>
+						</p>
+						<p className='watermark'>Programmes</p>
 					</div>
 					<div className='courses-container' >
 						{
@@ -101,27 +106,6 @@ const AboutUs = () => {
 					</div>
 
 				</div>
-
-				{/* <div className='home-page-our-clients'>
-					<h2>Our Clients</h2>
-					<h3>Thank you for choosing us!</h3>
-					<div className='carousel'>
-						<Slider {...ourClientSettings}>
-							{
-								our_clients.map((t,i) => (
-									<div className='item' >
-										<img src={t.logo} />
-								
-										<h2>{t.name}</h2>
-								
-									</div>
-								))    
-							}
-						</Slider>
-					</div>
-				</div>
-			 */}
-				
 			
 				<Footer/>
 			</div>

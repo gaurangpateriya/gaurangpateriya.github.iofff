@@ -8,7 +8,24 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    .res-wrapper{
+        text-align: center;
+        p{
+            font-size: 0.8rem;
+            color: white;
+            
+            font-weight: 300;
 
+            padding: 10px;
+        }
+        .response{
+            background-color: $secondaryColor;
+        }
+        
+        .error{
+            background-color: red;
+        }
+    }
     .book-a-call-div{
         
         min-height: 100vh;
