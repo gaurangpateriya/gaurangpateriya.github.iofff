@@ -2,25 +2,28 @@ import React,{ useState} from 'react';
 import 'tachyons';
 import './AboutUs.css';
 import TextField from '@material-ui/core/Input';
-import { Link } from 'react-router-dom';
-
+import { Link, useHistory } from 'react-router-dom';
 import StarIcon from '@material-ui/icons/Star';
+
 import CollapseTransition from '../../common/components/CollapseTransition';
 
 function Course({details}) {
 	const [ showEmail, setShowEmail ] = useState(false);
 	const [email, setEmail] = useState('');
+	
+	const history = useHistory();
+	
+	
 	const applyForFree =(e) => {
 		e.preventDefault();
-		console.log(email);
+		
+		history.push('/payments',{email, course: details});
 	};
 
 	const stars = [];
 	for( let i = 0; i< details.rating; i++){
 		stars.push(<StarIcon/>);
 	}
-	
-
 	return (
 		
 		<div className='course'  >
@@ -72,18 +75,18 @@ function Course({details}) {
 				<form onSubmit={applyForFree}>
 					<TextField
 						required
-						// id="email"
+						id="email"
 						type='email'
 						label="Enter Email"
 						placeholder='Enter your email'
 						variant="outlined"
 						onChange={(e) => setEmail(e.target.value) }
 						value={email}
-						style={{width:"90%", margin:'auto'}}
+						style={{width:'90%', margin:'10px'}}
 					/>
 					<div className='btns-div'>
 						<span>
-							<button className='apply-now' type="submit" onClick={()=> setShowEmail(true) }>
+							<button className='apply-now' type="submit" >
 								Apply Now
 							</button>
 							<button type="button" onClick={()=> setShowEmail(false) }>

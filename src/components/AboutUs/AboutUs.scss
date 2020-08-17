@@ -10,6 +10,7 @@ $pageWidth : 80%;
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: normal;
+    
     height: calc(100vh - #{$navHeight});
     
 }
@@ -17,20 +18,13 @@ $pageWidth : 80%;
     text-align: center;
     padding: 0 5%;
     background-color: rgba(white,0.6);
-    
+    backdrop-filter: blur(2px);
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    @keyframes header-animation {
-        0%{
-            background-position: left;
-        }
-        100%{
-            background-position: right;
-        }
-    }
+    
     .content{
         text-align: left;
         

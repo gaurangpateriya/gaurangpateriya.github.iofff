@@ -1,0 +1,178 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/_mixins.scss';
+
+.payment-form-bg{
+    background-image: url(../../assets/Images/AboutUS/contactUs.svg);
+    margin: 0;
+    padding: 20px 0;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.payment-form{
+    width: 80%;
+    display: flex;
+    // align-items: center;
+    margin:  auto;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 15px;
+    min-height: 95vh - $navHeight;
+    overflow: hidden;
+    background-color: white;
+    & *{
+        font-family: 'Noto sans', cursive;
+        
+    }
+    @include mobile{
+        flex-direction: column;
+        width: 90%;
+    }
+    .left-div{
+        width: 50%;
+        // height: 100%;
+        background-image: url(../../assets/Images/PaymentPage/paymentLeftImg.svg);
+        background-size: contain;
+        overflow: hidden;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black ;
+        @include mobile{
+            width: 100%;
+        }
+        .content{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(black,0.5);
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            flex-direction: column;
+            text-align: left;
+            
+            h2,p{
+                color: white;
+            }
+            h2{
+                font-size: 2.5rem;
+                
+            }
+            p{
+                font-size: 1.5rem;
+            }
+            @include mobile{
+                width: 100%;
+                h2{
+                    font-size: 1.2rem;
+                }
+                p{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+    }
+    
+    .right-div{
+        width: 50%;
+        padding: 10px 40px;
+        @include mobile{
+            width: 100%;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            legend{
+                font-size: 1.3rem;
+                font-weight: bolder;
+
+            }
+            input{
+                width: 100%;
+                margin: 10px 0;
+                padding: 10px;
+                font-size: 1rem;
+                border-radius: 5px;
+                border: none;
+                border-bottom: 1px solid rgb(165, 165, 165);
+                box-sizing: border-box;
+                transition: all 0.3s;
+                &:focus{
+                    outline: none;
+                    
+                }
+            }
+            .pricing-table{
+                text-align: center;
+                margin: 20px 0;
+                p{
+                    font-size: 0.95rem;
+                    font-weight: bold;
+                    font-family: 'Noto sans', cursive;
+                    
+                    width: fit-content;
+                    
+                    
+                }
+                table{
+                    width: 100%;
+                    border: 1px solid rgb(165, 165, 165);
+                    padding: 20px ;
+                    border-radius: 10px;
+                    @include mobile{
+                        
+                        padding: 0;
+                    }
+                    
+                }
+                
+                td{
+                    padding: 10px 5px;
+                    text-align: right;
+                    @include mobile{
+                        font-size: 1rem;
+                    }
+                }
+                .heading{
+                    text-align: left;
+                    font-weight: bold;
+                    font-family: 'Noto sans', cursive;
+                    @include mobile{
+                        font-size: 1rem;
+                    }
+                }
+                .discount{
+                    color: $secondaryColor;
+                    
+                }
+                .total-row{
+                    td{
+                        border-top: 1px solid rgb(165, 165, 165) ;
+                        margin: 0;
+                        
+                    }
+                }
+    
+            }
+            button[type="submit"]{
+                width: 100%;
+                margin: 10px 0;
+                background-color: $secondaryColor;
+                padding: 20px;
+                border-radius: 5px;
+                font-weight: bold;
+                color: white;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                @include mobile{
+                    font-size: 0.9rem;
+                    padding: 15px;
+                }
+                
+            }
+
+        }
+        
+    }
+}

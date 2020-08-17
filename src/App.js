@@ -14,6 +14,7 @@ import AboutUs from './components/AboutUs/AboutUs';
 import './App.css';
 import CourseDetails from './components/CourseDetails/CourseDetails';
 import TalkToMentor from './components/TalkToMentor/TalkToMentor';
+import PaymentPage from './components/PaymentPage/PaymentPage';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
 			<Switch>
 				<Route path="/" component={AboutUs} exact />
 				<Route path="/talk-to-mentor" component={TalkToMentor}  exact/>
+				<Route path="/payments" component={PaymentPage}  exact/>
 				<Route path="/:courseDetails" component={CourseDetails}  exact/>
 				
 				

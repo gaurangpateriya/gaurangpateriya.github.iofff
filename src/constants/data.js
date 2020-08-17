@@ -16,8 +16,8 @@ import hemendra_sharma from '../assets/Images/AboutUS/testimonials/hemendra_shar
 import sampreeth_miriyala from '../assets/Images/AboutUS/testimonials/sampreeth_miriyala.jpg';
 import sai_teja from '../assets/Images/AboutUS/testimonials/sai_teja.jpg';
 
-import falcon_logo from '../assets/Images/AboutUS/our_clients/falcon-city-logo.jpg';
-import instalink_logo from '../assets/Images/AboutUS/our_clients/instalink_logo.png';
+// import falcon_logo from '../assets/Images/AboutUS/our_clients/falcon-city-logo.jpg';
+// import instalink_logo from '../assets/Images/AboutUS/our_clients/instalink_logo.png';
 
 
 import reactImg from '../assets/Images/AboutUS/courses/react.png';
@@ -55,7 +55,7 @@ export const our_team = [
 		companyLogo:pwc,
 		designation: 'PWC',
 		linkedInURL:'https://www.linkedin.com/in/milind-kar-ray/',
-		info: 'Milind works in the Cloud and Digital Practise for PriceWaterHouseCoopers. He has over 3 years experience in Cloud Architecture Deployments and developing solution. He uses Django and Python back end for Web Development.'
+		info: 'Milind works in the Cloud and Digital Practise for PriceWaterHouseCoopHe has over 3 years experience in Cloud Architecture Deployments and developing solution. He uses Django and Python back end for Web Development'
 	},
 	{
 		photo:nihar_patel,
@@ -68,28 +68,28 @@ export const our_team = [
 	
 	
 ];
-export const our_clients = [
-	{
-		logo:instalink_logo,
-		name:'Royal Trendies'
-	},
-	{
-		logo:falcon_logo,
-		name:'Prestige Falcon City'
-	},
-	{
-		logo:instalink_logo,
-		name:'Shoe Factory'
-	},
-	{
-		logo:instalink_logo,
-		name:'Naffs Creation'
-	},
-	{
-		logo:instalink_logo,
-		name:'S Younus Khadri '
-	},
-];
+// export const our_clients = [
+// 	{
+// 		logo:instalink_logo,
+// 		name:'Royal Trendies'
+// 	},
+// 	{
+// 		logo:falcon_logo,
+// 		name:'Prestige Falcon City'
+// 	},
+// 	{
+// 		logo:instalink_logo,
+// 		name:'Shoe Factory'
+// 	},
+// 	{
+// 		logo:instalink_logo,
+// 		name:'Naffs Creation'
+// 	},
+// 	{
+// 		logo:instalink_logo,
+// 		name:'S Younus Khadri '
+// 	},
+// ];
 
 export const courses = [
 	{
@@ -97,8 +97,8 @@ export const courses = [
 		img: reactImg,
 		title:'Web & App Development',
 		rating:'4',
-		price: 'Rs. 2750 ',
-		discPrice:'Rs. 3000',
+		price: 3000 ,
+		discPrice:2750,
 		duration:'2 months',
 		noOfRating: '1.1k',
 		overview:`Throughout the course, you will gain hands-on experience by working on our flagship products, and by the end of this course, you will be prepared to build your own web applications as well as make mobile applications.
@@ -155,8 +155,8 @@ export const courses = [
 		img: djangoImg,
 		title:'Full stack Development',
 		rating:'4.3',
-		price: 'Rs. 2750 ',
-		discPrice:'Rs. 3000',
+		price: 3000 ,
+		discPrice:2750,
 		duration:'1 month',
 		noOfRating: '13.5k',
 		discreption:'In this internship you would be learning how to write scalable backend apis which are highly performant and have zero down time using the framework - Django. Language we would be writing the apis would be in python. The interns would get a chance to work on YAV technology’s flagship product, MyWeblink.',
