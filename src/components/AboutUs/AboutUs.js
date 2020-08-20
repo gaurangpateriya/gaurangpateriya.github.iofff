@@ -4,13 +4,16 @@ import 'tachyons';
 // import Slider from 'react-slick';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-
+import CreditCardIcon from '@material-ui/icons/CreditCard';
+import LocalAtmIcon from '@material-ui/icons/LocalAtm';
+import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
+import CheckCircleRoundedIcon from '@material-ui/icons/CheckCircleRounded';
 import './AboutUs.css';
 
 import topBg from '../../assets/Images/AboutUS/top-bg.png';
 import profileAnalysis from '../../assets/Images/AboutUS/profileAnalysis.svg';
 import interview from '../../assets/Images/AboutUS/interview.svg';
-import crackInterview from '../../assets/Images/AboutUS/crackInterview.jpg';
+
 import code from '../../assets/Images/AboutUS/code.svg';
 
 
@@ -62,11 +65,32 @@ const AboutUs = () => {
 						<img src={topBg} alt="" />
 					</div>
 				</div>
+				<div className='crack-interview-wrapper'>
+					<div className='content-div'>
+						<h2>WHAT IT TAKES TO CRACK THE HECK OUT OF AN INTERVIEW</h2>
+
+					
+						<ul>
+							<li>Make Data Structures your bread and butter</li>
+							<li>Optimize, optimize and then optimize a bit more</li>
+							<li>Remember: Every complex problem has a simple solution</li>
+							<li>Talk English, Think Binary!</li>
+							<li>In an interview, don’t corner any case!</li>
+							<li>Be damn sure that you will get placed!</li>
+						</ul>
+					</div>
+					<div className='img-div'>
+						{/* <img src={crackInterview} alt="" /> */}
+					</div>
+
+
+				</div>
+				
 				
 				
 				<div className='our-mentor-companies-div'>
 					<div className='heading-div'>
-						<p className='txt'>Our Mentors Works At</p>
+						<p className='txt'>Our Mentors Work At</p>
 						<p className='watermark'>Mentors</p>
 					
 					</div>
@@ -86,9 +110,9 @@ const AboutUs = () => {
 						<p className='txt'>Programme Outline</p>
 						<p className='watermark'>Programme</p>
 					</div>
-					<div className='outline-content'>
+					{/* <div className='outline-content'>
 						<p>DP, Graphs, Advanced Data structure, Recursion, BackTracking, Competitive Coding , Interview Preps, Resume Building</p>
-					</div>
+					</div> */}
 					<div className='details-wrapper'>
 						<div className='detail'> 
 							<img src={code} alt=""/>
@@ -117,15 +141,32 @@ const AboutUs = () => {
 				</div>
 				<TestimonialCarousel/>
 				<div className='what-will-it-cost-div'>
-					<div className='content'>
-						<h2>SO WHAT WILL IT COST?</h2>
-						<ul>
-							<li>₹0 deposit charges - Because we trust you!</li>
-							<li>₹0 upfront fees - Because we are not into all that!</li>
-							<li>Pay only if you get a CTC ₹8,00,000 and above - Because we win when you do!</li>
-							<li>17% of your monthly salary for only first 6 months - Because we want to celebrate your achievement too!</li>
-						</ul>
-					</div>
+					{/* <div className='content'> */}
+					<h2>SO WHAT WILL IT COST?</h2>
+					<ul>
+						<li>
+							<CreditCardIcon />
+							<b>₹0 deposit charges</b>
+							<p>Because we trust you!</p>
+						</li>
+						<li>
+							<CardGiftcardIcon/>
+							<b>₹0 upfront fees </b>
+							<p>Because we are not into all that!</p>
+						</li>
+						<li>
+							
+							<LocalAtmIcon />
+							<b>Pay only if you get a CTC ₹8,00,000 and above</b>
+							<p> Because we win when you do!</p>
+						</li>
+						<li>
+							<CheckCircleRoundedIcon />
+							<b>17% of your monthly salary for only first 6 months</b>
+							<p> Because we want to celebrate your achievement too!</p>
+						</li>
+					</ul>
+					{/* </div> */}
 				</div>
 				{/* <div className="home-page-courses" id='product'>
 					<div className='design' />
@@ -143,27 +184,7 @@ const AboutUs = () => {
 						}
 					</div>
 				</div> */}
-				<MentorsCarousels/>
-				<div className='crack-interview-wrapper'>
-					<div className='content-div'>
-						<h2>WHAT IT TAKES TO CRACK THE HECK OUT OF AN INTERVIEW</h2>
-
-					
-						<ul>
-							<li>Make Data Structures your bread and butter</li>
-							<li>Optimize, optimize and then optimize a bit more</li>
-							<li>Remember: Every complex problem has a simple solution</li>
-							<li>Talk English, Think Binary!</li>
-							<li>In an interview, don’t corner any case!</li>
-							<li>Be damn sure that you will get placed!</li>
-						</ul>
-					</div>
-					<div className='img-div'>
-						{/* <img src={crackInterview} alt="" /> */}
-					</div>
-
-
-				</div>
+				{/* <MentorsCarousels/> */}
 				
 				<div className='join-yav-container'>
 					<small>	Break your goals into an achievable milestone</small>
