@@ -182,7 +182,7 @@ $pageWidth : 80%;
             }
             .btns-div{
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
                 width: 90%;
                 margin: auto;
@@ -256,27 +256,28 @@ $pageWidth : 80%;
 }
 
 .join-yav-container{
-    background-color: black;
-    color: white;
+    background-color: $primaryColor;
+    color: black;
     text-align: center;
     padding: 6% 0;
     small{
-        color: white;
+        color: black;
     }
     h2{
         font-size: 3rem;
-        color: white;
+        color: black;
         font-weight: 500;
     }
     p{
-        color: white;
+        color: black;
     }
 
     .btn-div{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 10%;
-        width: 50%;
+        grid-template-columns: 1fr ;
+        // grid-column-gap: 10%;
+    
+        width: 20%;
         margin: auto;
         margin-top: 50px ;
         a{
@@ -309,6 +310,135 @@ $pageWidth : 80%;
     }
 }
 
+.our-mentor-companies-div{
+    text-align: center;
+    padding: 5% ;
+    background-color:rgba($secondaryColor, 0.1);
+    @include mobile{
+        padding: 15% 0;
+    }
+    .company-img-wrapper{
+        
+        .company-img{
+            width: auto !important;
+            height: 100px;
+            margin: 50px;   
+            @include mobile {
+                margin: 10px;
+            }
+        }
+    }
+}
+.programme-outline{
+    text-align: center;
+    padding: 50px;
+    
+    .outline-content{
+        width: 50%;
+        margin: auto;
+        font-weight: bold;
+        font-size: 1.3rem;
+        @include mobile {
+            width: 100%;
+            font-size: 1.1rem;
+        }
+    }
+    .details-wrapper{
+        
+        margin: 100px auto;
+        display: flex;
+        justify-content: space-evenly;
+        @include mobile {
+            flex-direction: column;
+        }
+        .detail{
+            margin: 0 25px;
+            -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.75);
+            border-radius: 15px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 500px;
+            img{
+                width: 150px;
+            }
+            h3{
+                font-size: 1.8rem;
+            }
+            p{
+                font-size: 1.1rem;   
+                margin: auto;
+            }
+            @include mobile {
+                flex-direction: column;
+                margin: 20px 0;
+                min-height: 150px;
+            }
+        }
+    }
+}
+
+.what-will-it-cost-div{
+    
+    
+    background-image: url(../../assets/Images/AboutUS/cost.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 50px 0;
+    
+    
+    .content{
+        background-color: rgba(white,0.7);
+        padding: 5% 0;
+        // width: 50%;
+        
+        margin-left: auto;
+        text-align: right;
+        @include mobile{
+            width: 100%;
+            text-align: center;
+        }
+        h2{
+            font-size: 2.5rem;        
+        }
+        ul{
+            padding:0;
+            display: grid;
+            
+            grid-column-gap: 50px;
+            width: 50%;
+            list-style: none;
+            margin-left: auto;
+            padding-right: 20px;
+            
+            @include mobile{
+                width: 80%;
+                margin: auto;
+                list-style: disc;
+            }
+            li{
+                text-align: left;
+                font-size: 1.1rem;
+                margin: 10px 0;
+                line-height: 1.3rem;
+                font-family: 'Inter';
+                text-align: right;
+                font-weight: 700;
+                @include mobile{
+                    
+                    text-align: left;
+                    
+                }
+            }
+        }
+    }
+    
+}
 .heading{
     
         @media (max-width:600px) {
@@ -317,3 +447,88 @@ $pageWidth : 80%;
     
 }
 
+.crack-interview-wrapper{
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 5% 0;
+    
+    background-color: black;
+    background-image: linear-gradient(315deg, #a1d5da 0%, rgb(194, 194, 40), 74%);
+    @include mobile{
+        flex-direction: column;
+    }
+    background-image: url(../../assets/Images/AboutUS/question.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    backdrop-filter: blur(10px);
+    .content-div{
+        width: 50%;
+        margin: 0 50px;
+        border-radius: 10px;
+        background-color: transparent;
+        padding-left: 5%;
+        
+        @include mobile{
+            width: 100%;
+            padding: 0 50px;
+            margin: 0;
+        }
+        h2{
+            font-size: 2.5rem;
+            margin-bottom: 80px;
+            font-family:'Aleo';
+            color: white;
+            @include mobile{
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+                
+            }
+
+        }
+        ul{
+            padding:0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 120px;
+            @include mobile{
+                grid-template-columns: 1fr;
+            }
+            li{
+                font-size: 1rem;
+                font-family: 'Inter';
+                margin: 20px 0;
+                line-height: 1.5rem;
+                color: white;
+                font-size: 1rem;
+            }
+
+        }
+    }
+    .img-div{
+        width: 50%;
+        flex-grow: 1;
+        margin-left: auto;
+        display: flex;
+        justify-content: flex-end;
+        @include mobile{
+            width: 100%;
+            padding: 0 50px;
+            margin: 0;
+        }
+
+        img{
+            border-radius: 10px;
+            width: 80%;
+            margin-left: auto;
+            height: auto;
+            @include mobile{
+                width: 100%;
+                
+                margin: 0;
+            }
+            
+        }
+    }
+}

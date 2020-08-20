@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { APP_NAME, APP_NAME_short } from '../../constants/otherConstants';
+import { Link } from 'react-router-dom';
 import 'tachyons';
 import './NavBar.css';
 import  logo from '../../assets/Images/AboutUS/logo_short.png';
@@ -16,9 +17,7 @@ class BootstrapNavbar extends React.Component{
 				</div>
 				<div className='end-links'>
 					<button type='button'>
-						<a href='/#product' >
-                        Join Us
-						</a>
+					<Link to='/talk-to-mentor' >Schedule a call</Link>
 					</button>
 
 				</div>  

@@ -56,8 +56,11 @@
     text-align: center;
     .slick-slide{
         .mentor{
-            padding: 20px;
+            padding: 20px 50px;
             text-decoration: none;
+            @include mobile{
+                padding: 0;
+            }
             .quote-svg{
                 display: grid;
                 place-items: center;

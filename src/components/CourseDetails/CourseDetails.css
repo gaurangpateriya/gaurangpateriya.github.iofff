@@ -186,35 +186,6 @@
   }
 }
 
-.our-mentor-companies-div {
-  text-align: center;
-  padding: 5%;
-  background-color: rgba(255, 136, 0, 0.1);
-}
-
-@media (max-width: 576px) {
-  .our-mentor-companies-div {
-    padding: 15% 0;
-  }
-}
-
-.our-mentor-companies-div .company-img-wrapper {
-  margin: 100px 0;
-}
-
-.our-mentor-companies-div .company-img-wrapper .company-img {
-  width: auto !important;
-  height: 100px;
-  margin: 0 50px;
-}
-
-@media (max-width: 600px) {
-  .our-mentor-companies-div .company-img-wrapper .company-img {
-    height: 100px;
-    margin: 0 10px;
-  }
-}
-
 .concepts-div {
   padding: 5%;
   text-align: center;

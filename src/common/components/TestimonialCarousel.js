@@ -40,13 +40,14 @@ const CourseDetails = () => {
 		<>							
 			<div className='testimonial-carousel'>
 				<div className='heading-div'>
-					<p className='txt'>Testimonials</p>
+					<p className='txt'>WHAT OUR STUDENTS HAVE TO SAY
+</p>
 					<p className='watermark'>Testimonials</p>
 				</div>
 				<Slider {...testimonialSettings} >
 					{
 						testimonialData.map((t,i) => (
-							<a href={t.linkedInURL} className='mentor' style={{width: Math.min(window.innerWidth- 20, 300)}} >
+							<a href={t.linkedInURL} className='mentor' style={{width: Math.min(window.innerWidth- 20, 400)}} >
 								<div className='quote-svg'>
 									<FormatQuoteIcon/>
 								</div>

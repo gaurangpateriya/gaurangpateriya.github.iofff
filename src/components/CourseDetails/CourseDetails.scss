@@ -150,26 +150,7 @@
         margin-top: 50%;
     }
 }
-.our-mentor-companies-div{
-    text-align: center;
-    padding: 5% ;
-    background-color:rgba($secondaryColor, 0.1);
-    @include mobile{
-        padding: 15% 0;
-    }
-    .company-img-wrapper{
-        margin: 100px 0;
-        .company-img{
-            width: auto !important;
-            height: 100px;
-            margin: 0 50px;
-            @media (max-width:600px) {
-                height: 100px;
-                margin: 0 10px;
-            }
-        }
-    }
-}
+
 .concepts-div{
     padding: 5%;
     text-align: center;

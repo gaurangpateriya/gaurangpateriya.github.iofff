@@ -56,8 +56,14 @@
 }
 
 .testimonial-carousel .slick-slide .mentor {
-  padding: 20px;
+  padding: 20px 50px;
   text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .testimonial-carousel .slick-slide .mentor {
+    padding: 0;
+  }
 }
 
 .testimonial-carousel .slick-slide .mentor .quote-svg {
