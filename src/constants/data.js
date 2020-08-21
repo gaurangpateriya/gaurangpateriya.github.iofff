@@ -15,6 +15,9 @@ import chirag_agrawal from '../assets/Images/AboutUS/testimonials/chirag_agrawal
 import hemendra_sharma from '../assets/Images/AboutUS/testimonials/hemendra_sharma.jpg';
 import sampreeth_miriyala from '../assets/Images/AboutUS/testimonials/sampreeth_miriyala.jpg';
 import sai_teja from '../assets/Images/AboutUS/testimonials/sai_teja.jpg';
+import shubhamPatel from '../assets/Images/AboutUS/testimonials/shubhamPatel.jpg';
+import pranayNath from '../assets/Images/AboutUS/testimonials/pranayNath.jpg';
+import adityaVyas from '../assets/Images/AboutUS/testimonials/adityaVyas.jpeg';
 
 // import falcon_logo from '../assets/Images/AboutUS/our_clients/falcon-city-logo.jpg';
 // import instalink_logo from '../assets/Images/AboutUS/our_clients/instalink_logo.png';
@@ -221,6 +224,28 @@ export const courses = [
 ];
 
 export const testimonialData = [
+	{
+		photo:adityaVyas,
+		name:'Aditya Vyas',
+		linkedInURL: 'https://www.linkedin.com/in/aditya-vyas-862253183/',
+		testimonial: `It was during the third year of my college that I came to know about YAV Technologies. Prior to that I was conflicted between placements or higher studies, and to be honest I wasn't too good at programming. But with some seriousness (which everyone experiences when the placements are close :p), I enrolled in the 2 month’s course at YAV Technologies, and that was THE PUSH that I needed. Not only were we taught the concepts of DS, a lot of stress was laid on using the concepts efficiently in problem solving.
+		The resume builder and mock interview sessions were really very helpful, I realised it when the placement season started in my college. Being used to that experience by means of mock interviews, really helped me go the extra mile.
+		From teachers to study material, everything about this program was praiseworthy and efficient.
+		I am thankful to YAV Technologies for grooming me on every aspect of the campus placements and enabling me to secure a super dream offer from my college into Nielsen.
+		`
+	},
+	{
+		photo:pranayNath,
+		name:'Pranay Nath',
+		linkedInURL: 'https://www.linkedin.com/in/pranav-nath-566349150/',
+		testimonial: 'YAV Technologies made me realise the importance of having a dream and working towards it. Not losing hope on a bad day, not getting too excited on a good day but working every day to turn your dream into reality.I got placed with a super dream offer into OYO.'
+	},
+	{
+		photo:shubhamPatel,
+		name:'Shubham Patel',
+		linkedInURL: 'https://www.linkedin.com/in/shubham-patel-45621a144/',
+		testimonial: 'It was my first experience and i have learnt a loads from you alll. The complete system is very wxciting and all help eqch others in resolving their problems .. especially the mentors who are available for helping us 24/7 ..I have learnt a basic understanding of how the website works and what is the level of programming needed and how to resolve the errors.... It is a great experience for me.'
+	},
 	{
 		photo:chirag_agrawal,
 		name:'Chirag Agarwal',

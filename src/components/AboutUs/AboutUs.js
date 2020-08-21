@@ -8,6 +8,7 @@ import CreditCardIcon from '@material-ui/icons/CreditCard';
 import LocalAtmIcon from '@material-ui/icons/LocalAtm';
 import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
 import CheckCircleRoundedIcon from '@material-ui/icons/CheckCircleRounded';
+import ScrollAnimation from 'react-animate-on-scroll';
 import './AboutUs.css';
 
 import topBg from '../../assets/Images/AboutUS/top-bg.png';
@@ -51,97 +52,90 @@ const AboutUs = () => {
 			</Helmet>
 			<NavBar />
 			<div className=''>
-				<div className='bgimg'>
-					<div className="home-page-header" >
+				<ScrollAnimation animateOnce  animateIn="bounceInRight">
+					<div className='bgimg'>
+						<div className="home-page-header" >
 				
-						<div className="content">
-							<h2>WANT TO CHAMPION YOUR PLACEMENTS?</h2>
-							<p>Get 1-1 Live mentorship and in-depth interview preparation with  Super-Dream placed VIT alumni for a leap into your professional career.</p>
-							<div className='flex items-center'>
+							<div className="content">
+								<h2>WANT TO CHAMPION YOUR PLACEMENTS?</h2>
+								<p>Get 1-1 Live mentorship and in-depth interview preparation with  Super-Dream placed VIT alumni for a leap into your professional career.</p>
+								<div className='flex items-center'>
 								
-								<Link to='/talk-to-mentor' >Schedule a call</Link>
+									<Link to='/talk-to-mentor' >Schedule a call</Link>
+								</div>
 							</div>
+							<img src={topBg} alt="" />
 						</div>
-						<img src={topBg} alt="" />
-					</div>
-				</div>
-				<div className='crack-interview-wrapper'>
-					<div className='content-div'>
-						<h2>WHAT IT TAKES TO CRACK THE HECK OUT OF AN INTERVIEW</h2>
-
-					
-						<ul>
-							<li>Make Data Structures your bread and butter</li>
-							<li>Optimize, optimize and then optimize a bit more</li>
-							<li>Remember: Every complex problem has a simple solution</li>
-							<li>Talk English, Think Binary!</li>
-							<li>In an interview, don’t corner any case!</li>
-							<li>Be damn sure that you will get placed!</li>
-						</ul>
-					</div>
-					<div className='img-div'>
-						{/* <img src={crackInterview} alt="" /> */}
-					</div>
-
-
-				</div>
-				
-				
-				
-				<div className='our-mentor-companies-div'>
-					<div className='heading-div'>
-						<p className='txt'>Our Mentors Work At</p>
-						<p className='watermark'>Mentors</p>
 					
 					</div>
-					<div className='company-img-wrapper'>
-						
-						{
-							mentorsCompany.map((t,i) => (
-								<img src={t} key={i} alt=""  className='company-img' />	
+				</ScrollAnimation>
+				<ScrollAnimation animateOnce  animateIn="bounceInLeft">
+					<div className='crack-interview-wrapper'>
+						<ScrollAnimation animateOnce  animateIn='bounceInRight' className='content-div'>
+							<h2>WHAT IT TAKES TO CRACK THE HECK OUT OF AN INTERVIEW</h2>
+							<ul>
+								<li>Make Data Structures your bread and butter</li>
+								<li>Optimize, optimize and then optimize a bit more</li>
+								<li>Remember: Every complex problem has a simple solution</li>
+								<li>Talk English, Think Binary!</li>
+								<li>In an interview, don’t corner any case!</li>
+								<li>Be damn sure that you will get placed!</li>
+							</ul>
+						</ScrollAnimation>
+					</div>
+				</ScrollAnimation>
+				<ScrollAnimation animateOnce  animateIn='fadeIn'>
+					<div className='our-mentor-companies-div'>
+						<ScrollAnimation animateOnce  animateIn='fadeIn' className='heading-div'>
+							<p className='txt'>Our Mentors Work At</p>
+							<p className='watermark'>Mentors</p>
+						</ScrollAnimation>
+						<div className='company-img-wrapper'>
+							{
+								mentorsCompany.map((t,i) => (
+									<img src={t} key={i} alt=""  className='company-img' />	
 										
-							))    
-						}
-						
+								))    
+							}
+						</div>
 					</div>
-				</div>
+				</ScrollAnimation>
 				<div className='programme-outline'>
-					<div className='heading-div'>
+					<ScrollAnimation animateOnce  animateIn='fadeIn' className='heading-div'>
 						<p className='txt'>Programme Outline</p>
 						<p className='watermark'>Programme</p>
-					</div>
+					</ScrollAnimation>
 					{/* <div className='outline-content'>
 						<p>DP, Graphs, Advanced Data structure, Recursion, BackTracking, Competitive Coding , Interview Preps, Resume Building</p>
 					</div> */}
 					<div className='details-wrapper'>
-						<div className='detail'> 
+						<ScrollAnimation animateOnce  animateIn='flipInY' className='detail'> 
 							<img src={code} alt=""/>
 							<h3>Crack The Code</h3>
 							<p className='content'>
 								Scale up your knowledge with in-depth knowledge of Advanced DSA, Dynamic Programming, Graphs, Backtracking, and other must-haves for your preliminary coding rounds.
 							</p>
-						</div>
-						<div className='detail'> 
+						</ScrollAnimation>
+						<ScrollAnimation animateOnce  animateIn='flipInX' className='detail'> 
 							<img src={interview} alt='' />
 							<h3>Mock Interviews</h3>
 							<p className='content'>
 							Experience different interview formats and identify your weak areas with 1:1 mock interviews. Gain insights on optimized coding, code complexity, and better design patterns/
 							</p>
-						</div>
-						<div className='detail'> 
+						</ScrollAnimation>
+						<ScrollAnimation animateOnce  animateIn='flipInY' className='detail'> 
 							<img src={profileAnalysis} alt='' />
 							<h3>Deep Profile Analysis</h3>
 							<p className='content'>
 								 Get an expert analysis of your project with all the linked Q&A. Get a professional assessment, highlight your strong areas, and build an irresistible resume.
 
 							</p>
-						</div>
+						</ScrollAnimation>
 
 					</div>
 				</div>
 				<TestimonialCarousel/>
-				<div className='what-will-it-cost-div'>
-					{/* <div className='content'> */}
+				<ScrollAnimation animateOnce  animateIn='bounceInLeft' className='what-will-it-cost-div'>
 					<h2>SO WHAT WILL IT COST?</h2>
 					<ul>
 						<li>
@@ -166,16 +160,17 @@ const AboutUs = () => {
 							<p> Because we want to celebrate your achievement too!</p>
 						</li>
 					</ul>
-					{/* </div> */}
-				</div>
+				
+					
+				</ScrollAnimation>
 				{/* <div className="home-page-courses" id='product'>
 					<div className='design' />
 
 					
-					<div className='heading-div'>
+					<ScrollAnimation animateOnce  animateIn='fadeIn' className='heading-div'>
 						<p className='txt'>
 						Choose From Latest Program
-						</p>
+						ScrollAnimation>
 						<p className='watermark'>Programmes</p>
 					</div>
 					<div className='courses-container' >
@@ -187,9 +182,10 @@ const AboutUs = () => {
 				{/* <MentorsCarousels/> */}
 				
 				<div className='join-yav-container'>
-					<small>	Break your goals into an achievable milestone</small>
-					<h2> Join YAV Technologies Today!</h2>
-					{/* <p>I am interested in</p> */}
+					{/* <small>	Break your goals into an achievable milestone</small> */}
+					<ScrollAnimation animateOnce  animateIn='tada'>
+						<h2> Join YAV Technologies Today!</h2>
+					</ScrollAnimation>
 					<div className='btn-div'>
 						
 						<Link to='/talk-to-mentor' >Schedule a call</Link>

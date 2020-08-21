@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+
 /* eslint-disable linebreak-style */
 import React from 'react';
 import {
@@ -8,7 +9,7 @@ import {
 } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
+import 'animate.css/animate.min.css';
 
 import AboutUs from './components/AboutUs/AboutUs';
 import './App.css';

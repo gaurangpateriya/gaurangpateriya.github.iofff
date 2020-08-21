@@ -83,12 +83,13 @@
     text-align: center;
   }
   .home-page-header .content h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .home-page-header .content p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .home-page-header .content a {
+    margin: auto;
     padding: 5px 20px;
   }
 }
@@ -469,9 +470,21 @@
   font-size: 1.8rem;
 }
 
+@media (max-width: 576px) {
+  .programme-outline .details-wrapper .detail h3 {
+    font-size: 1.3rem;
+  }
+}
+
 .programme-outline .details-wrapper .detail p {
   font-size: 1.1rem;
   margin: auto;
+}
+
+@media (max-width: 576px) {
+  .programme-outline .details-wrapper .detail p {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 576px) {

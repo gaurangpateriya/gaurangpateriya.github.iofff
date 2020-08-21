@@ -70,13 +70,13 @@ $pageWidth : 80%;
         .content{
             text-align: center;
             h2{
-                font-size: 1.3rem;
+                font-size: 1.5rem;
             }
             p{
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
             a{
-                    
+                margin: auto;
                 padding: 5px 20px;
             }
         }
@@ -367,10 +367,16 @@ $pageWidth : 80%;
             }
             h3{
                 font-size: 1.8rem;
+                @include mobile {
+                    font-size: 1.3rem;
+                }
             }
             p{
                 font-size: 1.1rem;   
                 margin: auto;
+                @include mobile {
+                    font-size: 1rem;
+                }
             }
             @include mobile {
                 flex-direction: column;
@@ -383,11 +389,6 @@ $pageWidth : 80%;
 
 .what-will-it-cost-div{
     
-    // background-image: url(../../assets/Images/AboutUS/cost.svg);
-    // background-position: left;
-    // background-repeat: no-repeat;
-    // background-size: contain;
-    // margin: 50px 0;
 
     background-color: rgba(white,0.7);
     padding: 5% 0;
