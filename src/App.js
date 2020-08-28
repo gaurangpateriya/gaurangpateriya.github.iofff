@@ -23,6 +23,7 @@ function App() {
 		<BrowserRouter>
 			<Switch>
 				<Route path="/" component={AboutUs} exact />
+				<Route path="/vit" component={() => <AboutUs college={'vit'} />} exact />
 				<Route path="/talk-to-mentor" component={TalkToMentor}  exact/>
 				<Route path="/payments" component={PaymentPage}  exact/>
 				<Route path="/:courseDetails" component={CourseDetails}  exact/>

@@ -33,16 +33,8 @@ function importAll(r) {
   
 const mentorsCompany = importAll(require.context('../../assets/Images/AboutUS/mentors_company/', false, /\.(png|jpe?g|svg)$/));
 
-const AboutUs = () => {
-	const settings = {
-		dots: true,
-		infinite: true,
-		speed: 500,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 2000,
-		variableWidth: true,
-	};
+const AboutUs = ({college}) => {
+	
 	return (
 		<>
 			<Helmet>
@@ -58,7 +50,13 @@ const AboutUs = () => {
 				
 							<div className="content">
 								<h2>WANT TO CHAMPION YOUR PLACEMENTS?</h2>
-								<p>Get 1-1 Live mentorship and in-depth interview preparation with  Super-Dream placed VIT alumni for a leap into your professional career.</p>
+								<p>
+									{
+										college === 'vit' 
+											? 'Get 1-1 Live mentorship and in-depth interview preparation with  Super-Dream placed VIT alumni for a leap into your professional career.'
+											: 'Get 1-1 Live mentorship and in-depth interview preparation with  Super-Dream placed alumni for a leap into your professional career.'
+									}
+								</p>
 								<div className='flex items-center'>
 								
 									<Link to='/talk-to-mentor' >Schedule a call</Link>
@@ -151,7 +149,14 @@ const AboutUs = () => {
 						<li>
 							
 							<LocalAtmIcon />
-							<b>Pay only if you get a CTC ₹8,00,000 and above</b>
+							
+							<b>
+								{
+									college === 'vit' 
+										? 'Pay only if you get a CTC ₹8,00,000 and above'
+										: 'Pay only if you get placed in your dream company'
+								}
+							</b>
 							<p> Because we win when you do!</p>
 						</li>
 						<li>
