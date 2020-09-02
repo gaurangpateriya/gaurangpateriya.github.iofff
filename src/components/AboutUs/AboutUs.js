@@ -54,7 +54,7 @@ const AboutUs = ({college}) => {
 									{
 										college === 'vit' 
 											? 'Get 1-1 Live mentorship and in-depth interview preparation with  Super-Dream placed VIT alumni for a leap into your professional career.'
-											: 'Get 1-1 Live mentorship and in-depth interview preparation with  Super-Dream placed alumni for a leap into your professional career.'
+											: 'Get 1-1 Live mentorship and in-depth interview preparation with industry experts from product-based companies for a leap into your professional career.'
 									}
 								</p>
 								<div className='flex items-center'>
@@ -154,7 +154,7 @@ const AboutUs = ({college}) => {
 								{
 									college === 'vit' 
 										? 'Pay only if you get a CTC ₹8,00,000 and above'
-										: 'Pay only if you get placed in your dream company'
+										: 'Pay only if you get a job'
 								}
 							</b>
 							<p> Because we win when you do!</p>
