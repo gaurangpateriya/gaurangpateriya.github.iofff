@@ -17,11 +17,14 @@ class BootstrapNavbar extends React.Component{
 				</div>
 				<div className='end-links'>
 					<button type='button'>
+						<Link to='/talk-to-mentor' >Schedule a call</Link>
+					</button>
+					{/* <button type='button'>
 						<Link to='/login' >Login</Link>
-					</button>
-					<button type='button'>
+					</button> */}
+					{/* <button type='button'>
 						<Link to='/register' >Register</Link>
-					</button>
+					</button> */}
 				</div>  
 			</nav>
 			
