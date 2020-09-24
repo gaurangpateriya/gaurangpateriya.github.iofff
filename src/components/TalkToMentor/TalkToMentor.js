@@ -31,12 +31,24 @@ const TalkToMentor = () => {
 	const [loading, setLoading] = useState(false);
 	const [res, setRes] = useState("");
 	const [error, setError] = useState("");
-	const submitDetails = e => {
+	const submitDetails =  e => {
 		if(e){
 			e.preventDefault();
 		}
-		const data = { ...user, time };
-		console.log(data);
+		
+		let { phone } = user;
+		phone = parseInt(phone);
+		
+		setUser({ ...user, phone });
+
+		const data = { ...user, time, phone: String(phone) };
+		
+		if( data.phone.length !== 10){
+			setError("Enter 10 digit mobile number without leading zero.");
+			setRes("")
+			return;
+		}
+		// console.log(data);
 		setLoading(true);
 		agent.TalkToMentor.sendDetails(data).then(res => {
 			console.log(res);
@@ -47,7 +59,12 @@ const TalkToMentor = () => {
 		}).catch(err  => {
 			setLoading(false);
 			console.log(err,err.response);
-			setError("Some error occured, please try again after some time!!!");
+			if( err.response && err.response.data && err.response.data.error ){
+				setError(err.response.data.error);
+			} else{
+				setError("Some error occured, please try again after some time!!!");
+			}
+			
 			setRes("");
 		});
 	};

@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 
-const API_ROOT =  'https://api.yavtechnology.com/api';
+const API_ROOT =  process.env.NODE_ENV === 'test'? 'http://127.0.0.1:8000/': 'https://api.yavtechnology.com/api';
     
 axios.defaults.baseURL = API_ROOT;
 axios.defaults.timeout = 100 * 1000;
