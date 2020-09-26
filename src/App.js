@@ -47,6 +47,7 @@ function App( { history } ) {
 					<Route path="/login" component={Login} exact />
 					<Route path="/register" component={Register} exact />
 					<Route path="/vit" component={() => <AboutUs college={'vit'} />} exact />
+					<Route path="/mis" component={() => <AboutUs college={'mis'} />} exact />
 					<Route path="/talk-to-mentor" component={TalkToMentor}  exact/>
 					<Route path="/payments" component={PaymentPage}  exact/>
 					<Route path="/:courseDetails" component={CourseDetails}  exact/>

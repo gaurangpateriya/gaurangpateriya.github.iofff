@@ -133,41 +133,44 @@ const AboutUs = ({college}) => {
 					</div>
 				</div>
 				<TestimonialCarousel/>
-				<ScrollAnimation animateOnce  animateIn='bounceInLeft' className='what-will-it-cost-div'>
-					<h2>SO WHAT WILL IT COST?</h2>
-					<ul>
-						<li>
-							<CreditCardIcon />
-							<b>₹0 deposit charges</b>
-							<p>Because we trust you!</p>
-						</li>
-						<li>
-							<CardGiftcardIcon/>
-							<b>₹0 upfront fees </b>
-							<p>Because we are not into all that!</p>
-						</li>
-						<li>
+				{
+					college !== 'mis' && (
+						<ScrollAnimation animateOnce  animateIn='bounceInLeft' className='what-will-it-cost-div'>
+							<h2>SO WHAT WILL IT COST?</h2>
+							<ul>
+								<li>
+									<CreditCardIcon />
+									<b>₹0 deposit charges</b>
+									<p>Because we trust you!</p>
+								</li>
+								<li>
+									<CardGiftcardIcon/>
+									<b>₹0 upfront fees </b>
+									<p>Because we are not into all that!</p>
+								</li>
+								<li>
+									<LocalAtmIcon />
+									<b>
+										{
+											college === 'vit' 
+												? 'Pay only if you get a CTC ₹8,00,000 and above'
+												: 'Pay only if you get a job'
+										}
+									</b>
+									<p> Because we win when you do!</p>
+								</li>
+								<li>
+									<CheckCircleRoundedIcon />
+									<b>17% of your monthly salary for only first 6 months</b>
+									<p> Because we want to celebrate your achievement too!</p>
+								</li>
+							</ul>
+						
 							
-							<LocalAtmIcon />
-							
-							<b>
-								{
-									college === 'vit' 
-										? 'Pay only if you get a CTC ₹8,00,000 and above'
-										: 'Pay only if you get a job'
-								}
-							</b>
-							<p> Because we win when you do!</p>
-						</li>
-						<li>
-							<CheckCircleRoundedIcon />
-							<b>17% of your monthly salary for only first 6 months</b>
-							<p> Because we want to celebrate your achievement too!</p>
-						</li>
-					</ul>
+						</ScrollAnimation>
+					)
+				}
 				
-					
-				</ScrollAnimation>
 				{/* <div className="home-page-courses" id='product'>
 					<div className='design' />
 
