@@ -53,8 +53,8 @@ const AboutUs = ({college}) => {
 								<p>
 									{
 										college === 'vit' 
-											? 'Get 1-1 Live mentorship and in-depth interview preparation with  Super-Dream placed VIT alumni for a leap into your professional career.'
-											: 'Get 1-1 Live mentorship and in-depth interview preparation with industry experts from product-based companies for a leap into your professional career.'
+											? 'Get 1-1 Live mentorship with Super-Dream placed VIT alumni for a leap into your professional career.'
+											: 'Get 1-1 Live mentorship with industry experts from product-based companies for a leap into your professional career.'
 									}
 								</p>
 								<div className='flex items-center'>
@@ -77,7 +77,7 @@ const AboutUs = ({college}) => {
 								<li>Remember: Every complex problem has a simple solution</li>
 								<li>Talk English, Think Binary!</li>
 								<li>In an interview, don’t corner any case!</li>
-								<li>Be damn sure that you will get placed!</li>
+								<li>Be damn sure that you will get job!</li>
 							</ul>
 						</ScrollAnimation>
 					</div>

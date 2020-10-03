@@ -65,6 +65,10 @@ const CourseDetails = () => {
 										</a>
 										<p>{t.name}</p>
 									</div>
+									
+										<p>{t.company}</p>
+										<p className=''>{t.package}</p>
+									
 								</div>
 							</a>
 						))    

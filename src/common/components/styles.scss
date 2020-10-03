@@ -88,7 +88,6 @@
                 }
             }   
             .heading{
-                
                 .name{
                     display: flex;
                     align-items: center;
@@ -99,7 +98,12 @@
                     }
                     p{
                         font-weight: 500;
+                        color: black;
                     }
+                }
+                p{
+                    font-weight: bold;
+                    color: $secondaryColor;
                 }
             }
             .discreption{

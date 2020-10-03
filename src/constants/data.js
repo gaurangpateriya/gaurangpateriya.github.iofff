@@ -228,6 +228,8 @@ export const testimonialData = [
 		photo:adityaVyas,
 		name:'Aditya Vyas',
 		linkedInURL: 'https://www.linkedin.com/in/aditya-vyas-862253183/',
+		company:"Nielsen",
+		package: "CTC more than 15 LPA",
 		testimonial: `It was during the third year of my college that I came to know about YAV Technologies. Prior to that I was conflicted between placements or higher studies, and to be honest I wasn't too good at programming. But with some seriousness (which everyone experiences when the placements are close :p), I enrolled in the 2 month’s course at YAV Technologies, and that was THE PUSH that I needed. Not only were we taught the concepts of DS, a lot of stress was laid on using the concepts efficiently in problem solving.
 		The resume builder and mock interview sessions were really very helpful, I realised it when the placement season started in my college. Being used to that experience by means of mock interviews, really helped me go the extra mile.
 		From teachers to study material, everything about this program was praiseworthy and efficient.
@@ -238,37 +240,41 @@ export const testimonialData = [
 		photo:pranayNath,
 		name:'Pranay Nath',
 		linkedInURL: 'https://www.linkedin.com/in/pranav-nath-566349150/',
+		company:"OYO",
+		package: "CTC more than 15 LPA",
 		testimonial: 'YAV Technologies made me realise the importance of having a dream and working towards it. Not losing hope on a bad day, not getting too excited on a good day but working every day to turn your dream into reality.I got placed with a super dream offer into OYO.'
 	},
 	{
 		photo:shubhamPatel,
 		name:'Shubham Patel',
+		company:"MIQ",
+		package: "CTC more than 12 LPA",
 		linkedInURL: 'https://www.linkedin.com/in/shubham-patel-45621a144/',
-		testimonial: 'It was my first experience and i have learnt a loads from you alll. The complete system is very wxciting and all help eqch others in resolving their problems .. especially the mentors who are available for helping us 24/7 ..I have learnt a basic understanding of how the website works and what is the level of programming needed and how to resolve the errors.... It is a great experience for me.'
+		testimonial: 'It was my first experience and i have learnt a loads from you all. The complete system is very wxciting and all help eqch others in resolving their problems .. especially the mentors who are available for helping us 24/7 ..I have learnt a basic understanding of how the website works and what is the level of programming needed and how to resolve the errors.... It is a great experience for me.'
 	},
-	{
-		photo:chirag_agrawal,
-		name:'Chirag Agarwal',
-		linkedInURL: 'https://www.linkedin.com/in/chirag-agrawal-770488144',
-		testimonial: 'It was my first experience and i have learnt a loads from you alll. The complete system is very wxciting and all help eqch others in resolving their problems .. especially the mentors who are available for helping us 24/7 ..I have learnt a basic understanding of how the website works and what is the level of programming needed and how to resolve the errors.... It is a great experience for me.'
-	},
-	{
-		photo:sai_teja,
-		name:'Sai Teja',
-		linkedInURL: 'https://instagram.com/saiteja_278?igshid=rhm6up8a39ph',
-		testimonial: 'Flexible deadlines, always there to clear doubts in any aspect, good advices not only regarding web development but also various other aspects in the field of Computer science Really helped brush up my concepts on web development topics like React'
-	},
-	{
-		photo:hemendra_sharma,
-		name:'Hemendra  sharma',
-		linkedInURL: 'https://www.linkedin.com/in/hemendra-sharma-15725a194/',
-		testimonial: 'It was my first intenship and i learnt a lot . I worked in a lots of projects and mentors helped me alot . They guide me properly and I gain some real practical knowledge. I specially learned how to work in a team .This thing really helped me to gain skills and overall it was a really great experience.'
-	},
-	{
-		photo:sampreeth_miriyala,
-		name:'Sampreeth Miriyala',
-		linkedInURL: 'https://www.linkedin.com/in/sampreeth-miriyala-30bb02196/',
-		testimonial: 'As for now it is very good and started learning things.Started learning to manage time. Very good to be in the team.'
-	},
+	// {
+	// 	photo:chirag_agrawal,
+	// 	name:'Chirag Agarwal',
+	// 	linkedInURL: 'https://www.linkedin.com/in/chirag-agrawal-770488144',
+	// 	testimonial: 'It was my first experience and i have learnt a loads from you alll. The complete system is very wxciting and all help eqch others in resolving their problems .. especially the mentors who are available for helping us 24/7 ..I have learnt a basic understanding of how the website works and what is the level of programming needed and how to resolve the errors.... It is a great experience for me.'
+	// },
+	// {
+	// 	photo:sai_teja,
+	// 	name:'Sai Teja',
+	// 	linkedInURL: 'https://instagram.com/saiteja_278?igshid=rhm6up8a39ph',
+	// 	testimonial: 'Flexible deadlines, always there to clear doubts in any aspect, good advices not only regarding web development but also various other aspects in the field of Computer science Really helped brush up my concepts on web development topics like React'
+	// },
+	// {
+	// 	photo:hemendra_sharma,
+	// 	name:'Hemendra  sharma',
+	// 	linkedInURL: 'https://www.linkedin.com/in/hemendra-sharma-15725a194/',
+	// 	testimonial: 'It was my first intenship and i learnt a lot . I worked in a lots of projects and mentors helped me alot . They guide me properly and I gain some real practical knowledge. I specially learned how to work in a team .This thing really helped me to gain skills and overall it was a really great experience.'
+	// },
+	// {
+	// 	photo:sampreeth_miriyala,
+	// 	name:'Sampreeth Miriyala',
+	// 	linkedInURL: 'https://www.linkedin.com/in/sampreeth-miriyala-30bb02196/',
+	// 	testimonial: 'As for now it is very good and started learning things.Started learning to manage time. Very good to be in the team.'
+	// },
 	
 ];

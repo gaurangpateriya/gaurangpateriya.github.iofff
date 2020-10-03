@@ -121,6 +121,12 @@
 
 .testimonial-carousel .slick-slide .mentor .heading .name p {
   font-weight: 500;
+  color: black;
+}
+
+.testimonial-carousel .slick-slide .mentor .heading p {
+  font-weight: bold;
+  color: #ff8800;
 }
 
 .testimonial-carousel .slick-slide .mentor .discreption {
