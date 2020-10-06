@@ -65,10 +65,10 @@ const CourseDetails = () => {
 										</a>
 										<p>{t.name}</p>
 									</div>
-									
-										<p>{t.company}</p>
+									<div className='company'>
+										<p>Placed in {t.company}</p>
 										<p className=''>{t.package}</p>
-									
+									</div>
 								</div>
 							</a>
 						))    
