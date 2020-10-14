@@ -23,6 +23,7 @@
     "react-scripts": "3.4.1",
     "react-slick": "^0.26.1",
     "react-toastify": "^6.0.8",
+    "react-typist": "^2.0.5",
     "redux": "^4.0.5",
     "redux-persist": "^6.0.0",
     "slick-carousel": "^1.8.1",

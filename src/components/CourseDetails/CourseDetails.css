@@ -1,38 +1,3 @@
-.heading-div {
-  position: relative;
-  margin: 40px 0;
-}
-
-.heading-div .txt {
-  color: #ff8800;
-  font-weight: 600;
-  font-size: 23px;
-  margin-bottom: 25px;
-  position: relative;
-  z-index: 1;
-}
-
-.heading-div .watermark {
-  font-size: 75px;
-  color: rgba(133, 153, 209, 0.2);
-  font-weight: 700;
-  position: absolute;
-  top: -150%;
-  margin: 0;
-  left: 0;
-  right: 0;
-}
-
-@media (max-width: 576px) {
-  .heading-div {
-    margin: 20px 0;
-  }
-  .heading-div .watermark {
-    font-size: 50px;
-    top: -70%;
-  }
-}
-
 .top-bg {
   background-color: rgba(255, 136, 0, 0.8);
   width: 100%;

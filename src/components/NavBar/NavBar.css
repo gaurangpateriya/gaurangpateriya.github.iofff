@@ -1,11 +1,6 @@
 .nav-bar {
-  background-color: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
-  -webkit-filter: blur(0.3);
-          filter: blur(0.3);
-  position: -webkit-sticky;
-  position: sticky;
+  background-color: transparent;
+  position: fixed;
   top: 0px;
   padding: 0px 5%;
   width: 100%;
@@ -20,6 +15,8 @@
       -ms-flex-align: center;
           align-items: center;
   height: 10vh;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .nav-bar .logo {
@@ -44,10 +41,20 @@
 }
 
 .nav-bar .end-links a {
-  background-color: #26232e;
   color: #ecfafc;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 10px;
+  text-align: right;
   text-decoration: none;
+  border: 2px solid #ff8800;
+}
+
+.scroll {
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.scroll .end-links a {
+  background-color: #ff8800;
 }
 /*# sourceMappingURL=NavBar.css.map */

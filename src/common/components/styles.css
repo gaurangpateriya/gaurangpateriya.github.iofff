@@ -73,8 +73,8 @@
 }
 
 .testimonial-carousel .slick-slide .mentor .quote-svg svg {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
 }
 
 .testimonial-carousel .slick-slide .mentor .quote-svg svg path {
@@ -136,8 +136,8 @@
 }
 
 .testimonial-carousel .slick-slide .mentor .heading .company p {
-  font-weight: bold;
-  font-size: 0.8rem;
+  font-weight: 500;
+  font-size: 0.95rem;
   width: 100%;
   color: white;
 }
@@ -170,13 +170,13 @@
 
 .testimonial-carousel .slick-slide .mentor .discreption {
   overflow-y: scroll;
-  height: 150px;
+  height: 250px;
   text-align: center;
   padding: 15px;
 }
 
 .testimonial-carousel .slick-slide .mentor .discreption p {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 .testimonial-carousel .slick-slide .mentor .discreption::-webkit-scrollbar {

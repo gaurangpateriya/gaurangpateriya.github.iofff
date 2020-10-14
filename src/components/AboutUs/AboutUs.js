@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React,{ useEffect, useState} from 'react';
 import 'tachyons';
+import Typist from 'react-typist';
 // import Slider from 'react-slick';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
@@ -11,7 +12,7 @@ import CheckCircleRoundedIcon from '@material-ui/icons/CheckCircleRounded';
 import ScrollAnimation from 'react-animate-on-scroll';
 import './AboutUs.css';
 
-import topBg from '../../assets/Images/AboutUS/top-bg.png';
+import topBg from '../../assets/Images/AboutUS/top-bg.jpg';
 import profileAnalysis from '../../assets/Images/AboutUS/profileAnalysis.svg';
 import interview from '../../assets/Images/AboutUS/interview.svg';
 
@@ -19,21 +20,55 @@ import code from '../../assets/Images/AboutUS/code.svg';
 
 
 
-import Course from './Course';
+// import Course from './Course';
 import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
-import { courses, } from '../../constants/data';
+// import { courses, } from '../../constants/data';
 
-import  MentorsCarousels from '../../common/components/MentorsCarousels';
+// import  MentorsCarousels from '../../common/components/MentorsCarousels';
 import  TestimonialCarousel from '../../common/components/TestimonialCarousel';
+// import { TypeWriterText } from '../../common/components/TypeWriterText';
 
 function importAll(r) {
 	return r.keys().map(r);
 }
-  
+
+const texts = [
+	
+"Make Data Structures your bread and butter",
+"Optimize, optimize and then optimize a bit more",
+"Remember: Every complex problem has a simple solution",
+"Talk English, Think Binary!",
+"In an interview, don’t corner any case!",
+"Be damn sure that you will get a job!",
+]
+
 const mentorsCompany = importAll(require.context('../../assets/Images/AboutUS/mentors_company/', false, /\.(png|jpe?g|svg)$/));
 
 const AboutUs = ({college}) => {
+	const [ activeIndex, setActiveIndex ] = useState([0]);
+
+	const moveToNextText = () => {
+		setActiveIndex((activeIndex+1)% texts.length)
+	}
+	const delayGenerator = (mean, std, {line, lineIdx, charIdx, defDelayGenerator}) => {
+		// Delay the animation for 2 seconds at the last character of the first line
+		if (lineIdx === 0 && charIdx === line.length - 1) {
+		  return 2000;
+		}
+		if (lineIdx === 0 && charIdx < line.length -1) {
+			return 50;
+		}
+		return defDelayGenerator();
+	}
+
+	const textComponents = texts.map((t,i) => (
+		<Typist  className='animated-text'  onTypingDone={moveToNextText} key={i} delayGenerator={delayGenerator}	>
+			{t}<Typist.Backspace count={t.length} delay={200} />
+		</Typist>
+	))
+
+	
 	
 	return (
 		<>
@@ -46,6 +81,7 @@ const AboutUs = ({college}) => {
 			<div className=''>
 				<ScrollAnimation animateOnce  animateIn="bounceInRight">
 					<div className='bgimg'>
+					<div  alt="" className='side-img' />
 						<div className="home-page-header" >
 				
 							<div className="content">
@@ -61,13 +97,20 @@ const AboutUs = ({college}) => {
 								
 									<Link to='/talk-to-mentor' >Schedule a call</Link>
 								</div>
+								
+								{
+									textComponents[activeIndex]
+								}
+								
 							</div>
-							<img src={topBg} alt="" />
+							
 						</div>
+						
 					
 					</div>
+					
 				</ScrollAnimation>
-				<ScrollAnimation animateOnce  animateIn="bounceInLeft">
+				{/* <ScrollAnimation animateOnce  animateIn="bounceInLeft">
 					<div className='crack-interview-wrapper'>
 						<ScrollAnimation animateOnce  animateIn='bounceInRight' className='content-div'>
 							<h2>WHAT IT TAKES TO CRACK THE HECK OUT OF AN INTERVIEW</h2>
@@ -81,7 +124,7 @@ const AboutUs = ({college}) => {
 							</ul>
 						</ScrollAnimation>
 					</div>
-				</ScrollAnimation>
+				</ScrollAnimation> */}
 				<ScrollAnimation animateOnce  animateIn='fadeIn'>
 					<div className='our-mentor-companies-div'>
 						<ScrollAnimation animateOnce  animateIn='fadeIn' className='heading-div'>
@@ -107,27 +150,34 @@ const AboutUs = ({college}) => {
 						<p>DP, Graphs, Advanced Data structure, Recursion, BackTracking, Competitive Coding , Interview Preps, Resume Building</p>
 					</div> */}
 					<div className='details-wrapper'>
-						<ScrollAnimation animateOnce  animateIn='flipInY' className='detail'> 
+						<ScrollAnimation animateOnce  animateIn='flipInY' className='detail border-left'> 
 							<img src={code} alt=""/>
+							<div className='content'>
 							<h3>Crack The Code</h3>
-							<p className='content'>
+							
+							<p>
 								Scale up your knowledge with in-depth knowledge of Advanced DSA, Dynamic Programming, Graphs, Backtracking, and other must-haves for your preliminary coding rounds.
 							</p>
+							</div>
 						</ScrollAnimation>
-						<ScrollAnimation animateOnce  animateIn='flipInX' className='detail'> 
+						<ScrollAnimation animateOnce  animateIn='flipInX' className='detail border-right'> 
+							
+							<div className='content'>
+								<h3>Mock Interviews</h3>
+								<p>
+								Experience different interview formats and identify your weak areas with 1:1 mock interviews. Gain insights on optimized coding, code complexity, and better design patterns/
+								</p>
+							</div>
 							<img src={interview} alt='' />
-							<h3>Mock Interviews</h3>
-							<p className='content'>
-							Experience different interview formats and identify your weak areas with 1:1 mock interviews. Gain insights on optimized coding, code complexity, and better design patterns/
-							</p>
 						</ScrollAnimation>
-						<ScrollAnimation animateOnce  animateIn='flipInY' className='detail'> 
+						<ScrollAnimation animateOnce  animateIn='flipInY' className='detail border-left'> 
 							<img src={profileAnalysis} alt='' />
-							<h3>Deep Profile Analysis</h3>
-							<p className='content'>
-								 Get an expert analysis of your project with all the linked Q&A. Get a professional assessment, highlight your strong areas, and build an irresistible resume.
-
-							</p>
+							<div className='content'>
+								<h3>Deep Profile Analysis</h3>
+								<p>
+									Get an expert analysis of your project with all the linked Q&A. Get a professional assessment, highlight your strong areas, and build an irresistible resume.
+								</p>
+							</div>
 						</ScrollAnimation>
 
 					</div>

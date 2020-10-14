@@ -65,11 +65,12 @@
                 display: grid;
                 place-items: center;
                 svg{
-                    width: 100px;
+                    width: 70px;
+                    height: 70px;
                     path{
                         color: $secondaryColor;
                     }
-                    height: 100px;
+                    
                 }
             }
             .header{
@@ -115,8 +116,8 @@
                     animation: shine 5s infinite cubic-bezier(.45,.89,.98,.47) ;
                     
                     p{
-                        font-weight: bold;
-                        font-size: 0.8rem;
+                        font-weight: 500;
+                        font-size: 0.95rem;
                         width: 100%;
                         color: white;
                         
@@ -149,11 +150,11 @@
             }
             .discreption{
                 overflow-y: scroll;
-                height: 150px;
+                height: 250px;
                 text-align: center;
                 padding: 15px;
                 p{
-                    font-size: 0.7rem;
+                    font-size: 0.9rem;
                 }
                 &::-webkit-scrollbar {
                     width: 3px;
@@ -308,3 +309,4 @@
     }
     
 }
+

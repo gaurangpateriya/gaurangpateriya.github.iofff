@@ -31,7 +31,7 @@ class ErrorPage extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-  user: state.AuthReducer.user,
-  publicPageUser: state.HomePageReducers.user,
+  // user: state.AuthReducer.user,
+  // publicPageUser: state.HomePageReducers.user,
 })
 export default connect(mapStateToProps)(ErrorPage);
