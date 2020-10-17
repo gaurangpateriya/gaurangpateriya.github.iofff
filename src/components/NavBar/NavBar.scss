@@ -1,4 +1,5 @@
 @import '../../assets/styles/variables.scss';
+@import '../../assets/styles/_mixins.scss';
 
 .nav-bar{
     // background-color: rgb(38, 35, 46);
@@ -29,18 +30,47 @@
     }
     
     .end-links{
+        // display: flex;
+        
+        align-items: center;
+        overflow-wrap: break-word;
+        text-align: center;
         a{
+            // display: block;
             // background-color: rgba($secondaryColor, 1);
             color: $primaryColor;
-            padding: 10px;
-            text-align: right;
-
+            text-align: center;
+            max-width: fit-content;
+            padding: 5px;
+            height: fit-content;
+            
             text-decoration: none;
             border: 2px solid $secondaryColor;
             
         }
     }
-    
+    @include mobile{
+        padding:0px 1%;
+        .logo{
+            img{
+                width: 20px;
+            }
+            h1{
+                font-size: 1.1rem;
+                margin-left: 5px;
+                color: $secondaryColor;
+            }
+        }
+        .end-links{
+            a{
+                padding: 5px;
+                height: fit-content;
+                text-decoration: none;
+                border: 2px solid $secondaryColor;
+                font-size: 0.9rem;
+            }
+        }
+    }
 }
 .scroll{
     background-color: rgba(black,0.6);

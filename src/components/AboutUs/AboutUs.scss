@@ -608,7 +608,8 @@ $pageWidth : 80%;
     margin: 40px 0;
     .txt{
         color: $secondaryColor;
-        font-weight: 600;
+        font-weight: bolder;
+        letter-spacing: 1px;
         font-size: 23px;
         margin-bottom: 25px;
         position: relative;
@@ -616,7 +617,7 @@ $pageWidth : 80%;
     }
     .watermark {
         font-size: 75px;
-        color: rgba($tertiaryColor, 0.2);
+        color: rgba(#e4e6e4, 0.8);
         font-weight: 700;
         position: absolute;
         top: -150%;
@@ -627,8 +628,8 @@ $pageWidth : 80%;
     @include mobile{
         margin: 20px 0;
         .watermark{
-            font-size: 50px;
-            top: -70%;
+            font-size: 30px;
+            top: -20%;
         }
     }
 }

@@ -784,7 +784,8 @@
 
 .heading-div .txt {
   color: #ff8800;
-  font-weight: 600;
+  font-weight: bolder;
+  letter-spacing: 1px;
   font-size: 23px;
   margin-bottom: 25px;
   position: relative;
@@ -793,7 +794,7 @@
 
 .heading-div .watermark {
   font-size: 75px;
-  color: rgba(38, 35, 46, 0.2);
+  color: rgba(228, 230, 228, 0.8);
   font-weight: 700;
   position: absolute;
   top: -150%;
@@ -807,8 +808,8 @@
     margin: 20px 0;
   }
   .heading-div .watermark {
-    font-size: 50px;
-    top: -70%;
+    font-size: 30px;
+    top: -20%;
   }
 }
 /*# sourceMappingURL=AboutUs.css.map */

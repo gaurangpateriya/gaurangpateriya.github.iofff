@@ -40,12 +40,49 @@
   color: #ff8800;
 }
 
+.nav-bar .end-links {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
 .nav-bar .end-links a {
   color: #ecfafc;
-  padding: 10px;
-  text-align: right;
+  text-align: center;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 5px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   text-decoration: none;
   border: 2px solid #ff8800;
+}
+
+@media (max-width: 576px) {
+  .nav-bar {
+    padding: 0px 1%;
+  }
+  .nav-bar .logo img {
+    width: 20px;
+  }
+  .nav-bar .logo h1 {
+    font-size: 1.1rem;
+    margin-left: 5px;
+    color: #ff8800;
+  }
+  .nav-bar .end-links a {
+    padding: 5px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    text-decoration: none;
+    border: 2px solid #ff8800;
+    font-size: 0.9rem;
+  }
 }
 
 .scroll {
