@@ -5,29 +5,23 @@ import Typist from 'react-typist';
 // import Slider from 'react-slick';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import CreditCardIcon from '@material-ui/icons/CreditCard';
-import LocalAtmIcon from '@material-ui/icons/LocalAtm';
-import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
-import CheckCircleRoundedIcon from '@material-ui/icons/CheckCircleRounded';
+
 import ScrollAnimation from 'react-animate-on-scroll';
 import './AboutUs.css';
 
-import topBg from '../../assets/Images/AboutUS/top-bg.jpg';
-import profileAnalysis from '../../assets/Images/AboutUS/profileAnalysis.svg';
+
+import work from '../../assets/Images/AboutUS/work.svg';
+import quants from '../../assets/Images/AboutUS/quants.svg';
+import design from '../../assets/Images/AboutUS/design.svg';
+import backend from '../../assets/Images/AboutUS/backend.svg';
+import concept from '../../assets/Images/AboutUS/concept.svg';
 import interview from '../../assets/Images/AboutUS/interview.svg';
 
 import code from '../../assets/Images/AboutUS/code.svg';
-
-
-
-// import Course from './Course';
+import PaymentStructure from './PaymentStructure';
 import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
-// import { courses, } from '../../constants/data';
-
-// import  MentorsCarousels from '../../common/components/MentorsCarousels';
 import  TestimonialCarousel from '../../common/components/TestimonialCarousel';
-// import { TypeWriterText } from '../../common/components/TypeWriterText';
 
 function importAll(r) {
 	return r.keys().map(r);
@@ -47,6 +41,7 @@ const mentorsCompany = importAll(require.context('../../assets/Images/AboutUS/me
 
 const AboutUs = ({college}) => {
 	const [ activeIndex, setActiveIndex ] = useState([0]);
+	const [ costStructure, setCostStructure ] = useState([0]);
 
 	const moveToNextText = () => {
 		setActiveIndex((activeIndex+1)% texts.length)
@@ -141,86 +136,90 @@ const AboutUs = ({college}) => {
 						</div>
 					</div>
 				</ScrollAnimation>
+				
+
 				<div className='programme-outline'>
 					<ScrollAnimation animateOnce  animateIn='fadeIn' className='heading-div'>
-						<p className='txt'>Programme Outline</p>
-						<p className='watermark'>Programme</p>
+						{/* <p className='txt'>Programme Outline</p>
+						<p className='watermark'>Programme</p> */}
+						<h2>Programme Outline</h2>
+						{/* <ul  >
+							<li># Very Small batches </li>
+							<li># No Recorded material </li>
+							<li># Highly affordable </li>
+							<li># Project and Assignment based Learning </li>
+							<li># Online Mentoring Sessions </li>
+						</ul> */}
 					</ScrollAnimation>
 					{/* <div className='outline-content'>
 						<p>DP, Graphs, Advanced Data structure, Recursion, BackTracking, Competitive Coding , Interview Preps, Resume Building</p>
 					</div> */}
 					<div className='details-wrapper'>
-						<ScrollAnimation animateOnce  animateIn='flipInY' className='detail border-left'> 
-							<img src={code} alt=""/>
+						<ScrollAnimation animateOnce  animateIn='flipInY' className='detail border-left' number='1.'> 
+							<img src={concept} alt=""/>
 							<div className='content'>
-							<h3>Crack The Code</h3>
+							<h3>Concept Building</h3>
 							
 							<p>
-								Scale up your knowledge with in-depth knowledge of Advanced DSA, Dynamic Programming, Graphs, Backtracking, and other must-haves for your preliminary coding rounds.
+							Scale up your knowledge with in-depth focus on Basic and Advanced Data Structures, Algorithm Optimization, Bit Manipulation, Dynamic Programming, Recursion and Backtracking to ace your initial coding rounds.
 							</p>
 							</div>
 						</ScrollAnimation>
 						<ScrollAnimation animateOnce  animateIn='flipInX' className='detail border-right'> 
 							
 							<div className='content'>
+								<h3>Professional Frontend Skills</h3>
+								<p>
+								Start off with Basic and Advanced Javascript concepts, including into Events, Closure, Async/Await. Get well versed with web development using JS and complex concepts like Redux/Middlewares. Gain confidence in working with Git and deploying build on Azure / AWS.
+								</p>
+							</div>
+							<img src={design} alt='' />
+						</ScrollAnimation>
+						<ScrollAnimation animateOnce  animateIn='flipInY' className='detail border-left'> 
+							<img src={backend} alt='' />
+							<div className='content'>
+								<h3>Professional Backend Skills</h3>
+								<p>
+								Work on learning system design. Play with RDBMS with focus on SQL. Step into the world of Node JS / Express framework. Schedule Cron jobs, dabble with REST APIs. Gain insights into error logging mechanisms and writing unit tests cases.
+								</p>
+							</div>
+						</ScrollAnimation>
+						<ScrollAnimation animateOnce  animateIn='flipInY' className='detail border-right'> 
+							
+							<div className='content'>
+							<h3>Quants</h3>
+							
+							<p>
+							Get drilled and grilled by improving your mathematical skills for those mathematical rounds in companies. Learn the concepts, improve your speed, learn shortcuts, and solve better than everyone else.
+							</p>
+							</div>
+							<img src={quants} alt=""/>
+						</ScrollAnimation>
+						<ScrollAnimation animateOnce  animateIn='flipInX' className='detail border-left'> 
+						<img src={work} alt='' />
+							<div className='content'>
+								<h3>Internship</h3>
+								<p>
+								Get an in-house internship program and work on some amazing industry-level projects and systems that are being used by others. Add it into your resume and flaunt it for others to envy.
+								</p>
+							</div>
+							
+						</ScrollAnimation>
+						<ScrollAnimation animateOnce  animateIn='flipInY' className='detail border-right'> 
+							
+							<div className='content'>
 								<h3>Mock Interviews</h3>
 								<p>
-								Experience different interview formats and identify your weak areas with 1:1 mock interviews. Gain insights on optimized coding, code complexity, and better design patterns/
+								Get exposed to tons and tons of interview styles and formats. Be interviewed by established developers working in De Shaw, Morgan 
+Stanley, Flipkart, PwC, Walmart, Bank of America and many more. Identify your weak areas with 1:1 mock interviews. Gain insights to optimized approaches, code complexity and better design patterns. Getting deep level insights on your projects and several tips to crack that interview!
 								</p>
 							</div>
 							<img src={interview} alt='' />
 						</ScrollAnimation>
-						<ScrollAnimation animateOnce  animateIn='flipInY' className='detail border-left'> 
-							<img src={profileAnalysis} alt='' />
-							<div className='content'>
-								<h3>Deep Profile Analysis</h3>
-								<p>
-									Get an expert analysis of your project with all the linked Q&A. Get a professional assessment, highlight your strong areas, and build an irresistible resume.
-								</p>
-							</div>
-						</ScrollAnimation>
-
 					</div>
 				</div>
 				<TestimonialCarousel/>
-				{
-					college !== 'mis' && (
-						<ScrollAnimation animateOnce  animateIn='bounceInLeft' className='what-will-it-cost-div'>
-							<h2>SO WHAT WILL IT COST?</h2>
-							<ul>
-								<li>
-									<CreditCardIcon />
-									<b>₹0 deposit charges</b>
-									<p>Because we trust you!</p>
-								</li>
-								<li>
-									<CardGiftcardIcon/>
-									<b>₹0 upfront fees </b>
-									<p>Because we are not into all that!</p>
-								</li>
-								<li>
-									<LocalAtmIcon />
-									<b>
-										{
-											college === 'vit' 
-												? 'Pay only if you get a CTC ₹8,00,000 and above'
-												: 'Pay only if you get a job'
-										}
-									</b>
-									<p> Because we win when you do!</p>
-								</li>
-								<li>
-									<CheckCircleRoundedIcon />
-									<b>17% of your monthly salary for only first 6 months</b>
-									<p> Because we want to celebrate your achievement too!</p>
-								</li>
-							</ul>
-						
-							
-						</ScrollAnimation>
-					)
-				}
-				
+				<PaymentStructure college={college} /> 
 				{/* <div className="home-page-courses" id='product'>
 					<div className='design' />
 

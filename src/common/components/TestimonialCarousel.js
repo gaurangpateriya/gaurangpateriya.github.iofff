@@ -30,7 +30,7 @@ const CourseDetails = () => {
 		infinite: true,
 		speed: 500,
 		slidesToScroll: 1,
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed:4000,
 		slidesToShow: 1,
 		variableWidth: !mobileView,
@@ -52,7 +52,7 @@ const CourseDetails = () => {
 									<FormatQuoteIcon/>
 								</div>
 								<div className='discreption'>
-									<p> {t.testimonial} </p>
+									<p> "{t.testimonial}" </p>
 								</div>
 								<div className='header'>
 									<img src={t.photo} alt="" />	

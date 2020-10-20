@@ -8,7 +8,7 @@ import nihar_patel from '../assets/Images/AboutUS/our_team/nihar_patel.jpg';
 import athena_health from '../assets/Images/AboutUS/mentors_company/athena_health.png';
 import Caterpillar from '../assets/Images/AboutUS/mentors_company/Caterpillar.png';
 import DE_shaw from '../assets/Images/AboutUS/mentors_company/DE_shaw.png';
-import logo from '../assets/Images/AboutUS/mentors_company/logo.png';
+// import logo from '../assets/Images/AboutUS/mentors_company/logo.png';
 import pwc from '../assets/Images/AboutUS/mentors_company/pwc.png';
 
 import chirag_agrawal from '../assets/Images/AboutUS/testimonials/chirag_agrawal.jpg';
@@ -47,7 +47,7 @@ export const our_team = [
 	{
 		photo:gaurang_sir_photo,
 		name:'Gaurang Pateriya',
-		companyLogo:logo,
+		// companyLogo:logo,
 		designation: 'Technical Lead at YAV Technologies',
 		linkedInURL: 'https://www.linkedin.com/in/gaurang-pateriya-b15290178/',
 		info: 'I have started as an intern with YAV Technologies. Got Expert in full stack development under the guidance of Yash Prasad (sir) and now doing mentorship of new interns.'
@@ -230,11 +230,7 @@ export const testimonialData = [
 		linkedInURL: 'https://www.linkedin.com/in/aditya-vyas-862253183/',
 		company:"Nielsen",
 		package: "CTC > 15 LPA",
-		testimonial: `It was during the third year of my college that I came to know about YAV Technologies. Prior to that I was conflicted between placements or higher studies, and to be honest I wasn't too good at programming. But with some seriousness (which everyone experiences when the placements are close :p), I enrolled in the 2 month’s course at YAV Technologies, and that was THE PUSH that I needed. Not only were we taught the concepts of DS, a lot of stress was laid on using the concepts efficiently in problem solving.
-		The resume builder and mock interview sessions were really very helpful, I realised it when the placement season started in my college. Being used to that experience by means of mock interviews, really helped me go the extra mile.
-		From teachers to study material, everything about this program was praiseworthy and efficient.
-		I am thankful to YAV Technologies for grooming me on every aspect of the campus placements and enabling me to secure a super dream offer from my college into Nielsen.
-		`
+		testimonial: `I was in my third year and was in two minds about MS or jobs and to be honest I wasn't very good with programming. I heard about YAV and I thought let's try it, how much of a difference can it make. But as the weeks passed by I felt the "Force with Me". I am surprised how I didn't know about this before. Would have done so much more! I would have probably joined it in my first sem itself! Would recommend it to every person who wants to flourish in the digital times!`
 	},
 	{
 		photo:pranayNath,
@@ -242,7 +238,7 @@ export const testimonialData = [
 		linkedInURL: 'https://www.linkedin.com/in/pranav-nath-566349150/',
 		company:"OYO",
 		package: "CTC > 15 LPA",
-		testimonial: 'YAV Technologies made me realise the importance of having a dream and working towards it. Not losing hope on a bad day, not getting too excited on a good day but working every day to turn your dream into reality.I got placed with a super dream offer into OYO.'
+		testimonial: `YAV made me realize the importance of having a dream and working towards it. They don't sugarcoat stuff but are brutally upfront. They guided towards having a dream and achieving it, not losing hope on your bad days and not getting excited about good ones. Every day I felt that I was turning my dream into reality and I finally landed my dream job! If they are willing to take more students while you are reading this, don't even think twice. Just JOIN!`
 	},
 	{
 		photo:shubhamPatel,
@@ -250,7 +246,7 @@ export const testimonialData = [
 		company:"MIQ",
 		package: "CTC > 12 LPA",
 		linkedInURL: 'https://www.linkedin.com/in/shubham-patel-45621a144/',
-		testimonial: 'It was my first experience and i have learnt a loads from you all. The complete system is very wxciting and all help eqch others in resolving their problems .. especially the mentors who are available for helping us 24/7 ..I have learnt a basic understanding of how the website works and what is the level of programming needed and how to resolve the errors.... It is a great experience for me.'
+		testimonial: `I had learnt loads from them. I found a lot of coaching and mentorship program which people blindly ran towards. But what I found special is the personal experience that the mentors put into the program structure. There was not a single time that the mentors were not present for me. Also, the mock interview and profile analysis sessions are super awesome. The peer-to-peer learning is an immense boost as well which can never be experienced in crowded setups or video lectures of other websites.`
 	},
 	// {
 	// 	photo:chirag_agrawal,
