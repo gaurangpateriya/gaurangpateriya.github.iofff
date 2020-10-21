@@ -54,113 +54,110 @@
     padding:  40px;
     background-color: $primaryColor;
     text-align: center;
-    .slick-slide{
-        .mentor{
-            padding: 20px 50px;
-            text-decoration: none;
-            @include mobile{
-                padding: 0;
-            }
-            .quote-svg{
-                display: grid;
-                place-items: center;
-                svg{
-                    width: 70px;
-                    height: 70px;
-                    path{
-                        color: $secondaryColor;
-                    }
-                    
-                }
-            }
-            .header{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
-                img{
-                    width: 30%;
-                    height: 90px;
-                    border-radius: 50%;
-                    border : 3px solid white;
-                    
-
-                }
-            }   
-            .heading{
-                .name{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    position: relative;
-                    path{
-                        color:rgb(17, 82, 147)
-                    }
-                    p{
-                        font-weight: 500;
-                        color: black;
-                    }
-                }
-                .company{
-                    // -webkit-box-shadow: 0px 0px 15px 5px rgba(231,166,26,1);
-                    // -moz-box-shadow: 0px 0px 15px 5px rgba(231,166,26,1);
-                    // box-shadow: 0px 0px 15px 5px rgba(231,166,26,1);
-                    
-                    margin:  15px auto;
-                    padding: 15px;
-                    border-radius: 4px;
-                    background-color: cornflowerblue;
-                    position: relative;
-                    overflow: hidden;
-                    animation: shine 5s infinite cubic-bezier(.45,.89,.98,.47) ;
-                    
-                    p{
-                        font-weight: 500;
-                        font-size: 0.95rem;
-                        width: 100%;
-                        color: white;
-                        
-                    }
-                    
-                    
-                    @keyframes shine{
-                        from {
-                            background-repeat:no-repeat;
-                            background-image:-webkit-linear-gradient(
-                                top left,
-                                rgba(255, 255, 255, 0.0) 0%,
-                                rgba(255, 255, 255, 0.0) 45%,
-                                rgba(255, 255, 255, 0.5) 48%,
-                                rgba(255, 255, 255, 0.8) 50%,
-                                rgba(255, 255, 255, 0.5) 52%,
-                                rgba(255, 255, 255, 0.0) 57%,
-                                rgba(255, 255, 255, 0.0) 100%
-                            );
-                            background-position:-250px -250px;
-                            background-size: 600px 600px
-                        }
-                        to {
-                            background-repeat:no-repeat;
-                            background-position:250px 250px;
-                        }
-                    }
-                }
-                
-            }
-            .discreption{
-                
-                
-                text-align: center;
-                padding: 15px;
-                p{
-                    font-size: 0.9rem;
-                    font-style: italic;
+    
+    .mentor{
+        padding: 20px 50px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include mobile{
+            padding: 0;
+        }
+        .quote-svg{
+            display: grid;
+            place-items: center;
+            svg{
+                width: 70px;
+                height: 70px;
+                path{
+                    color: $secondaryColor;
                 }
                 
             }
         }
-        
+        .header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            img{
+                width: 30%;
+                height: 90px;
+                border-radius: 50%;
+                border : 3px solid white;
+                
+
+            }
+        }   
+        .heading{
+            .name{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                path{
+                    color:rgb(17, 82, 147)
+                }
+                p{
+                    font-weight: 500;
+                    color: black;
+                }
+            }
+            .company{
+                // -webkit-box-shadow: 0px 0px 15px 5px rgba(231,166,26,1);
+                // -moz-box-shadow: 0px 0px 15px 5px rgba(231,166,26,1);
+                // box-shadow: 0px 0px 15px 5px rgba(231,166,26,1);
+                
+                margin:  15px auto;
+                padding: 15px;
+                border-radius: 4px;
+                background-color: cornflowerblue;
+                position: relative;
+                overflow: hidden;
+                animation: shine 5s infinite cubic-bezier(.45,.89,.98,.47) ;
+                
+                p{
+                    font-weight: 500;
+                    font-size: 0.95rem;
+                    width: 100%;
+                    color: white;
+                    
+                }                
+                @keyframes shine{
+                    from {
+                        background-repeat:no-repeat;
+                        background-image:-webkit-linear-gradient(
+                            top left,
+                            rgba(255, 255, 255, 0.0) 0%,
+                            rgba(255, 255, 255, 0.0) 45%,
+                            rgba(255, 255, 255, 0.5) 48%,
+                            rgba(255, 255, 255, 0.8) 50%,
+                            rgba(255, 255, 255, 0.5) 52%,
+                            rgba(255, 255, 255, 0.0) 57%,
+                            rgba(255, 255, 255, 0.0) 100%
+                        );
+                        background-position:-250px -250px;
+                        background-size: 600px 600px
+                    }
+                    to {
+                        background-repeat:no-repeat;
+                        background-position:250px 250px;
+                    }
+                }
+            }
+        }
+        .discreption{
+            text-align: center;
+            padding: 15px;
+            
+            p{
+                font-size: 0.9rem;
+                font-style: italic;
+            }
+            
+        }
     }    
 }
 //MentorsCarousels.js

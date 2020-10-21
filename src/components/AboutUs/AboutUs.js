@@ -11,13 +11,13 @@ import './AboutUs.css';
 
 
 import work from '../../assets/Images/AboutUS/work.svg';
-import quants from '../../assets/Images/AboutUS/quants.svg';
+import quants from '../../assets/Images/AboutUS/quants.png';
 import design from '../../assets/Images/AboutUS/design.svg';
-import backend from '../../assets/Images/AboutUS/backend.svg';
+import backend from '../../assets/Images/AboutUS/backend.png';
 import concept from '../../assets/Images/AboutUS/concept.svg';
-import interview from '../../assets/Images/AboutUS/interview.svg';
+import interview from '../../assets/Images/AboutUS/interview.png';
 
-import code from '../../assets/Images/AboutUS/code.svg';
+
 import PaymentStructure from './PaymentStructure';
 import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
@@ -206,12 +206,13 @@ const AboutUs = ({college}) => {
 							
 						</ScrollAnimation>
 						<ScrollAnimation animateOnce  animateIn='flipInY' className='detail border-right'> 
+
 							
 							<div className='content'>
 								<h3>Mock Interviews</h3>
 								<p>
 								Get exposed to tons and tons of interview styles and formats. Be interviewed by established developers working in De Shaw, Morgan 
-Stanley, Flipkart, PwC, Walmart, Bank of America and many more. Identify your weak areas with 1:1 mock interviews. Gain insights to optimized approaches, code complexity and better design patterns. Getting deep level insights on your projects and several tips to crack that interview!
+					Stanley, Flipkart, PwC, Walmart, Bank of America and many more. Identify your weak areas with 1:1 mock interviews. Gain insights to optimized approaches, code complexity and better design patterns. Getting deep level insights on your projects and several tips to crack that interview!
 								</p>
 							</div>
 							<img src={interview} alt='' />

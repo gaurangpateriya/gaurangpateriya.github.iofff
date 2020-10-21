@@ -227,14 +227,14 @@ export const testimonialData = [
 	{
 		photo:adityaVyas,
 		name:'Aditya Vyas',
-		linkedInURL: 'https://www.linkedin.com/in/aditya-vyas-862253183/',
+		linkedInURL: 'https://www.linkedin.com/in/aaditya-vyas-862253183/',
 		company:"Nielsen",
 		package: "CTC > 15 LPA",
 		testimonial: `I was in my third year and was in two minds about MS or jobs and to be honest I wasn't very good with programming. I heard about YAV and I thought let's try it, how much of a difference can it make. But as the weeks passed by I felt the "Force with Me". I am surprised how I didn't know about this before. Would have done so much more! I would have probably joined it in my first sem itself! Would recommend it to every person who wants to flourish in the digital times!`
 	},
 	{
 		photo:pranayNath,
-		name:'Pranay Nath',
+		name:'Pranav Nath',
 		linkedInURL: 'https://www.linkedin.com/in/pranav-nath-566349150/',
 		company:"OYO",
 		package: "CTC > 15 LPA",

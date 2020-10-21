@@ -423,7 +423,6 @@
   text-align: center;
   padding: 5%;
   background-color: #ecfafc;
-  border-top: 20px solid white;
 }
 
 @media (max-width: 576px) {
@@ -699,8 +698,6 @@
   width: 20%;
   font-size: 1.1rem;
   margin: 10px 50px;
-  border-left: 2px solid #ff8800;
-  border-bottom: 2px solid #ff8800;
   line-height: 1.3rem;
   font-family: 'Inter';
   text-align: left;

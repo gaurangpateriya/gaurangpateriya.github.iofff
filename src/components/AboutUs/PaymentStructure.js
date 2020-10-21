@@ -23,6 +23,7 @@ const PaymentStructure = ({college}) => {
 					college !== 'mis' && (
 						<ScrollAnimation animateOnce  animateIn='bounceInLeft' className='what-will-it-cost-div'>
 							<h2>SO WHAT WILL IT COST?</h2>
+                            <h4>Welcome to the world's most affordable Live Mentorship program</h4>
                             <h4>I am a...</h4>
 							<div className='btns-div'>
 								<button type='button' onClick={() => setCostStructure("graduate")} className={ costStructure === 'graduate' ? 'active':"" } >Graduate</button>

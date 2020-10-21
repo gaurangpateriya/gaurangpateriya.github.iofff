@@ -55,33 +55,43 @@
   text-align: center;
 }
 
-.testimonial-carousel .slick-slide .mentor {
+.testimonial-carousel .mentor {
   padding: 20px 50px;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 576px) {
-  .testimonial-carousel .slick-slide .mentor {
+  .testimonial-carousel .mentor {
     padding: 0;
   }
 }
 
-.testimonial-carousel .slick-slide .mentor .quote-svg {
+.testimonial-carousel .mentor .quote-svg {
   display: -ms-grid;
   display: grid;
   place-items: center;
 }
 
-.testimonial-carousel .slick-slide .mentor .quote-svg svg {
+.testimonial-carousel .mentor .quote-svg svg {
   width: 70px;
   height: 70px;
 }
 
-.testimonial-carousel .slick-slide .mentor .quote-svg svg path {
+.testimonial-carousel .mentor .quote-svg svg path {
   color: #ff8800;
 }
 
-.testimonial-carousel .slick-slide .mentor .header {
+.testimonial-carousel .mentor .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,14 +105,14 @@
   border-top-right-radius: 5px;
 }
 
-.testimonial-carousel .slick-slide .mentor .header img {
+.testimonial-carousel .mentor .header img {
   width: 30%;
   height: 90px;
   border-radius: 50%;
   border: 3px solid white;
 }
 
-.testimonial-carousel .slick-slide .mentor .heading .name {
+.testimonial-carousel .mentor .heading .name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,16 +125,16 @@
   position: relative;
 }
 
-.testimonial-carousel .slick-slide .mentor .heading .name path {
+.testimonial-carousel .mentor .heading .name path {
   color: #115293;
 }
 
-.testimonial-carousel .slick-slide .mentor .heading .name p {
+.testimonial-carousel .mentor .heading .name p {
   font-weight: 500;
   color: black;
 }
 
-.testimonial-carousel .slick-slide .mentor .heading .company {
+.testimonial-carousel .mentor .heading .company {
   margin: 15px auto;
   padding: 15px;
   border-radius: 4px;
@@ -135,7 +145,7 @@
           animation: shine 5s infinite cubic-bezier(0.45, 0.89, 0.98, 0.47);
 }
 
-.testimonial-carousel .slick-slide .mentor .heading .company p {
+.testimonial-carousel .mentor .heading .company p {
   font-weight: 500;
   font-size: 0.95rem;
   width: 100%;
@@ -168,12 +178,12 @@
   }
 }
 
-.testimonial-carousel .slick-slide .mentor .discreption {
+.testimonial-carousel .mentor .discreption {
   text-align: center;
   padding: 15px;
 }
 
-.testimonial-carousel .slick-slide .mentor .discreption p {
+.testimonial-carousel .mentor .discreption p {
   font-size: 0.9rem;
   font-style: italic;
 }

@@ -44,36 +44,72 @@ const CourseDetails = () => {
 </p>
 					<p className='watermark'>Testimonials</p>
 				</div>
-				<Slider {...testimonialSettings} >
-					{
-						testimonialData.map((t,i) => (
-							<a href={t.linkedInURL} className='mentor' style={{width: Math.min(window.innerWidth- 20, 400)}} >
-								<div className='quote-svg'>
-									<FormatQuoteIcon/>
-								</div>
-								<div className='discreption'>
-									<p> "{t.testimonial}" </p>
-								</div>
-								<div className='header'>
-									<img src={t.photo} alt="" />	
-								</div>
-                            
-								<div className='heading'>
-									<div className='name'>
-										<a href={t.linkedInURL}>
-										    <LinkedInIcon />
-										</a>
-										<p>{t.name}</p>
-									</div>
-									<div className='company'>
-										<p>Placed in {t.company}</p>
-										<p className=''>{t.package}</p>
-									</div>
-								</div>
-							</a>
-						))    
-					}
-				</Slider>
+				{
+					mobileView ? (
+						<Slider {...testimonialSettings} >
+							{
+								testimonialData.map((t,i) => (
+									<a href={t.linkedInURL} className='mentor' style={{width: Math.min(window.innerWidth- 10, 400)}} >
+										<div className='quote-svg'>
+											<FormatQuoteIcon/>
+										</div>
+										<div className='discreption'>
+											<p> "{t.testimonial}" </p>
+										</div>
+										<div className='header'>
+											<img src={t.photo} alt="" />	
+										</div>
+									
+										<div className='heading'>
+											<div className='name'>
+												<a href={t.linkedInURL}>
+													<LinkedInIcon />
+												</a>
+												<p>{t.name}</p>
+											</div>
+											<div className='company'>
+												<p>Placed in {t.company}</p>
+												<p className=''>{t.package}</p>
+											</div>
+										</div>
+									</a>
+								))    
+							}
+						</Slider>
+					) : (
+						<div className='flex justify-between'>
+							{
+								testimonialData.map((t,i) => (
+									<a href={t.linkedInURL} className='mentor' style={{width: Math.min(window.innerWidth- 10, 400)}} >
+										<div className='quote-svg'>
+											<FormatQuoteIcon/>
+										</div>
+										<div className='discreption'>
+											<p> "{t.testimonial}" </p>
+										</div>
+										<div className='header'>
+											<img src={t.photo} alt="" />	
+										</div>
+									
+										<div className='heading'>
+											<div className='name'>
+												<a href={t.linkedInURL}>
+													<LinkedInIcon />
+												</a>
+												<p>{t.name}</p>
+											</div>
+											<div className='company'>
+												<p>Placed in {t.company}</p>
+												<p className=''>{t.package}</p>
+											</div>
+										</div>
+									</a>
+								))    
+							}
+						</div>
+					)
+				}
+				
 			</div>
 			
 		</>

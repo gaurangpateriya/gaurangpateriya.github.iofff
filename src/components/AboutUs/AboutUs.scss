@@ -353,7 +353,7 @@ $pageWidth : 80%;
     padding: 5% ;
     background-color: $primaryColor;
     // background-color: #535c00;
-    border-top: 20px solid white;
+    
     @include mobile{
         padding: 15% 0;
     }
@@ -546,8 +546,7 @@ $pageWidth : 80%;
             width: 20%;
             font-size: 1.1rem;
             margin: 10px 50px;
-            border-left: 2px solid $secondaryColor;
-            border-bottom: 2px solid $secondaryColor;
+            
             line-height: 1.3rem;
             font-family: 'Inter';
             text-align: left;
