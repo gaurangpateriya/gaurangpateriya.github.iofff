@@ -73,6 +73,13 @@
 @media (max-width: 576px) {
   .testimonial-carousel .mentor {
     padding: 0;
+    height: 500px;
+    display: -ms-grid !important;
+    display: grid !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow: hidden;
   }
 }
 
@@ -112,6 +119,10 @@
   border: 3px solid white;
 }
 
+.testimonial-carousel .mentor .heading {
+  margin-top: auto;
+}
+
 .testimonial-carousel .mentor .heading .name {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,6 +147,7 @@
 
 .testimonial-carousel .mentor .heading .company {
   margin: 15px auto;
+  margin-bottom: 0px;
   padding: 15px;
   border-radius: 4px;
   background-color: cornflowerblue;
