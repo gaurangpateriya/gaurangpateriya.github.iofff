@@ -1,3 +1,35 @@
+## Info about the Branches in this repo
+We are having four projects in the same repo
+1. yavtechnology.com
+1. student.yavtechnology.com
+1. admin.yavtechnology.com
+1. hr.yavtechnology.com
+
+**info of branches**
+
+| Branch | Description | Domain |
+| ------ | ------ | ------ |
+| student-dashboard-stagin-build | This holds the build file the student dashboard staging build | https://teststudent.yavtechnology.com/ |
+| hr-test-build| This holds the build of the hr dashboard staging frontend | https://hrtest.yavtechnology.com/ |
+| admin-test-build | This holds the buid of the admin dashboard staging frontend | https://testadmin.yavtechnology.com/ |
+| student-dashboard-production-build | This holds the build of the student dashboard production frontend | https://student.yavtechnology.com/ |
+| admin-production-build | This holds the build of the admin dashboard production frontend | https://admin.yavtechnology.com/|
+| build | This holds the build file of the yavtechnology.com | https://yavtechnology.com/ |
+| student-dashboard-production | This holds the project of the student dashboard production frontend | |
+| admin-production | This holds the project of the admin dashboard production frontend | |
+| hr-dashboard-production| This holds the project of the hr dashboard production frontend | |
+| student-dashboard-staging | This holds the project of the student dashboard staging frontend | |
+| hr-dashboard-test| This holds the project of the HR dashboard staging frontend | |
+| admin-staging | This holds the project of the admin dashboard staging frontend | |
+| student-dashboard| This holds the project of the student dashboard development frontend | |
+| hr-dashboard| This holds the project of the hr dashboard development frontend | |
+| admin | This holds the project of the admin dashboard development frontend | |
+| student-dashboard-dev | This is a temporary branch | |
+| adminBuild | This is a temporary branch | |
+
+
+student
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
