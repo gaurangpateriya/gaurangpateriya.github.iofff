@@ -17,6 +17,7 @@ We are having four projects in the same repo
 | build | This holds the build file of the yavtechnology.com | https://yavtechnology.com/ |
 | student-dashboard-production | This holds the project of the student dashboard production frontend | |
 | admin-production | This holds the project of the admin dashboard production frontend | |
+| hr-dashboard-production| This holds the project of the hr dashboard production frontend | |
 | student-dashboard-staging | This holds the project of the student dashboard staging frontend | |
 | hr-dashboard-test| This holds the project of the HR dashboard staging frontend | |
 | admin-staging | This holds the project of the admin dashboard staging frontend | |
