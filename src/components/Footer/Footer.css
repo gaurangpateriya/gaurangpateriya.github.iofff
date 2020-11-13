@@ -20,7 +20,9 @@
   color: white;
 }
 
-.reach-us-div .content p {
+.reach-us-div .content p,
+.reach-us-div .content a {
+  display: block;
   color: white;
   font-size: 0.8rem;
   max-width: 250px;

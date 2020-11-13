@@ -3,7 +3,7 @@
 /* eslint-disable linebreak-style */
 import React, { lazy, Component } from 'react';
 import {
-	
+
 	Switch,
 	Route,
 } from 'react-router-dom';
@@ -23,37 +23,39 @@ import TalkToMentor from './components/TalkToMentor/TalkToMentor';
 import PaymentPage from './components/PaymentPage/PaymentPage';
 import Register from './components/Register/Register';
 import Login from './components/Login/Login';
+import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 
-function App( { history } ) {
+function App({ history }) {
 
 	return (
 		<>
-		
+
 			<React.Suspense fallback={(
 				<div style={{
-						width: '40px', height: '40px', position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%,-50%)',
-					}}
+					width: '40px', height: '40px', position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%,-50%)',
+				}}
 				>
 					<h4>Loading...</h4>
 					<CircularProgress />
 				</div>
-				)}
+			)}
 			>
 
-			<ConnectedRouter history={history}>
-				<Switch>
-					<Route path="/" component={AboutUs} 
-					exact />
-					<Route path="/login" component={Login} exact />
-					<Route path="/register" component={Register} exact />
-					<Route path="/vit" component={() => <AboutUs college={'vit'} />} exact />
-					<Route path="/mis" component={() => <AboutUs college={'mis'} />} exact />
-					<Route path="/talk-to-mentor" component={TalkToMentor}  exact/>
-					<Route path="/payments" component={PaymentPage}  exact/>
-					<Route path="/:courseDetails" component={CourseDetails}  exact/>
+				<ConnectedRouter history={history}>
+					<Switch>
+						<Route path="/" component={AboutUs}
+							exact />
+						<Route path="/login" component={Login} exact />
+						<Route path="/register" component={Register} exact />
+						<Route path="/vit" component={() => <AboutUs college={'vit'} />} exact />
+						<Route path="/mis" component={() => <AboutUs college={'mis'} />} exact />
+						<Route path="/talk-to-mentor" component={TalkToMentor} exact />
+						<Route path="/payments" component={PaymentPage} exact />
+						<Route path="/privacy-policy" component={PrivacyPolicy} exact />
+						<Route path="/:courseDetails" component={CourseDetails} exact />
 
-				</Switch>
-			</ConnectedRouter>
+					</Switch>
+				</ConnectedRouter>
 			</React.Suspense>
 		</>
 	);

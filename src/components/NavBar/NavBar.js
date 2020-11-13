@@ -1,16 +1,16 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 
 import { APP_NAME, APP_NAME_short } from '../../constants/otherConstants';
 import { Link } from 'react-router-dom';
 import 'tachyons';
 import './NavBar.css';
-import  logo from '../../assets/Images/AboutUS/logo_short.png';
+import logo from '../../assets/Images/AboutUS/logo_short.png';
 const BootstrapNavbar = () => {
 	const handleScroll = () => {
 		if (window.scrollY > 20) {
-		  document.querySelector(".nav-bar").className = "nav-bar scroll";
+			document.querySelector(".nav-bar").className = "nav-bar scroll";
 		} else {
-		  document.querySelector(".nav-bar").className = "nav-bar";
+			document.querySelector(".nav-bar").className = "nav-bar";
 		}
 	}
 	useEffect(() => {
@@ -19,14 +19,14 @@ const BootstrapNavbar = () => {
 			window.removeEventListener("scroll", handleScroll);
 		}
 	}, [])
-	
-	return(
-		
+
+	return (
+
 		<nav className='nav-bar' >
-			<div className='logo' >
-				<img src={logo} alt='logo'/>
+			<Link to='/' className='logo' >
+				<img src={logo} alt='logo' />
 				<h1>{APP_NAME_short}</h1>
-			</div>
+			</Link>
 			<div className='end-links'>
 				<button type='button'>
 					<Link to='/talk-to-mentor' >Schedule a call</Link>
@@ -40,11 +40,11 @@ const BootstrapNavbar = () => {
 				{/* <button type='button'>
 					<Link to='/register' >Register</Link>
 				</button> */}
-			</div>  
+			</div>
 		</nav>
-		
-	);  
-	
+
+	);
+
 }
 
 export default BootstrapNavbar;

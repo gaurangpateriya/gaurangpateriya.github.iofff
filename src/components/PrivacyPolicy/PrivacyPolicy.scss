@@ -1,0 +1,28 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/_mixins.scss';
+
+
+$pagePadding: 1rem;
+$pageWidth : 80%;
+
+.privacy-policy {
+
+	padding: $navHeight $pagePadding;
+	background-color: $tertiaryColor;
+	color: $primaryColor;
+
+	h1,
+	h3,
+	p,
+	b {
+		color: inherit;
+		font-family: 'Noto Sans';
+	}
+
+	b {
+
+		display: block;
+		margin-top: 1rem;
+		text-decoration: underline;
+	}
+}
