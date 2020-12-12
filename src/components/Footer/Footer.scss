@@ -1,24 +1,24 @@
 .reach-us-div {
-	background-color: rgb(41, 39, 44);
-	padding: 20px;
-	color: white;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
+  background-color: rgb(41, 39, 44);
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 
-	.content {
-		text-align: center;
+  .content {
+    text-align: center;
 
-		path {
-			color: white;
-		}
+    path {
+      color: white;
+    }
 
-		p,
-		a {
-			display: block;
-			color: white;
-			font-size: 0.8rem;
-			max-width: 250px;
-		}
-	}
+    p,
+    a {
+      display: block;
+      color: white;
+      font-size: 0.8rem;
+      max-width: 250px;
+    }
+  }
 }
