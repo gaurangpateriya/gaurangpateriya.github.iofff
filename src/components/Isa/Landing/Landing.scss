@@ -3,7 +3,7 @@
 
 .btn {
   display: inline-block;
-  background: $tertiaryColor;
+  background: $secondaryColor;
   color: white;
   padding: 0.9rem 3.9rem;
   font-size: 1rem;
@@ -16,7 +16,7 @@
 
   &:hover {
     transition: opacity 0.2s ease-in;
-    background: #e98008;
+    background: $tertiaryColor;
     color: white;
   }
 }
@@ -28,7 +28,7 @@
 }
 
 .head {
-  background-color: #1C2A3E;
+  background-color: #1c2a3e;
   /* background-image: linear-gradient(
     to right top,
     #09c28a,
@@ -92,9 +92,8 @@
 }
 
 /* Colors */
-
 .blue {
-  color: rgb(17, 58, 104);
+  color: $secondaryColor;
 }
 .white {
   color: rgb(255, 255, 255);
