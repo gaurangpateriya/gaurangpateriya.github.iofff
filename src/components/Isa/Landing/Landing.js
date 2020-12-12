@@ -76,7 +76,7 @@ const Landing = () => {
           </div>
           <div className='col-3 '>
             <div className='align'>
-              <h1 className='blue'>₹5 LPA</h1>
+              <h1 className='orange'>₹5 LPA</h1>
               <p>
                 The ISA only kicks in once you're making at least ₹5 Lakhs per
                 annum within 1 year of completion.
@@ -85,13 +85,13 @@ const Landing = () => {
           </div>
           <div className='col-3 '>
             <div className=' align'>
-              <h1 className='blue'>2 years</h1>
+              <h1 className='orange'>2 years</h1>
               <p>You'll make payments distributed over a span of 2 years.</p>
             </div>
           </div>
           <div className='col-3 '>
             <div className=' align'>
-              <h1 className='blue'>₹2.5 Lakhs</h1>
+              <h1 className='orange'>₹2.5 Lakhs</h1>
               <p>
                 You'll only have to pay a capped amount of 2.5 Lakhs over a
                 period of 24 months once you get a placement of more than the
@@ -103,7 +103,7 @@ const Landing = () => {
         <div className='row'>
           <div className='col-3 '>
             <div className=''>
-              <h1 className='blue'>₹0</h1>
+              <h1 className='orange'>₹0</h1>
               <p>
                 The payment will get paused if you left/got fired from your
                 first job within 3 months of joining. It continues when you get
@@ -115,7 +115,7 @@ const Landing = () => {
           </div>
           <div className='col-3'>
             <div className=''>
-              <h1 className='blue'>1 year</h1>
+              <h1 className='orange'>1 year</h1>
               <p>
                 Your ISA expires in 1 year if you don't land up in a job of more
                 than 5 LPA within 1 year of course completion date. In this case
@@ -125,7 +125,7 @@ const Landing = () => {
           </div>
           <div className='col-3 '>
             <div className=''>
-              <h1 className='blue'>₹2 Lakh</h1>
+              <h1 className='orange'>₹2 Lakh</h1>
               <p>
                 You can choose to pay ₹2 Lakh upfront for YAV Technology instead
                 of doing an ISA.
