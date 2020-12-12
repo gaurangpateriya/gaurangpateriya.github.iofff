@@ -12,7 +12,7 @@
   margin-right: 0.5rem;
   transition-duration: 0.8s;
   outline: none;
-  border-radius: 20px;
+  // border-radius: 20px;
 
   &:hover {
     transition: opacity 0.2s ease-in;
@@ -28,7 +28,7 @@
 }
 
 .head {
-  background-color: $tertiaryColor;
+  background-color: #1C2A3E;
   /* background-image: linear-gradient(
     to right top,
     #09c28a,
