@@ -28,6 +28,7 @@ const BootstrapNavbar = () => {
 				<h1>{APP_NAME_short}</h1>
 			</Link>
 			<div className='end-links'>
+				<Link to='/' >Home</Link>
 				<button type='button'>
 					<Link to='/talk-to-mentor' >Schedule a call</Link>
 				</button>

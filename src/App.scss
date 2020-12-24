@@ -4,42 +4,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;1,700&display=swap');
 // font-family: 'Aleo', cursive;
 // Inter
-    // font-family: 'Noto Sans', sans-serif;
+// font-family: 'Noto Sans', sans-serif;
 
 
-*{
-    color: $fontColor;
-    scroll-behavior: smooth;
-    // font-family: 'Noto Sans', sans-serif;
-    font-family: 'Inter', sans-serif;
-    margin: 0;
+* {
+	color: $fontColor;
+	scroll-behavior: smooth;
+	// font-family: 'Noto Sans', sans-serif;
+	font-family: 'Inter', sans-serif;
+	margin: 0;
 }
-button{
-    background: none;
-    border: none;
-    cursor: pointer;
+
+a {
+	text-decoration: none;
 }
-.primary-btn{
-    background-color: $secondaryColor;
-    text-decoration: none;
-    
-    color: white;
-    display: block;
-    text-align: center;
-    font-weight: bold;
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
 }
-.secondary-btn{
-    background-color: rgb(67, 243, 135);
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    display: block;
-    text-align: center;
-    transition: all 0.5s;
-    
-    &:hover{
-        color: white;
-        
-        background-color: $secondaryColor;
-    }
+
+.primary-btn {
+	background-color: $secondaryColor;
+	text-decoration: none;
+
+	color: white;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+}
+
+.secondary-btn {
+	background-color: rgb(67, 243, 135);
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	display: block;
+	text-align: center;
+	transition: all 0.5s;
+
+	&:hover {
+		color: white;
+
+		background-color: $secondaryColor;
+	}
 }

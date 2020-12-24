@@ -1,24 +1,34 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/_mixins.scss';
+
 .reach-us-div {
-  background-color: rgb(41, 39, 44);
-  padding: 20px;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+	background-color: $tertiaryColor;
+	padding: 20px;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 
-  .content {
-    text-align: center;
+	@include mobile {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 10px;
 
-    path {
-      color: white;
-    }
+	}
 
-    p,
-    a {
-      display: block;
-      color: white;
-      font-size: 0.8rem;
-      max-width: 250px;
-    }
-  }
+	.content {
+		text-align: center;
+
+		path {
+			color: white;
+		}
+
+		p,
+		a {
+			display: block;
+			color: white;
+			font-size: 0.8rem;
+			max-width: 250px;
+		}
+	}
 }
