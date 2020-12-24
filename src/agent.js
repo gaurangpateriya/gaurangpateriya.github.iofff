@@ -2,8 +2,16 @@
 import axios from 'axios';
 
 
-const API_ROOT =  process.env.NODE_ENV === 'test'? 'http://127.0.0.1:8000/': 'https://api.yavtechnology.com/api';
-    
+
+const env = process.env.REACT_APP_ENV.trim()
+const API_ROOT = env === "development"
+	? 'http://127.0.0.1:8000/api'
+	: (
+		env === 'staging'
+			? 'https://test.yavtechnology.com/api'
+			: 'https://production.yavtechnology.com/api'
+	);
+
 axios.defaults.baseURL = API_ROOT;
 axios.defaults.timeout = 100 * 1000;
 axios.defaults.headers = {};
@@ -44,7 +52,7 @@ const requests = {
 };
 
 const TalkToMentor = {
-	sendDetails: (data) => requests.post('/contact/',data)
+	sendDetails: (data) => requests.post('/contact', data)
 };
 
 export default {
