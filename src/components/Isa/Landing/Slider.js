@@ -7,7 +7,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 
 const PERCENT = 0.17;
 const MONTHS = 6;
-const MAX_SHARE = 1000000;
+const MAX_SHARE = 100000;
 const PrettoSlider = withStyles({
     root: {
         color: '#52af77',
