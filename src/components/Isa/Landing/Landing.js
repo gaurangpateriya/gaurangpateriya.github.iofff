@@ -38,16 +38,16 @@ const Landing = () => {
         <div className='align'>
           <h1>4 THINGS TO KNOW ABOUT THE YAV's ISA</h1>
         </div>
-        <div className='col-4 '>
-          <div className='bg-light p-1'>
+        {/* <div className='col-3 '> */}
+        {/* <div className='bg-light p-1'>
             <img src={job} alt='image' />
             <h4>Rs. 0 till you get a job</h4>
             <p className='p-1'>
               With YAV Technology, you do not pay a single penny till you get a job! No registration fees, deposits or monthly fees or any other hidden charges.
             </p>
-          </div>
-        </div>
-        <div className='col-4 '>
+          </div> */}
+        {/* </div> */}
+        <div className='col-3'>
           <div className='bg-light p-1'>
             <img src={payment} alt='image' />
             <h4>Pay amount based on what you get</h4>
@@ -56,7 +56,7 @@ const Landing = () => {
             </p>
           </div>
         </div>
-        <div className='col-4 '>
+        <div className='col-3'>
           <div className='bg-light p-1'>
             <img src={jobSecurity} alt='image' />
             <h4>Job Loss Security</h4>
@@ -65,7 +65,7 @@ const Landing = () => {
             </p>
           </div>
         </div>
-        <div className='col-4 '>
+        <div className='col-3'>
           <div className='bg-light p-1'>
             <img src={nomoney} alt='image' />
             <h4>Stop Paying if you reach the cap</h4>

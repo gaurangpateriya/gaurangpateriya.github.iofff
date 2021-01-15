@@ -94,6 +94,31 @@
 	}
 }
 
+.col-3 {
+	float: left;
+	width: 33%;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+
+
+	img {
+		width: 100%;
+		height: 200px;
+		margin-bottom: 20px;
+	}
+
+	@include mobile {
+		width: 100%;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
 .row:after {
 	content: '';
 	display: table;
