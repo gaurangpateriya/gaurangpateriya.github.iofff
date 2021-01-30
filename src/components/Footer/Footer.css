@@ -2,22 +2,15 @@
   background-color: #26232e;
   padding: 20px;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 @media (max-width: 576px) {
   .reach-us-div {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-row-gap: 10px;
   }
 }
@@ -37,4 +30,3 @@
   font-size: 0.8rem;
   max-width: 250px;
 }
-/*# sourceMappingURL=Footer.css.map */

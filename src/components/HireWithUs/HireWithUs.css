@@ -1,0 +1,409 @@
+.btn {
+  display: inline-block;
+  background: #bbbbbb;
+  color: #080808;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition-duration: 0.8s;
+  outline: none;
+  border-radius: 25px;
+}
+
+.btn:hover {
+  transition: opacity 0.5s ease-out;
+  background: white;
+  color: black;
+}
+
+.align {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.align .p-div {
+  font-size: 1.4rem;
+  padding: 0 10px 20px 10px;
+}
+
+@media (max-width: 576px) {
+  .align .p-div {
+    font-size: 1.2rem;
+  }
+}
+
+.heading {
+  background-color: #1c2a3e;
+  width: 100%;
+  padding: 100px 60px 40px 60px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.heading .head-div {
+  margin: auto;
+  text-align: center;
+}
+
+.heading .head-div h2 {
+  font-size: 2rem;
+}
+
+.heading .head-div p {
+  font-size: 2.1rem;
+}
+
+.heading .head-div .p-div {
+  text-align: left;
+  margin-top: 40px;
+  width: 500px;
+  font-size: 0.9rem;
+}
+
+.heading .head-div .btn-div {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.heading img {
+  transform: scaleX(-1);
+  opacity: 0.15;
+  width: 200px;
+}
+
+@media (max-width: 576px) {
+  .heading {
+    padding: 100px 30px 0 30px;
+    display: block;
+    width: 100%;
+  }
+  .heading .head-div {
+    text-align: left;
+  }
+  .heading .head-div p {
+    font-size: 1.5rem;
+  }
+  .heading .head-div .p-div {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .heading img {
+    z-index: -1;
+    margin-top: -140px;
+    margin-left: 150px;
+  }
+}
+
+.col2 {
+  float: left;
+  width: 33.33%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.col2 h2 {
+  font-size: 2rem;
+}
+
+.col2 p {
+  font-size: 1.2rem;
+  padding: 40px 0;
+}
+
+.col2 img {
+  margin-top: 30px;
+  width: 150px;
+}
+
+@media (max-width: 576px) {
+  .col2 {
+    padding: 0%;
+  }
+  .col2 p {
+    font-size: 1.1rem;
+    padding: 30px 0;
+  }
+  .col2 img {
+    margin-top: 40px;
+    width: 100px;
+  }
+}
+
+.pd1 {
+  padding: 20px 250px 80px 250px;
+}
+
+@media (max-width: 576px) {
+  .pd1 {
+    padding: 10px 10px;
+  }
+}
+
+.pd2 {
+  padding: 30px 250px 0px 250px;
+}
+
+@media (max-width: 576px) {
+  .pd2 {
+    padding: 30px 0px;
+  }
+}
+
+.row-div {
+  width: 100%;
+}
+
+.col3 {
+  float: left;
+  width: 33%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.col3 p {
+  font-size: 1.25rem;
+}
+
+.col3 img {
+  width: 60%;
+  height: 60%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .col3 {
+    width: 100%;
+  }
+  .col3 img {
+    width: 40%;
+  }
+}
+
+.row-div:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.companies-div {
+  text-align: center;
+  padding: 20px 30px;
+}
+
+.companies-div p {
+  font-size: 1.7rem;
+}
+
+@media (max-width: 576px) {
+  .companies-div {
+    padding: 20px 0;
+    width: 100%;
+  }
+  .companies-div p {
+    font-size: 1.3rem;
+    padding: 0 40px;
+  }
+}
+
+.companies-div .company-img-wrapper {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.companies-div .company-img-wrapper .company-img {
+  width: auto !important;
+  max-height: 50px;
+  margin: 50px;
+  max-width: 100px;
+}
+
+@media (max-width: 576px) {
+  .companies-div .company-img-wrapper .company-img {
+    margin: 10px;
+    max-width: 70px;
+  }
+}
+
+/* Utils */
+.bg-light {
+  background: #fdfdfd;
+  color: #f8f6f6;
+}
+
+.bg-blue {
+  background: #f9feff;
+  color: #f8f6f6;
+}
+
+/* Colors */
+.orange {
+  color: #ff8800;
+}
+
+.white {
+  color: white;
+}
+
+/* Padding */
+.p {
+  padding: 0.5rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+@media (max-width: 576px) {
+  .p-3 {
+    padding: 0;
+  }
+}
+
+/* Font Size */
+.fs-50 {
+  font-size: 50px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.form {
+  display: block;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.form p {
+  font-size: 1.5rem;
+}
+
+.form a {
+  margin-top: 20px;
+}
+
+.form .grid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.form .grid img {
+  width: 150px;
+  margin-top: 30px;
+}
+
+@media (max-width: 576px) {
+  .form {
+    padding: 20px 5px;
+  }
+  .form p {
+    font-size: 1.2rem;
+  }
+  .form .grid {
+    padding: 0;
+    display: block;
+  }
+  .form .grid img {
+    display: none;
+  }
+}
+
+.schedule-a-call .res-wrapper {
+  text-align: center;
+}
+
+.schedule-a-call .res-wrapper p {
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.schedule-a-call .res-wrapper .response {
+  color: #ff8800;
+}
+
+.schedule-a-call .res-wrapper .error {
+  color: red;
+}
+
+.schedule-a-call form {
+  width: 65%;
+  margin: auto;
+  padding: 10px;
+}
+
+@media (max-width: 576px) {
+  .schedule-a-call form {
+    width: 90%;
+    padding: 0;
+  }
+}
+
+.schedule-a-call form div {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.schedule-a-call form div input,
+.schedule-a-call form div select {
+  padding: 7px;
+  font-family: 'Aleo', cursive;
+  border: none;
+  outline: none;
+  color: black;
+}
+
+.schedule-a-call form .inputs {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  grid-column-gap: 10px;
+}
+
+.schedule-a-call form .inputs label {
+  margin: auto;
+}
+
+.schedule-a-call form button[type='submit'] {
+  text-align: center;
+  background-color: #ff8800;
+  width: 30%;
+  padding: 10px;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-radius: 25px;
+  margin: auto;
+  outline: none;
+  margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+  .schedule-a-call form button[type='submit'] {
+    width: 40%;
+  }
+}

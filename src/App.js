@@ -21,6 +21,7 @@ import Register from './components/Register/Register';
 import Login from './components/Login/Login';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 import Isa from './components/Isa/Isa';
+import HireWithUs from './components/HireWithUs/HireWithUs';
 
 function App({ history }) {
   return (
@@ -60,6 +61,7 @@ function App({ history }) {
             <Route path='/talk-to-mentor' component={TalkToMentor} exact />
             <Route path='/payments' component={PaymentPage} exact />
             <Route path='/isa' component={Isa} exact />
+            <Route path='/hirewithus' component={HireWithUs} exact />
             <Route path='/privacy-policy' component={PrivacyPolicy} exact />
             <Route path='/:courseDetails' component={CourseDetails} exact />
           </Switch>

@@ -2,100 +2,99 @@
 @import '../../assets/styles/_mixins.scss';
 
 .book-a-call-wrapper {
-	text-align: center;
-	background-image: url(../../assets/Images/AboutUS/contactUs.svg);
-	min-height: 100vh;
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
-	margin-top: $navHeight;
+  text-align: center;
+  background-image: url(../../assets/Images/AboutUS/contactUs.svg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: $navHeight;
 
+  .res-wrapper {
+    text-align: center;
 
-	.res-wrapper {
-		text-align: center;
+    p {
+      font-size: 0.8rem;
+      color: white;
 
-		p {
-			font-size: 0.8rem;
-			color: white;
+      font-weight: 300;
 
-			font-weight: 300;
+      padding: 10px;
+    }
 
-			padding: 10px;
-		}
+    .response {
+      color: white;
+      background-color: $secondaryColor;
+    }
 
-		.response {
-			background-color: $secondaryColor;
-		}
+    .error {
+      color: white;
+      background-color: red;
+    }
+  }
 
-		.error {
-			background-color: red;
-		}
-	}
+  .book-a-call-div {
+    min-height: 100vh;
 
-	.book-a-call-div {
+    // background-color: rgba(white,0.7);
+    form {
+      border: 1px solid $secondaryColor;
+      border-radius: 10px;
+      width: 50%;
+      margin: auto;
+      padding: 10px;
+      text-align: left;
+      background-color: white;
 
-		min-height: 100vh;
+      @include mobile {
+        width: 90%;
+      }
 
-		// background-color: rgba(white,0.7);
-		form {
-			border: 1px solid $secondaryColor;
-			border-radius: 10px;
-			width: 50%;
-			margin: auto;
-			padding: 10px;
-			text-align: left;
-			background-color: white;
+      .header {
+        text-align: center;
+        border-bottom: 1px solid black;
+        padding: 20px;
+      }
 
-			@include mobile {
-				width: 90%;
-			}
+      div {
+        width: 100%;
+        margin: 10px 0;
 
-			.header {
-				text-align: center;
-				border-bottom: 1px solid black;
-				padding: 20px;
-			}
+        label {
+          margin: 5px 0;
+          font-size: 1rem;
+          font-family: 'Aleo', cursive;
+          font-weight: bold;
+        }
 
-			div {
-				width: 100%;
-				margin: 10px 0;
+        input,
+        select {
+          padding: 10px;
+          font-family: 'Aleo', cursive;
+          border: 1px;
+          border-radius: 3px;
+          border: 1px solid rgba(54, 50, 54, 0.333);
+        }
 
-				label {
-					margin: 5px 0;
-					font-size: 1rem;
-					font-family: 'Aleo', cursive;
-					font-weight: bold;
-				}
+        .inputs {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 10px;
+        }
+      }
 
-				input,
-				select {
-					padding: 10px;
-					font-family: 'Aleo', cursive;
-					border: 1px;
-					border-radius: 3px;
-					border: 1px solid rgba(54, 50, 54, 0.333);
-				}
-
-				.inputs {
-					display: grid;
-					grid-template-columns: 1fr 1fr;
-					grid-column-gap: 10px;
-				}
-			}
-
-			button[type=submit] {
-				background-color: $secondaryColor;
-				width: 100%;
-				padding: 15px;
-				color: white;
-				font-weight: bold;
-				letter-spacing: 1px;
-				text-transform: uppercase;
-				font-size: 1rem;
-				border-radius: 5px;
-				margin: auto;
-			}
-		}
-	}
-
+      button[type='submit'] {
+        background-color: $secondaryColor;
+        width: 100%;
+        padding: 15px;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 1rem;
+        border-radius: 5px;
+        margin: auto;
+      }
+    }
+  }
 }

@@ -5,27 +5,16 @@
   padding: 0px 5%;
   width: 100%;
   z-index: 150;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   height: 10vh;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .nav-bar .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 50px;
 }
 
@@ -41,15 +30,11 @@
 }
 
 .nav-bar .end-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow-wrap: break-word;
   text-align: center;
   width: 80%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   overflow: hidden;
 }
 
@@ -62,8 +47,6 @@
   color: #ecfafc;
   padding: 5px;
   margin: 0 10px;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
   min-width: fit-content;
   border: 2px solid #ff8800;
 }
@@ -91,11 +74,9 @@
 
 .scroll {
   background-color: rgba(0, 0, 0, 0.6);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .scroll .end-links button {
   background-color: #ff8800;
 }
-/*# sourceMappingURL=NavBar.css.map */

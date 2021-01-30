@@ -1,0 +1,402 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/_mixins.scss';
+
+.btn {
+  display: inline-block;
+  background: rgb(187, 187, 187);
+  color: rgb(8, 8, 8);
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition-duration: 0.8s;
+  outline: none;
+  border-radius: 25px;
+
+  &:hover {
+    transition: opacity 0.5s ease-out;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+}
+
+.align {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .p-div {
+    font-size: 1.4rem;
+    padding: 0 10px 20px 10px;
+    @include mobile {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.heading {
+  background-color: #1c2a3e;
+  width: 100%;
+  padding: 100px 60px 40px 60px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  .head-div {
+    margin: auto;
+    text-align: center;
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 2.1rem;
+    }
+    .p-div {
+      text-align: left;
+      margin-top: 40px;
+      width: 500px;
+      font-size: 0.9rem;
+    }
+    .btn-div {
+      margin-top: 30px;
+      text-align: left;
+    }
+  }
+  img {
+    transform: scaleX(-1);
+    opacity: 0.15;
+    width: 200px;
+  }
+  @include mobile {
+    padding: 100px 30px 0 30px;
+    display: block;
+    width: 100%;
+
+    .head-div {
+      text-align: left;
+
+      p {
+        font-size: 1.5rem;
+      }
+      .p-div {
+        width: 100%;
+        font-size: 0.9rem;
+      }
+    }
+    img {
+      z-index: -1;
+      margin-top: -140px;
+      margin-left: 150px;
+    }
+  }
+}
+
+.col2 {
+  float: left;
+  width: 33.33%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.2rem;
+    padding: 40px 0;
+  }
+  img {
+    margin-top: 30px;
+    width: 150px;
+  }
+  @include mobile {
+    padding: 0%;
+    p {
+      font-size: 1.1rem;
+      padding: 30px 0;
+    }
+    img {
+      margin-top: 40px;
+      width: 100px;
+    }
+  }
+}
+
+// .col-4 {
+//   float: left;
+//   width: 25%;
+//   margin: auto;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   padding: 20px;
+
+//   img {
+//     width: 100%;
+//     height: 150px;
+//     margin-bottom: 20px;
+//   }
+
+//   @include mobile {
+//     width: 100%;
+
+//     img {
+//       width: 100%;
+//     }
+//   }
+// }
+.pd1 {
+  padding: 20px 250px 80px 250px;
+  @include mobile {
+    padding: 10px 10px;
+  }
+}
+.pd2 {
+  padding: 30px 250px 0px 250px;
+  @include mobile {
+    padding: 30px 0px;
+  }
+}
+.row-div {
+  width: 100%;
+}
+.col3 {
+  float: left;
+  width: 33%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+  p {
+    font-size: 1.25rem;
+  }
+  img {
+    width: 60%;
+    height: 60%;
+    margin-bottom: 20px;
+  }
+
+  @include mobile {
+    width: 100%;
+    img {
+      width: 40%;
+    }
+  }
+}
+
+.row-div:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.companies-div {
+  text-align: center;
+  padding: 20px 30px;
+
+  // background-color: #535c00;
+  p {
+    font-size: 1.7rem;
+  }
+  @include mobile {
+    padding: 20px 0;
+    width: 100%;
+    p {
+      font-size: 1.3rem;
+      padding: 0 40px;
+    }
+  }
+  .company-img-wrapper {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    .company-img {
+      width: auto !important;
+      max-height: 50px;
+      margin: 50px;
+      max-width: 100px;
+      @include mobile {
+        margin: 10px;
+        max-width: 70px;
+      }
+    }
+  }
+}
+/* Utils */
+
+.bg-light {
+  background: rgb(253, 253, 253);
+  color: rgb(248, 246, 246);
+}
+.bg-blue {
+  background: rgb(249, 254, 255);
+  color: rgb(248, 246, 246);
+}
+/* Colors */
+.orange {
+  color: $secondaryColor;
+}
+
+.white {
+  color: rgb(255, 255, 255);
+}
+
+/* Padding */
+.p {
+  padding: 0.5rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+
+  @include mobile {
+    padding: 0;
+  }
+}
+
+/* Font Size */
+
+.fs-50 {
+  font-size: 50px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.form {
+  display: block;
+  padding: 30px 20px;
+  text-align: center;
+
+  p {
+    font-size: 1.5rem;
+  }
+  a {
+    margin-top: 20px;
+  }
+  .grid {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    img {
+      width: 150px;
+      margin-top: 30px;
+    }
+  }
+  @include mobile {
+    padding: 20px 5px;
+    p {
+      font-size: 1.2rem;
+    }
+    .grid {
+      padding: 0;
+      display: block;
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+.schedule-a-call {
+  // min-height: 100vh;
+  // background-color: rgba(white,0.7);
+  .res-wrapper {
+    text-align: center;
+
+    p {
+      font-size: 0.8rem;
+      color: white;
+      font-weight: 300;
+      padding: 10px;
+    }
+
+    .response {
+      color: $secondaryColor;
+    }
+
+    .error {
+      color: red;
+    }
+  }
+  form {
+    // border: 1px solid $secondaryColor;
+    width: 65%;
+    margin: auto;
+    padding: 10px;
+    // background-color: rgba(rgb(119, 118, 118), 0.7);
+
+    @include mobile {
+      width: 90%;
+      padding: 0;
+    }
+
+    // .header {
+    //   text-align: center;
+    //   border-bottom: 1px solid black;
+    //   padding: 20px;
+    // }
+
+    div {
+      width: 100%;
+      margin: 10px 0;
+      // label {
+      //   margin: 5px 0;
+      //   font-size: 1rem;
+      //   font-family: 'Aleo', cursive;
+      //   font-weight: bold;
+      // }
+
+      input,
+      select {
+        padding: 7px;
+        font-family: 'Aleo', cursive;
+        border: none;
+        outline: none;
+        color: black;
+        // border-radius: 3px;
+        // border: 1px solid rgba(54, 50, 54, 0.333);
+      }
+    }
+    .inputs {
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 0.5fr 1fr;
+      grid-column-gap: 10px;
+      label {
+        margin: auto;
+      }
+    }
+
+    button[type='submit'] {
+      text-align: center;
+      background-color: $secondaryColor;
+      width: 30%;
+      padding: 10px;
+      color: white;
+      // font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      border-radius: 25px;
+      margin: auto;
+      outline: none;
+      margin-top: 10px;
+      @include mobile {
+        width: 40%;
+      }
+    }
+  }
+}

@@ -34,7 +34,6 @@ button {
   color: white;
   display: block;
   text-align: center;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -42,4 +41,3 @@ button {
   color: white;
   background-color: #ff8800;
 }
-/*# sourceMappingURL=App.css.map */
