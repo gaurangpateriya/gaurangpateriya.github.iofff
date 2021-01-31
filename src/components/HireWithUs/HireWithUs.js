@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 import search from '../../assets/Images/HireWithUs/search1.png';
+import man from '../../assets/Images/HireWithUs/skill.png';
 import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
 import './HireWithUs.css';
@@ -70,7 +71,6 @@ const HireWithUs = () => {
       return;
     }
     // console.log(data);
-    console.log(user);
     setLoading(true);
     agent.TalkToMentor.sendDetails(data)
       .then((res) => {
@@ -123,7 +123,7 @@ const HireWithUs = () => {
 
       {/* ------ */}
 
-      <div className='row-div pd1 bg-light'>
+      <div className='row-div pd1'>
         <div className='align'>
           <h1>What makes us unique?</h1>
         </div>
@@ -142,22 +142,22 @@ const HireWithUs = () => {
       </div>
 
       {/* ------ */}
-      <div className='row-div pd2 bg-blue'>
+      <div className='row-div1 bg-orange'>
         <div className='align'>
           <p className='p-div'>
             YAV Technology can fullfil multiple profile requirements
           </p>
         </div>
         <div className='col2'>
-          <p className=''>Full Stack Engineer</p>
-          <p className=''>Backend Engineer</p>
+          <p className='floating'>Full Stack Engineer</p>
+          <p className='floating'>Backend Engineer</p>
         </div>
         <div className='col2'>
-          <img src={search} alt='image' />
+          <img src={man} alt='image' />
         </div>
         <div className='col2'>
-          <p className=''>Frontend Engineer</p>
-          <p className=''>Software Engineer</p>
+          <p className='floating'>Frontend Engineer</p>
+          <p className='floating'>Software Engineer</p>
         </div>
       </div>
 
@@ -172,11 +172,11 @@ const HireWithUs = () => {
       </div>
       {/*--------*/}
 
-      <div className='bg-blue form'>
+      <div className='form'>
         <p>Fill in the form and we will get back to you!</p>
         <div className='grid'>
           <div>
-            <img src={search} alt='image' />
+            <img src={man} alt='image' />
           </div>
           <div className='schedule-a-call '>
             <form onSubmit={submitDetails}>

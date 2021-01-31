@@ -36,7 +36,7 @@
 }
 
 .heading {
-  background-color: #1c2a3e;
+  background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
   width: 100%;
   padding: 100px 60px 40px 60px;
   display: grid;
@@ -48,13 +48,13 @@
       font-size: 2rem;
     }
     p {
-      font-size: 2.1rem;
+      font-size: 2.6rem;
     }
     .p-div {
       text-align: left;
       margin-top: 40px;
       width: 500px;
-      font-size: 0.9rem;
+      font-size: 1.2rem;
     }
     .btn-div {
       margin-top: 30px;
@@ -75,11 +75,11 @@
       text-align: left;
 
       p {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
       }
       .p-div {
         width: 100%;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
       }
     }
     img {
@@ -105,18 +105,18 @@
     padding: 40px 0;
   }
   img {
-    margin-top: 30px;
-    width: 150px;
+    margin-top: 20px;
+    width: 200px;
   }
   @include mobile {
-    padding: 0%;
+    padding: 0;
     p {
       font-size: 1.1rem;
       padding: 30px 0;
     }
     img {
-      margin-top: 40px;
-      width: 100px;
+      margin-top: 60px;
+      width: 150px;
     }
   }
 }
@@ -150,14 +150,34 @@
     padding: 10px 10px;
   }
 }
-.pd2 {
-  padding: 30px 250px 0px 250px;
-  @include mobile {
-    padding: 30px 0px;
-  }
-}
 .row-div {
   width: 100%;
+}
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+.row-div1 {
+  width: 100%;
+  padding: 40px 40px;
+  @include mobile {
+    padding: 30px 10px;
+  }
 }
 .col3 {
   float: left;
@@ -190,7 +210,11 @@
   display: table;
   clear: both;
 }
-
+.row-div1:after {
+  content: '';
+  display: table;
+  clear: both;
+}
 .companies-div {
   text-align: center;
   padding: 20px 30px;
@@ -209,76 +233,39 @@
   }
   .company-img-wrapper {
     display: flex;
-    margin-top: 20px;
+    margin-top: 30px;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0 20px;
     .company-img {
       width: auto !important;
-      max-height: 50px;
-      margin: 50px;
-      max-width: 100px;
+      max-height: 100px;
+      margin: 30px;
+      max-width: 80px;
       @include mobile {
         margin: 10px;
-        max-width: 70px;
+        max-width: 60px;
       }
+    }
+    @include mobile {
+      padding: 0;
     }
   }
 }
-/* Utils */
-
-.bg-light {
-  background: rgb(253, 253, 253);
+.bg-orange {
+  background: rgb(255, 226, 193);
   color: rgb(248, 246, 246);
 }
-.bg-blue {
-  background: rgb(249, 254, 255);
-  color: rgb(248, 246, 246);
-}
-/* Colors */
-.orange {
-  color: $secondaryColor;
-}
-
 .white {
   color: rgb(255, 255, 255);
-}
-
-/* Padding */
-.p {
-  padding: 0.5rem;
-}
-
-.p-1 {
-  padding: 1rem;
-}
-
-.p-2 {
-  padding: 2rem;
-}
-
-.p-3 {
-  padding: 3rem;
-
-  @include mobile {
-    padding: 0;
-  }
-}
-
-/* Font Size */
-
-.fs-50 {
-  font-size: 50px;
-}
-
-.fs-20 {
-  font-size: 20px;
 }
 
 .form {
   display: block;
   padding: 30px 20px;
   text-align: center;
+  background: linear-gradient(43deg, #40ec88 0%, #85dfbc 46%, #32c2fc 100%);
 
   p {
     font-size: 1.5rem;
@@ -291,12 +278,12 @@
     display: grid;
     grid-template-columns: 2fr 2fr;
     img {
-      width: 150px;
-      margin-top: 30px;
+      width: 250px;
+      margin-top: 10px;
     }
   }
   @include mobile {
-    padding: 20px 5px;
+    padding: 50px 0px;
     p {
       font-size: 1.2rem;
     }
@@ -332,15 +319,17 @@
     }
   }
   form {
-    // border: 1px solid $secondaryColor;
+    border: 1px solid rgb(121, 121, 121);
     width: 65%;
     margin: auto;
     padding: 10px;
+    border-radius: 10px;
     // background-color: rgba(rgb(119, 118, 118), 0.7);
 
     @include mobile {
       width: 90%;
       padding: 0;
+      border: none;
     }
 
     // .header {
@@ -369,6 +358,13 @@
         // border-radius: 3px;
         // border: 1px solid rgba(54, 50, 54, 0.333);
       }
+      @include mobile {
+        input,
+        select {
+          padding: 10px 5px;
+          margin-top: 7px;
+        }
+      }
     }
     .inputs {
       padding: 0;
@@ -396,6 +392,8 @@
       margin-top: 10px;
       @include mobile {
         width: 40%;
+        padding: 15px;
+        margin-top: 15px;
       }
     }
   }

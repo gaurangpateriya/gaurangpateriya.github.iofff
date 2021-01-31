@@ -37,7 +37,7 @@
 }
 
 .heading {
-  background-color: #1c2a3e;
+  background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
   width: 100%;
   padding: 100px 60px 40px 60px;
   display: grid;
@@ -54,14 +54,14 @@
 }
 
 .heading .head-div p {
-  font-size: 2.1rem;
+  font-size: 2.6rem;
 }
 
 .heading .head-div .p-div {
   text-align: left;
   margin-top: 40px;
   width: 500px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 .heading .head-div .btn-div {
@@ -85,11 +85,11 @@
     text-align: left;
   }
   .heading .head-div p {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
   .heading .head-div .p-div {
     width: 100%;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
   .heading img {
     z-index: -1;
@@ -117,21 +117,21 @@
 }
 
 .col2 img {
-  margin-top: 30px;
-  width: 150px;
+  margin-top: 20px;
+  width: 200px;
 }
 
 @media (max-width: 576px) {
   .col2 {
-    padding: 0%;
+    padding: 0;
   }
   .col2 p {
     font-size: 1.1rem;
     padding: 30px 0;
   }
   .col2 img {
-    margin-top: 40px;
-    width: 100px;
+    margin-top: 60px;
+    width: 150px;
   }
 }
 
@@ -145,18 +145,39 @@
   }
 }
 
-.pd2 {
-  padding: 30px 250px 0px 250px;
+.row-div {
+  width: 100%;
 }
 
-@media (max-width: 576px) {
-  .pd2 {
-    padding: 30px 0px;
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0px);
   }
 }
 
-.row-div {
+.row-div1 {
   width: 100%;
+  padding: 40px 40px;
+}
+
+@media (max-width: 576px) {
+  .row-div1 {
+    padding: 30px 10px;
+  }
 }
 
 .col3 {
@@ -195,6 +216,12 @@
   clear: both;
 }
 
+.row-div1:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .companies-div {
   text-align: center;
   padding: 20px 30px;
@@ -217,82 +244,47 @@
 
 .companies-div .company-img-wrapper {
   display: flex;
-  margin-top: 20px;
+  margin-top: 30px;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 20px;
 }
 
 .companies-div .company-img-wrapper .company-img {
   width: auto !important;
-  max-height: 50px;
-  margin: 50px;
-  max-width: 100px;
+  max-height: 100px;
+  margin: 30px;
+  max-width: 80px;
 }
 
 @media (max-width: 576px) {
   .companies-div .company-img-wrapper .company-img {
     margin: 10px;
-    max-width: 70px;
+    max-width: 60px;
   }
 }
 
-/* Utils */
-.bg-light {
-  background: #fdfdfd;
-  color: #f8f6f6;
+@media (max-width: 576px) {
+  .companies-div .company-img-wrapper {
+    padding: 0;
+  }
 }
 
-.bg-blue {
-  background: #f9feff;
+.bg-orange {
+  background: #ffe2c1;
   color: #f8f6f6;
-}
-
-/* Colors */
-.orange {
-  color: #ff8800;
 }
 
 .white {
   color: white;
 }
 
-/* Padding */
-.p {
-  padding: 0.5rem;
-}
-
-.p-1 {
-  padding: 1rem;
-}
-
-.p-2 {
-  padding: 2rem;
-}
-
-.p-3 {
-  padding: 3rem;
-}
-
-@media (max-width: 576px) {
-  .p-3 {
-    padding: 0;
-  }
-}
-
-/* Font Size */
-.fs-50 {
-  font-size: 50px;
-}
-
-.fs-20 {
-  font-size: 20px;
-}
-
 .form {
   display: block;
   padding: 30px 20px;
   text-align: center;
+  background: linear-gradient(43deg, #40ec88 0%, #85dfbc 46%, #32c2fc 100%);
 }
 
 .form p {
@@ -310,13 +302,13 @@
 }
 
 .form .grid img {
-  width: 150px;
-  margin-top: 30px;
+  width: 250px;
+  margin-top: 10px;
 }
 
 @media (max-width: 576px) {
   .form {
-    padding: 20px 5px;
+    padding: 50px 0px;
   }
   .form p {
     font-size: 1.2rem;
@@ -350,15 +342,18 @@
 }
 
 .schedule-a-call form {
+  border: 1px solid #797979;
   width: 65%;
   margin: auto;
   padding: 10px;
+  border-radius: 10px;
 }
 
 @media (max-width: 576px) {
   .schedule-a-call form {
     width: 90%;
     padding: 0;
+    border: none;
   }
 }
 
@@ -374,6 +369,14 @@
   border: none;
   outline: none;
   color: black;
+}
+
+@media (max-width: 576px) {
+  .schedule-a-call form div input,
+  .schedule-a-call form div select {
+    padding: 10px 5px;
+    margin-top: 7px;
+  }
 }
 
 .schedule-a-call form .inputs {
@@ -405,5 +408,7 @@
 @media (max-width: 576px) {
   .schedule-a-call form button[type='submit'] {
     width: 40%;
+    padding: 15px;
+    margin-top: 15px;
   }
 }
