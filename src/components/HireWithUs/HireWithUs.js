@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
-import search from '../../assets/Images/HireWithUs/search1.png';
-import man from '../../assets/Images/HireWithUs/skill.png';
+import mail from '../../assets/Images/HireWithUs/mail.png';
+import search from '../../assets/Images/HireWithUs/search.png';
+import quality from '../../assets/Images/HireWithUs/quality.png';
+import ready from '../../assets/Images/HireWithUs/ready.png';
+import zerofee from '../../assets/Images/HireWithUs/zerofee.jpg';
+import dev from '../../assets/Images/HireWithUs/developers.png';
 import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
 import './HireWithUs.css';
@@ -117,7 +121,7 @@ const HireWithUs = () => {
           </div>
         </div>
         <div>
-          <img src={search} alt='image' />
+          <img src={search} />
         </div>
       </div>
 
@@ -125,18 +129,18 @@ const HireWithUs = () => {
 
       <div className='row-div pd1'>
         <div className='align'>
-          <h1>What makes us unique?</h1>
+          <p>What makes us unique?</p>
         </div>
         <div className='col3'>
-          <img src={search} alt='image' />
+          <img className='img' src={quality} alt='image' />
           <p className=''>High quality candidates</p>
         </div>
         <div className='col3'>
-          <img src={search} alt='image' />
+          <img className='img-1' src={ready} alt='image' />
           <p className=''>Ready to join</p>
         </div>
         <div className='col3'>
-          <img src={search} alt='image' />
+          <img src={zerofee} alt='image' />
           <p className=''>Zero hiring charges</p>
         </div>
       </div>
@@ -149,15 +153,15 @@ const HireWithUs = () => {
           </p>
         </div>
         <div className='col2'>
-          <p className='floating'>Full Stack Engineer</p>
-          <p className='floating'>Backend Engineer</p>
+          <p className='red floating'>Full Stack Engineer</p>
+          <p className='blue floating'>Backend Engineer</p>
         </div>
         <div className='col2'>
-          <img src={man} alt='image' />
+          <img src={dev} alt='image' />
         </div>
         <div className='col2'>
-          <p className='floating'>Frontend Engineer</p>
-          <p className='floating'>Software Engineer</p>
+          <p className='black floating'>Frontend Engineer</p>
+          <p className='orange floating'>Software Engineer</p>
         </div>
       </div>
 
@@ -176,7 +180,7 @@ const HireWithUs = () => {
         <p>Fill in the form and we will get back to you!</p>
         <div className='grid'>
           <div>
-            <img src={man} alt='image' />
+            <img src={mail} alt='image' />
           </div>
           <div className='schedule-a-call '>
             <form onSubmit={submitDetails}>
