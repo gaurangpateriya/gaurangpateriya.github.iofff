@@ -107,7 +107,7 @@ const HireWithUs = () => {
   return (
     <>
       <NavBar />
-      <div className='heading'>
+      <div className='heading-hirewithus'>
         <div className='head-div'>
           <p className='white'>Hire best in class engineers at no cost!</p>
           <p className='p-div white'>
@@ -153,15 +153,15 @@ const HireWithUs = () => {
           </p>
         </div>
         <div className='col2'>
-          <p className='red floating'>Full Stack Engineer</p>
-          <p className='blue floating'>Backend Engineer</p>
+          <p className='yellow-back  floating'>Full Stack Engineer</p>
+          <p className='green-back  floating'>Backend Engineer</p>
         </div>
         <div className='col2'>
           <img src={dev} alt='image' />
         </div>
         <div className='col2'>
-          <p className='black floating'>Frontend Engineer</p>
-          <p className='orange floating'>Software Engineer</p>
+          <p className='pink-back  floating'>Frontend Engineer</p>
+          <p className='blue-back  floating'>Software Engineer</p>
         </div>
       </div>
 
@@ -176,13 +176,13 @@ const HireWithUs = () => {
       </div>
       {/*--------*/}
 
-      <div className='form'>
+      <div className='hiring-manager-form'>
         <p>Fill in the form and we will get back to you!</p>
         <div className='grid'>
           <div>
             <img src={mail} alt='image' />
           </div>
-          <div className='schedule-a-call '>
+          <div className='schedule-a-call-form '>
             <form onSubmit={submitDetails}>
               <div className='res-wrapper'>
                 {res && <p className='response'>{res}</p>}

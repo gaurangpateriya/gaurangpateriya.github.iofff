@@ -87,7 +87,7 @@ export default function CustomizedSlider() {
     const [ctc, setCtc] = useState(18);
 
     return (
-        <div className='slider-div align'>
+        <div className='slider-div isa-align'>
             <h1>Income Share calculator</h1>
             <div className='content'>
                 <div className='slider'>

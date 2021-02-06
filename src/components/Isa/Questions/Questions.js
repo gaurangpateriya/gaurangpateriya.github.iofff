@@ -1,6 +1,6 @@
 import React from 'react';
 import Faq from 'react-faq-component';
-
+import '../Landing/Landing.css';
 const Questions = () => {
   const data = {
     title: `FAQ`,
@@ -13,7 +13,8 @@ const Questions = () => {
       },
       {
         title: `Q. Do I have to pay only if I get a full stack developer profile job?`,
-        content: 'We will also train you with Quants and Guesstimates which are used for multiple roles. The ISA is hence binding for any role that you get.',
+        content:
+          'We will also train you with Quants and Guesstimates which are used for multiple roles. The ISA is hence binding for any role that you get.',
       },
       {
         title: `Q. What if I change the company before 6 months?`,
@@ -24,7 +25,8 @@ const Questions = () => {
         content: `That depends on one person - You! The harder you work, the quicker you are to get jobs! Different people have different learning curves so it is hard to pin-point a number.`,
       },
       {
-        title: 'Q.  I already have a job offer, do I have to pay my monthly payouts now?',
+        title:
+          'Q.  I already have a job offer, do I have to pay my monthly payouts now?',
         content: `Lol. No. We will add it as an exclusion to the ISA. You don't have to pay for them.
         `,
       },
@@ -61,7 +63,7 @@ const Questions = () => {
   };
 
   return (
-    <div style={{ padding: '3rem' }}>
+    <div className='faq-div'>
       <Faq data={data} styles={styles} />
     </div>
   );
