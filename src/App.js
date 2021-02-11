@@ -14,7 +14,6 @@ import 'animate.css/animate.min.css';
 
 import AboutUs from './components/AboutUs/AboutUs';
 import './App.css';
-import CourseDetails from './components/CourseDetails/CourseDetails';
 import TalkToMentor from './components/TalkToMentor/TalkToMentor';
 import PaymentPage from './components/PaymentPage/PaymentPage';
 import Register from './components/Register/Register';
@@ -63,7 +62,7 @@ function App({ history }) {
             <Route path='/isa' component={Isa} exact />
             <Route path='/hirewithus' component={HireWithUs} exact />
             <Route path='/privacy-policy' component={PrivacyPolicy} exact />
-            <Route path='/:courseDetails' component={CourseDetails} exact />
+            <Route path='/*' component={AboutUs} exact />
           </Switch>
         </ConnectedRouter>
       </React.Suspense>

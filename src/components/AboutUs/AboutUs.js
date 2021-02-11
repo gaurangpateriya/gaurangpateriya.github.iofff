@@ -79,7 +79,7 @@ const AboutUs = ({ college }) => {
   return (
     <>
       <Helmet>
-        <title>YAV</title>
+        <title>YAV Technologies: Pay after Placement</title>
         <meta
           name='description'
           content='Intern with us and escalate your career. Upskill with the world’s most effective project-based learning platform for developers.'
