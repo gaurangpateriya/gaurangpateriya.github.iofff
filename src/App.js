@@ -2,7 +2,7 @@
 
 /* eslint-disable linebreak-style */
 import React, { lazy, Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import { push } from 'react-router-redux';
 import { connect } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
@@ -62,7 +62,7 @@ function App({ history }) {
             <Route path='/isa' component={Isa} exact />
             <Route path='/hirewithus' component={HireWithUs} exact />
             <Route path='/privacy-policy' component={PrivacyPolicy} exact />
-            <Route path='/*' component={AboutUs} exact />
+            <Route path='/*' component={() => <Redirect to='/' />} exact />
           </Switch>
         </ConnectedRouter>
       </React.Suspense>
