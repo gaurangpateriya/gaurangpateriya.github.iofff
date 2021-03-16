@@ -6,6 +6,7 @@ import search from '../../assets/Images/HireWithUs/search.png';
 import quality from '../../assets/Images/HireWithUs/quality.png';
 import ready from '../../assets/Images/HireWithUs/ready.png';
 import zerofee from '../../assets/Images/HireWithUs/zerofee.jpg';
+import students from '../../assets/Images/HireWithUs/students.jpg';
 import dev from '../../assets/Images/HireWithUs/developers.png';
 import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
@@ -145,6 +146,43 @@ const HireWithUs = () => {
         </div>
       </div>
 
+      <div className='student-details-div'>
+        <div className='content'>
+          <h1>What kind of students do we have?</h1>
+          <div className=' text-content'>
+            <div>
+              <h2>100+ Hours</h2>
+              <p> Of Programming Experience</p>
+            </div>
+            <div>
+              <h2>Highly Trained</h2>
+              <p>By Industry Professionals</p>
+            </div>
+            <div>
+              <h2>Great projects</h2>
+              <p>With Rich Github Repos</p>
+            </div>
+
+
+            <div>
+              <h2>100+ Hours</h2>
+              <p>Of Competitive Coding</p>
+            </div>
+            <div>
+              <h2>Exams Perfected</h2>
+              <p>To ensure genuineness</p>
+            </div>
+            <div>
+              <h2>125+</h2>
+              <p>Leetcode solutions</p>
+            </div>
+
+          </div>
+        </div>
+
+        <img src={students} />
+      </div>
+
       {/* ------ */}
       <div className='row-div1 bg-orange'>
         <div className='align'>
@@ -243,8 +281,8 @@ const HireWithUs = () => {
                 {loading ? (
                   <CircularProgress style={{ color: 'white' }} size={20} />
                 ) : (
-                  'Get A Call'
-                )}
+                    'Get A Call'
+                  )}
               </button>
             </form>
           </div>

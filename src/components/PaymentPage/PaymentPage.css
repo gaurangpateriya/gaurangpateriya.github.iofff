@@ -9,6 +9,8 @@
 
 .payment-form {
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: auto;
   border: 1px solid #a5a5a5;
@@ -24,7 +26,10 @@
 
 @media (max-width: 576px) {
   .payment-form {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 90%;
   }
 }
@@ -49,10 +54,17 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 20px;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: left;
 }
 
@@ -92,8 +104,13 @@
 }
 
 .payment-form .right-div form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   text-align: center;
 }
@@ -111,7 +128,9 @@
   border-radius: 5px;
   border: none;
   border-bottom: 1px solid #a5a5a5;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -128,6 +147,8 @@
   font-size: 0.95rem;
   font-weight: bold;
   font-family: 'Noto sans', cursive;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -194,3 +215,4 @@
     padding: 15px;
   }
 }
+/*# sourceMappingURL=PaymentPage.css.map */

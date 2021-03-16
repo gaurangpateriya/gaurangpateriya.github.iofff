@@ -1,7 +1,11 @@
 .align {
   margin: auto;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
@@ -20,8 +24,10 @@
   background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
   width: 100%;
   padding: 100px 60px 40px 60px;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
 }
 
 .heading-hirewithus .head-div {
@@ -64,12 +70,14 @@
   border: none;
   cursor: pointer;
   margin-right: 0.5rem;
-  transition-duration: 0.8s;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
   outline: none;
   border-radius: 25px;
 }
 
 .heading-hirewithus .btn:hover {
+  -webkit-transition: opacity 0.5s ease-out;
   transition: opacity 0.5s ease-out;
   background: white;
   color: black;
@@ -125,8 +133,12 @@
   float: left;
   width: 33.33%;
   margin: auto;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   margin-top: 30px;
 }
@@ -180,22 +192,44 @@
 }
 
 .floating {
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-name: floating;
+          animation-name: floating;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   margin-top: 5px;
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
 }
 
 @keyframes floating {
   0% {
-    transform: translate(0, 0px);
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
   }
   50% {
-    transform: translate(0, 15px);
+    -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
   }
   100% {
-    transform: translate(0, 0px);
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
   }
 }
 
@@ -217,12 +251,104 @@
   }
 }
 
+.student-details-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 80px;
+  margin-top: 20px;
+  padding-bottom: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 32px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 32px 6px rgba(0, 0, 0, 0.5);
+}
+
+.student-details-div .content {
+  text-align: center;
+  padding: 20px;
+  width: 70%;
+}
+
+.student-details-div .content h1 {
+  font-size: 2rem;
+  margin: 50px 0;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.student-details-div .content .text-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 30px;
+}
+
+.student-details-div .content .text-content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.student-details-div .content .text-content div h2 {
+  color: #ff8800;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.student-details-div .content .text-content div p {
+  font-size: 0.9rem;
+}
+
+.student-details-div img {
+  width: 30%;
+  padding: 20px;
+  margin: auto;
+}
+
+@media (max-width: 576px) {
+  .student-details-div {
+    padding: 10px;
+    display: block;
+    -webkit-box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.5);
+  }
+  .student-details-div .content {
+    width: 100%;
+  }
+  .student-details-div .content h1 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
+  .student-details-div .content .text-content div h2 {
+    font-size: 1.2rem;
+  }
+  .student-details-div img {
+    width: 100%;
+    padding: 0;
+  }
+}
+
 .col3 {
   float: left;
   width: 33%;
   margin: auto;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   padding: 0;
   margin-top: 60px;
@@ -294,11 +420,18 @@
 }
 
 .companies-div .company-img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 30px;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0 20px;
 }
 
@@ -348,8 +481,10 @@
 
 .hiring-manager-form .grid {
   padding: 20px;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  -ms-grid-columns: 2fr 2fr;
+      grid-template-columns: 2fr 2fr;
 }
 
 .hiring-manager-form .grid img {
@@ -431,8 +566,10 @@
 
 .schedule-a-call-form form .inputs {
   padding: 0;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 0.5fr 1fr;
+  -ms-grid-columns: 1fr 0.5fr 1fr;
+      grid-template-columns: 1fr 0.5fr 1fr;
   grid-column-gap: 10px;
 }
 
@@ -462,3 +599,4 @@
     margin-top: 15px;
   }
 }
+/*# sourceMappingURL=HireWithUs.css.map */

@@ -77,8 +77,10 @@
 }
 
 .book-a-call-wrapper .book-a-call-div form div .inputs {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
 }
 
@@ -94,3 +96,4 @@
   border-radius: 5px;
   margin: auto;
 }
+/*# sourceMappingURL=TalkToMentor.css.map */
